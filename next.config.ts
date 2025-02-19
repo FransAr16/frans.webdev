@@ -8,7 +8,9 @@ const nextConfig: NextConfig = {
         hostname: "res.cloudinary.com",
       },
     ],
-    domains: ["res.cloudinary.com/dzv6ccnjm"], // Opsional
+    loader: "cloudinary",
+    path: "https://res.cloudinary.com/dzv6ccnjm/image/upload",
+    domains: ["res.cloudinary.com"], // Opsional
   },
 };
 
