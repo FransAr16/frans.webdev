@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
         hostname: "res.cloudinary.com",
       },
     ],
-    domains: ["res.cloudinary.com"], // Opsional
+    domains: ["res.cloudinary.com/dzv6ccnjm"], // Opsional
   },
 };
 
