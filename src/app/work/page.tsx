@@ -12,7 +12,7 @@ export default function Work() {
       <main className="relative overflow-hidden w-full h-full">
         <div className="w-full h-full relative ">
           <WorkHero />
-          <WorkProject />
+          {/* <WorkProject /> */}
           <Footer />
         </div>
       </main>
