@@ -4,9 +4,8 @@ import React, { useState } from "react";
 import { motion } from "motion/react";
 import { revealsText } from "@/data/animation";
 import Link from "next/link";
-import { CgArrowUp } from "react-icons/cg";
 import TextSlideUp from "../ui/TextSlideUp";
-import { LiaArrowDownSolid, LiaArrowUpSolid } from "react-icons/lia";
+import { LiaArrowUpSolid } from "react-icons/lia";
 
 interface FooterNavBottomProps {
   href: string;
