@@ -38,7 +38,7 @@ export default function MyWork({
         </div>
         <div className="col-span-3 flex items-center justify-end group-hover:text-foreground/30">
           <div className="lg:text-[.9rem] font-medium group-hover:translate-x-[2rem] transition-all duration-400 ease-out">
-            <span className="font-medium mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+            <span className="font-medium mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.3rem] leading-[120%]">
               {category}
             </span>
           </div>

@@ -51,7 +51,7 @@ export default function Navbar() {
                   setSelectedIndicator={setSelectedIndicator}
                   animate={navbarSlideUp}
                   // underline={underLineBtn}
-                  classNameLink="font-medium text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+                  classNameLink="font-medium text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
                   classNameHref=" w-full h-[1px] bg-background absolute left-0 bottom-0"
                 />
             ))}
@@ -60,7 +60,7 @@ export default function Navbar() {
             <Contact
               href="/contact"
               text="Start a project"
-              className="font-medium text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+              className="font-medium text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
             />
           </div>
         </ul>

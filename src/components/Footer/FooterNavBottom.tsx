@@ -30,10 +30,9 @@ export default function FooterNavBottom() {
       <div className="grid grid-cols-12 gap-1 lg:gap-4 w-full pb-[1.5rem] sm:pb-[2rem] lg:pb-[2rem] pt-[4rem] sm:pt-[8rem] lg:pt-[10rem]">
         <div className="hidden lg:col-span-4 lg:flex">
           <TextSlideUp
-            // text="2025 &copy; Edition - All Rights Reserved"
             text={`© ${new Date().getFullYear()} All rights reserved`}
             animate={revealsText}
-            className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+            className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
           />
         </div>
         <div className="hidden lg:col-span-4 lg:flex">
@@ -41,7 +40,7 @@ export default function FooterNavBottom() {
             <FooterItem
               href="/privacy-policy"
               text="Privacy Policy"
-              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
             />
           </div>
           <div className="font-medium 2xl:font-semibold flex items-center text-[1rem] px-1">
@@ -65,7 +64,7 @@ export default function FooterNavBottom() {
             <FooterItem
               href="/terms-conditions"
               text="Terms"
-              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
             />
           </div>
         </div>
@@ -75,7 +74,7 @@ export default function FooterNavBottom() {
           <TextSlideUp
             text="(2025 &copy; Edition - All Rights Reserved)"
             animate={revealsText}
-            className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+            className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
           />
         </div>
         <div className="col-span-12 lg:hidden flex order-first">
@@ -83,7 +82,7 @@ export default function FooterNavBottom() {
             <FooterItem
               href="/privacy-policy"
               text="Privacy Policy"
-              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
             />
           </div>
           <div className="font-medium 2xl:font-semibold flex items-center text-[1rem] px-1">
@@ -107,7 +106,7 @@ export default function FooterNavBottom() {
             <FooterItem
               href="/terms-conditions"
               text="Terms"
-              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
             />
           </div>
         </div>
@@ -136,10 +135,9 @@ export default function FooterNavBottom() {
                     }}
                     className="flex items-center gap-[3px]"
                   >
-                    <span className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]">
+                    <span className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]">
                       Back to top
                     </span>
-                    {/* <CgArrowUp className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1.25rem] 2xl:text-[1.38rem]" /> */}
                     <LiaArrowUpSolid
                       strokeWidth={1.8}
                       className="w-[1.2rem] h-[1.2rem] 2xl:w-[1.3rem] 2xl:h-[1.3rem]"
@@ -170,7 +168,7 @@ export default function FooterNavBottom() {
           <FooterItem
             href="/info-credit"
             text="Info & Credits"
-            className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+            className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
           />
         </div>
       </div>

@@ -80,14 +80,14 @@ export default function MyWorkMobile({
           <TextSlideUp
             text={category}
             animate={revealsText}
-            className="font-medium mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+            className="font-medium mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
           />
         </div>
         <div className="flex">
           <TextSlideUp
             text={published}
             animate={revealsText}
-            className="font-medium mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+            className="font-medium mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
           />
         </div>
       </div>
