@@ -61,7 +61,7 @@ export default function WorkProject() {
     <div className="flex flex-col w-full h-full py-[2rem] lg:py-[2rem] 2xl:py-[4rem]">
       <div className="flex flex-col w-full h-full">
         {/* CategoryNav */}
-        <div className="main-container w-full flex items-center justify-start lg:justify-between pt-[3rem] lg:pt-[2.5rem] border-t">
+        <div className="main-container w-full flex items-center justify-start lg:justify-between pt-[3rem] lg:pt-[2.5rem] border-t ">
           <div className="flex flex-wrap gap-4 lg:gap-10 2xl:gap-12 items-center">
             <div onClick={() => handleCategoryChange("All")}>
               <WorkCategoryBtn
