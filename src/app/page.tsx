@@ -31,7 +31,7 @@ export default function Home() {
           <div className="relative bg-background">
             <Intro />
             <Approach />
-            {/* <RecentWork /> */}
+            <RecentWork />
             <About />
             <Footer />
           </div>
