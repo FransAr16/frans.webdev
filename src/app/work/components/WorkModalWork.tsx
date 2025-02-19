@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { motion } from "motion/react";
-import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 
 const scaleAnimation = {
   initial: { scale: 0, x: "-50%", y: "-50%" },
@@ -119,7 +119,14 @@ export default function WorkModalWork({
                   style={{ backgroundColor: bgColor }}
                   className="relative h-full flex items-center justify-center px-[2rem]"
                 >
-                    <CldImage
+                    <Image
+                      src={`${images}`}
+                      width={1920}
+                      height={1080}
+                      className="w-full object-cover"
+                      alt="image-work"
+                    />
+                    {/* <CldImage
                       src={`${images}`}
                       width={1920}
                       height={1080}
@@ -129,7 +136,7 @@ export default function WorkModalWork({
                         type: "auto",
                         source: true,
                       }}
-                    />
+                    /> */}
                 </div>
               );
             })}

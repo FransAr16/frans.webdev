@@ -4,8 +4,8 @@ import React, { useRef } from "react";
 import { motion, useInView } from "motion/react";
 import Link from "next/link";
 import { revealsText } from "@/data/animation";
-import { CldImage } from "next-cloudinary";
 import TextSlideUp from "@/components/ui/TextSlideUp";
+import Image from "next/image";
 
 interface WorkListGridProps {
   index: number;
@@ -75,7 +75,14 @@ export default function WorkListGrid({
                 style={{ backgroundColor: bgColor }}
                 className="relative h-full flex items-center justify-center px-[2rem]"
               >
-                <CldImage
+                <Image
+                  src={`${images}`}
+                  width={1920}
+                  height={1080}
+                  className={`${imgClassName} w-full h-auto`}
+                  alt="image-work"
+                />
+                {/* <CldImage
                   src={`${images}`}
                   width={1920}
                   height={1080}
@@ -85,7 +92,7 @@ export default function WorkListGrid({
                     type: "auto",
                     source: true,
                   }}
-                />
+                /> */}
               </div>
             </motion.div>
           </motion.div>
