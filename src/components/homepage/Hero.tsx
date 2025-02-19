@@ -144,21 +144,21 @@ export default function Hero() {
                     <div className="flex flex-col">
                       <LetterLight
                         text="Creative"
-                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
                       />
                       <LetterLight
                         text="Web Developer"
-                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
                       />
                     </div>
                     <div className="flex flex-col">
                       <LetterLight
                         text="Fullstack"
-                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
                       />
                       <LetterLight
                         text="Capable"
-                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.3rem] "
+                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] "
                       />
                     </div>
                   </div>
@@ -191,7 +191,7 @@ export default function Hero() {
                       <div className="flex justify-center lg:w-[16vw] 2xl:w-[18rem] pt-3 lg:pt-6">
                         <LetterBold
                           text="(01)"
-                          className="font-semibold 2xl:text-[1.3rem]"
+                          className="font-semibold 2xl:text-[1.28rem]"
                         />
                       </div>
                     </motion.div>

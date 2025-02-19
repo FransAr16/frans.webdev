@@ -32,7 +32,7 @@ export default function FooterNavBottom() {
           <TextSlideUp
             text={`© ${new Date().getFullYear()} All rights reserved`}
             animate={revealsText}
-            className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+            className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
           />
         </div>
         <div className="hidden lg:col-span-4 lg:flex">
@@ -40,7 +40,7 @@ export default function FooterNavBottom() {
             <FooterItem
               href="/privacy-policy"
               text="Privacy Policy"
-              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
             />
           </div>
           <div className="font-medium 2xl:font-semibold flex items-center text-[1rem] px-1">
@@ -64,7 +64,7 @@ export default function FooterNavBottom() {
             <FooterItem
               href="/terms-conditions"
               text="Terms"
-              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
             />
           </div>
         </div>
@@ -74,7 +74,7 @@ export default function FooterNavBottom() {
           <TextSlideUp
             text="(2025 &copy; Edition - All Rights Reserved)"
             animate={revealsText}
-            className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+            className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
           />
         </div>
         <div className="col-span-12 lg:hidden flex order-first">
@@ -82,7 +82,7 @@ export default function FooterNavBottom() {
             <FooterItem
               href="/privacy-policy"
               text="Privacy Policy"
-              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
             />
           </div>
           <div className="font-medium 2xl:font-semibold flex items-center text-[1rem] px-1">
@@ -106,7 +106,7 @@ export default function FooterNavBottom() {
             <FooterItem
               href="/terms-conditions"
               text="Terms"
-              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
             />
           </div>
         </div>
@@ -135,7 +135,7 @@ export default function FooterNavBottom() {
                     }}
                     className="flex items-center gap-[3px]"
                   >
-                    <span className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]">
+                    <span className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]">
                       Back to top
                     </span>
                     <LiaArrowUpSolid
@@ -168,7 +168,7 @@ export default function FooterNavBottom() {
           <FooterItem
             href="/info-credit"
             text="Info & Credits"
-            className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+            className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
           />
         </div>
       </div>

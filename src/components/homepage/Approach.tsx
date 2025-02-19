@@ -14,12 +14,12 @@ export default function Approach() {
               <TextFadeIn
                 slideUp={fadeIn}
                 phrase="Breaking Boundaries"
-                className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.3rem] leading-[120%]"
+                className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
               />
               <TextFadeIn
                 slideUp={fadeIn}
                 phrase="in Web Developer"
-                className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.3rem] leading-[120%]"
+                className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
               />
             </div>
           </div>
@@ -32,7 +32,7 @@ export default function Approach() {
                 <TextFadeIn
                   slideUp={fadeIn}
                   phrase="Designing visually appealing and efficient websites has always been a fulfilling challenge for me. While I've completed many projects independently, I enjoy the synergy that comes with collaborating with others. Team efforts often bring out unique strengths and creative solutions that push the project to new heights."
-                  className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.3rem] leading-[120%]"
+                  className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
                 />
               </div>
 
@@ -40,7 +40,7 @@ export default function Approach() {
                 <TextFadeIn
                   slideUp={fadeIn}
                   phrase="Being part of a team excites me because it allows me to grow and contribute in meaningful ways. I embrace collaboration as a way to share knowledge, exchange ideas, and create something truly impactful. Every partnership is an opportunity to learn and achieve something extraordinary."
-                  className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.3rem] leading-[120%]"
+                  className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
                 />
               </div>
             </div>
@@ -51,7 +51,7 @@ export default function Approach() {
               <TextFadeIn
                 slideUp={fadeIn}
                 phrase="(02)"
-                className="font-medium 2xl:font-semibold 2xl:text-[1.3rem]"
+                className="font-medium 2xl:font-semibold 2xl:text-[1.28rem]"
               />
             </div>
           </div>

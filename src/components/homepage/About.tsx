@@ -26,7 +26,7 @@ const paragraphTwoMobile = [
 ];
 
 export default function About() {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement | null>(null);
   const isInViewImg = useInView(ref, { once: true });
 
   return (
@@ -71,7 +71,7 @@ export default function About() {
             <TextSlideUp
               text="Frans - Web Developer @2024"
               animate={revealsText}
-              className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] leading-[120%] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+              className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] leading-[120%] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
             />
           </div>
         </div>
@@ -85,7 +85,7 @@ export default function About() {
                   <TextSlideUp
                     text="(About Me)"
                     animate={revealsText}
-                    className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+                    className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
                   />
                   <div className="lg:pl-[.5rem] xl:pl-[1rem] 2xl:pl-[3rem]">
                     <TextSlideUp
@@ -118,7 +118,7 @@ export default function About() {
                   <TextSlideUp
                     text="(About Me)"
                     animate={revealsText}
-                    className="font-medium mr-[4px] lg:mr-[6px] tracking-[-0.04em] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+                    className="font-medium mr-[4px] lg:mr-[6px] tracking-[-0.04em] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
                   />
                   <div className="sm:ml-[2rem] lg:ml-[3rem]">
                     <TextSlideUp
@@ -144,7 +144,7 @@ export default function About() {
                   <TextSlideUp
                     text="(About Me)"
                     animate={revealsText}
-                    className="font-medium mr-[4px] lg:mr-[6px] tracking-[-0.04em] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+                    className="font-medium mr-[4px] lg:mr-[6px] tracking-[-0.04em] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
                   />
                   <div className="">
                     <TextSlideUp
@@ -211,7 +211,7 @@ export default function About() {
                     href="/about"
                     slideUp={revealsText}
                     text="Learn more about me"
-                    className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+                    className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
                   />
                 </div>
               </div>
