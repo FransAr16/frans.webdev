@@ -111,7 +111,7 @@ export default function Sidebar({ onClose }: SidebarProps) {
                 </div>
                 <div className="flex w-full mb-[4rem]">
                   <MobileContact
-                    href="/"
+                    href="/contact"
                     text="Start a project"
                     className="font-medium text-[2.4rem]"
                   />
