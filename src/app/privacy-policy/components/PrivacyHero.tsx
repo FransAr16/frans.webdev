@@ -1,12 +1,12 @@
-import React from 'react'
-import PrivacyHeading from './PrivacyHeading'
+import React from "react";
+import PrivacyHeading from "./PrivacyHeading";
 
 export default function PrivacyHero() {
   return (
-    <div className='h-[30vh] lg:h-[60vh] w-full relative overflow-hidden'>
-          <div className='main-container w-full h-full flex items-end'>
-            <PrivacyHeading />
-          </div>
-        </div>
-  )
+    <div className="h-full w-full relative overflow-hidden">
+      <div className="main-container w-full h-full pt-[11rem] lg:pt-[22rem] 2xl:pt-[32rem] 3xl:pt-[30rem]">
+        <PrivacyHeading />
+      </div>
+    </div>
+  );
 }

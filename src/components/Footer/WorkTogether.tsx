@@ -13,7 +13,7 @@ export default function WorkTogether() {
           <TextSlideUp
             text="Together, we can elevate your brand through cutting-edge and visually stunning interfaces."
             animate={revealsText}
-            className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[2rem] sm:text-[2.5rem] lg:text-[2.4rem] xl:text-[3.2vw] 2xl:text-[4rem]"
+            className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
           />
         </div>
 
@@ -24,7 +24,7 @@ export default function WorkTogether() {
             <TextSlideUp
               text="Ready to Rock?"
               animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[2rem] sm:text-[2.5rem] lg:text-[2.4rem] xl:text-[3.2vw] 2xl:text-[4rem]"
+              className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
             />
           </div>
 

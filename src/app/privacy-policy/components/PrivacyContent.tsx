@@ -37,10 +37,10 @@ export default function PrivacyContent() {
     <div className="relative w-full h-full">
       <div className="main-container w-full h-full overflow-hidden">
         {/* content */}
-        <div className="w-full py-[2rem] lg:py-[4rem] 2xl:py-[6rem]">
+        <div className="w-full py-[2rem] lg:py-[2rem] 2xl:py-[4rem]">
           <div className="flex flex-col w-full border-t">
             {contents.map((content, index) => (
-              <div key={index} className="pt-[2rem] pb-[5rem] lg:pt-[4rem] lg:pb-[7.5rem]">
+              <div key={index} className="pt-[2rem] pb-[5rem] lg:pt-[2rem] lg:pb-[7.5rem] 2xl:pt-[4rem]">
                 <Content title={content.title} desc={content.desc} />
               </div>
             ))}

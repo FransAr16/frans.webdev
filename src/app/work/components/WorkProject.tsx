@@ -61,8 +61,8 @@ export default function WorkProject() {
     <div className="flex flex-col w-full h-full py-[2rem] lg:py-[2rem] 2xl:py-[4rem]">
       <div className="flex flex-col w-full h-full">
         {/* CategoryNav */}
-        <div className="main-container w-full flex items-center justify-start lg:justify-between pt-[3rem] lg:pt-[2.5rem] border-t ">
-          <div className="flex flex-wrap gap-4 lg:gap-10 2xl:gap-12 items-center">
+        <div className="main-container w-full flex items-center justify-start lg:justify-between pt-[2rem] lg:pt-[2rem] 2xl:pt-[4rem] border-t ">
+          <div className=" flex-wrap gap-4 lg:gap-10 2xl:gap-12 items-center hidden">
             <div onClick={() => handleCategoryChange("All")}>
               <WorkCategoryBtn
                 animate={revealsText}
@@ -110,7 +110,7 @@ export default function WorkProject() {
         </div>
 
         {/* Mobile */}
-        <div className="main-container relative w-full h-full items-center justify-center flex lg:hidden py-[4rem] sm:py-[5rem] md:py-[6rem]">
+        <div className="main-container relative w-full h-full items-center justify-center flex lg:hidden pb-[5rem] sm:pb-[5rem] md:pb-[6rem]">
           <motion.div
             className="w-full grid sm:grid-cols-2 gap-y-[6rem] sm:gap-x-[1.4rem] items-center justify-center"
             initial={visible ? "hidden" : "exit"}
@@ -143,9 +143,9 @@ export default function WorkProject() {
             initial={visible ? "hidden" : "exit"}
             animate={visible ? "visible" : "exit"}
             variants={animationVariants}
-            className="relative items-center justify-center overflow-hidden hidden lg:flex flex-col py-[6rem] 2xl:py-[7rem]"
+            className="relative items-center justify-center overflow-hidden hidden lg:flex flex-col lg:pb-[6rem] lg:pt-[4rem] 2xl:pt-[5rem] 2xl:pb-[7rem]"
           >
-            <div className="w-full flex items-center main-container pb-7 lg:pb-9 2xl:pb-12">
+            <div className="w-full flex items-center main-container lg:pb-9 2xl:pb-12">
               {projectNav.map((project, index) => (
                 <div
                   key={index}
@@ -253,7 +253,7 @@ export default function WorkProject() {
             <TextSlideUp
               text="See more work?"
               animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[2rem] sm:text-[2.5rem] lg:text-[2.4rem] xl:text-[3.2vw] 2xl:text-[4rem]"
+              className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
             />
           </div>
 
@@ -263,7 +263,7 @@ export default function WorkProject() {
               slideUp={revealsText}
               text="Archive"
               underline="h-[2px] xl:h-[4px]"
-              className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[2rem] sm:text-[2.5rem] lg:text-[2.4rem] xl:text-[3.2vw] 2xl:text-[4rem]"
+              className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
             />
           </div>
         </div>

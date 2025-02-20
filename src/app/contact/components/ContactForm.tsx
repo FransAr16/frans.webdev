@@ -93,12 +93,12 @@ export default function ContactForm() {
                       : "polygon(0 0, 100% 0, 100% 0, 0 0)",
                   }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
-                  className={`absolute -bottom-[216%] lg:-bottom-[196%] w-full flex flex-col bg-foreground text-background ${
+                  className={`absolute -bottom-[196%] w-full flex flex-col bg-foreground text-background ${
                     isOpen ? "flex" : ""
                   }`}
                 >
                   <div
-                    className="border-b p-7 cursor-pointer"
+                    className="border-b p-6 lg:p-5 xl:p-6 2xl:p-7 cursor-pointer"
                     onClick={() => selectReason("For business")}
                   >
                     <span className="font-medium lg:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
@@ -106,7 +106,7 @@ export default function ContactForm() {
                     </span>
                   </div>
                   <div
-                    className="p-7 cursor-pointer"
+                    className="p-6 lg:p-5 xl:p-6 2xl:p-7 cursor-pointer"
                     onClick={() => selectReason("Contact for a job")}
                   >
                     <span className="font-medium lg:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
@@ -204,7 +204,6 @@ export default function ContactForm() {
                   animate={isInViewBtnSubmit ? "animate" : "initial"}
                   variants={animationVariants}
                   className="border p-6 lg:p-5 xl:p-6 2xl:p-7 cursor-pointer bg-foreground text-background"
-                  onClick={toggleModal}
                 >
                   <div className="flex items-center justify-between">
                     <div className="w-full overflow-hidden">
@@ -212,12 +211,9 @@ export default function ContactForm() {
                         Submit form
                       </span>
                     </div>
-                    <motion.div
-                      animate={{ rotate: isOpen ? 180 : 0 }}
-                      transition={{ duration: 0.5, ease: "easeInOut" }}
-                    >
+                    <div>
                       <ArrowRight />
-                    </motion.div>
+                    </div>
                   </div>
                 </motion.div>
               </div>
