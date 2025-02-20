@@ -115,6 +115,7 @@ export default function ModalWork({ modal }: ModalWorkProps) {
                       width={1920}
                       height={1080}
                       className="w-full object-cover"
+                      priority
                       alt="image-work"
                     />
                     {/* <CldImage
