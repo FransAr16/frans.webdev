@@ -8,7 +8,7 @@ import ChevronDown from "@/components/ui/ChevronDown";
 import ArrowRight from "@/components/ui/ArrowRight";
 
 const animationVariants = {
-  initial: { opacity: 0, y: 60 },
+  initial: { opacity: 0, y: 50 },
   animate: {
     opacity: 1,
     y: 0,
