@@ -59,6 +59,7 @@ export default function MyWorkMobile({
               width={1920}
               height={1080}
               className={`${imgClassName} w-full h-auto`}
+              priority
               alt="image-work"
             />
             {/* <CldImage
