@@ -68,9 +68,10 @@ export default function Intro() {
                       autoPlay
                       muted
                       loop
+                      preload="auto"
                       className="w-full h-full object-cover"
                     >
-                      <source src="/videos/typing.mp4" type="video/mp4" />
+                      <source src="/videos/typing.webm" type="video/webm" />
                     </video>
                   </motion.div>
                 </motion.div>
