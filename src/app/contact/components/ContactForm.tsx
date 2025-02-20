@@ -93,7 +93,7 @@ export default function ContactForm() {
                       : "polygon(0 0, 100% 0, 100% 0, 0 0)",
                   }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
-                  className={`absolute -bottom-[200%] lg:-bottom-[196%] w-full flex flex-col bg-foreground text-background ${
+                  className={`absolute -bottom-[220%] lg:-bottom-[196%] w-full flex flex-col bg-foreground text-background ${
                     isOpen ? "block" : ""
                   }`}
                 >
