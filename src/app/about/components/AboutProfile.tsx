@@ -2,12 +2,12 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "motion/react";
-import { CldImage } from "next-cloudinary";
+import Image from "next/image"
 
 const images = [
-  "https://res.cloudinary.com/dzv6ccnjm/image/upload/v1739815531/imagesshowcase2_yw1hgq.jpg",
-  "https://res.cloudinary.com/dzv6ccnjm/image/upload/v1739815551/imagesshowcase3_tdwgdp.jpg",
-  "https://res.cloudinary.com/dzv6ccnjm/image/upload/v1739815748/imagesshowcase1_j2wkhk.jpg",
+  "/imagesshowcase2.webp",
+  "/imagesshowcase3.webp",
+  "/imagesshowcase1.webp",
 ];
 
 export default function AboutProfile() {
@@ -45,16 +45,14 @@ export default function AboutProfile() {
               transition={{ delay: 0.2, duration: 1.2, ease: "easeInOut" }}
               className="w-full h-full"
             >
-              <CldImage
+              <Image
                 src={images[currentImage]} // Menampilkan hanya satu gambar
                 width={1920}
                 height={1080}
                 className="w-full h-full object-cover"
+                priority
                 alt={`image-work-${currentImage}`}
-                crop={{
-                  type: "auto",
-                  source: true,
-                }}
+               
               />
             </motion.div>
           </motion.div>
