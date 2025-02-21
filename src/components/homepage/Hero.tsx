@@ -201,7 +201,7 @@ export default function Hero() {
                     <div className="w-full sm:w-[26rem] lg:w-[28rem] xl:w-[90%] 2xl:w-[41rem]">
                       <LetterBold
                         text="Shaping The Future of Digital Experiences with Unmatched Craft and Precision."
-                        className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[2rem] sm:text-[2.5rem] lg:text-[2.4rem] xl:text-[3.2vw] 2xl:text-[4rem]"
+                        className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                       />
                     </div>
                   </div>

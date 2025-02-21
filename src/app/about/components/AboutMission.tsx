@@ -82,34 +82,34 @@ export default function AboutMission() {
                     <TextSlideUp
                       text="Leading the way in"
                       animate={revealsText}
-                      className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                      className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                     />
                   </div>
                 </div>
                 <TextSlideUp
                   text="development by embracing"
                   animate={revealsText}
-                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                 />
                 <TextSlideUp
                   text="modern frameworks, optimizing"
                   animate={revealsText}
-                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                 />
                 <TextSlideUp
                   text="performance, and creating"
                   animate={revealsText}
-                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                 />
                 <TextSlideUp
                   text="scalable solutions for the"
                   animate={revealsText}
-                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                 />
                 <TextSlideUp
                   text="ever-evolving digital landscape."
                   animate={revealsText}
-                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                 />
               </div>
 
@@ -125,7 +125,7 @@ export default function AboutMission() {
                     <TextSlideUp
                       text="Leading the way in"
                       animate={revealsText}
-                      className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                      className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                     />
                   </div>
                 </div>
@@ -134,7 +134,7 @@ export default function AboutMission() {
                     key={index}
                     text={line}
                     animate={revealsText}
-                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                   />
                 ))}
               </div>
@@ -151,7 +151,7 @@ export default function AboutMission() {
                     <TextSlideUp
                       text="Leading the way in development"
                       animate={revealsText}
-                      className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                      className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                     />
                   </div>
                 </div>
@@ -160,7 +160,7 @@ export default function AboutMission() {
                     key={index}
                     text={line}
                     animate={revealsText}
-                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                   />
                 ))}
               </div>
@@ -177,7 +177,7 @@ export default function AboutMission() {
                     <TextSlideUp
                       text="Leading the way in"
                       animate={revealsText}
-                      className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                      className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                     />
                   </div>
                 </div>
@@ -186,7 +186,7 @@ export default function AboutMission() {
                     key={index}
                     text={line}
                     animate={revealsText}
-                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                   />
                 ))}
               </div>
@@ -203,7 +203,7 @@ export default function AboutMission() {
                     <TextSlideUp
                       text="Leading the way"
                       animate={revealsText}
-                      className="font-medium mr-[8px] xl:mr-[14px] 2xl:mr-[16px] text-[2rem] sm:text-[2.5rem] lg:text-[2.4rem] xl:text-[3.2vw] 2xl:text-[4rem]"
+                      className="font-medium mr-[8px] xl:mr-[14px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                     />
                   </div>
                 </div>
@@ -212,7 +212,7 @@ export default function AboutMission() {
                     key={index}
                     text={line}
                     animate={revealsText}
-                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                   />
                 ))}
               </div>

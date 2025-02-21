@@ -38,7 +38,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="flex flex-col w-full h-full py-[2rem] lg:py-[2rem] 2xl:py-[4rem] relative overflow-hidden">
+    <div className="flex flex-col w-full h-full pt-[2rem] pb-[4rem] lg:py-[2rem] 2xl:py-[4rem] relative overflow-hidden">
       <div className="grid grid-cols-4 lg:grid-cols-12 w-full h-full main-container pt-[3rem] lg:pt-[2.5rem] border-t gap-[2rem]">
         <div className="pb-[4rem] sm:pb-[3rem] lg:pb-0 col-span-4 lg:col-span-3">
           <TextFadeIn
@@ -170,8 +170,34 @@ export default function ContactForm() {
             </div>
 
             {/* col 4 */}
-            <div className="flex flex-col lg:flex-row items-center gap-[1rem] lg:gap-[2rem] lg:pb-[1rem]">
+            <div className="flex flex-col lg:flex-row items-center gap-[1rem] lg:gap-[2rem] pb-[3rem] lg:pb-[1rem]">
               <div className="w-full lg:w-[16rem] 2xl:w-[24rem] 3xl:w-[33rem]">
+                <TextFadeIn
+                  slideUp={fadeIn}
+                  phrase="Name organization"
+                  className="font-medium lg:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
+                />
+              </div>
+
+              <div ref={colThree} className="w-full">
+                <motion.div
+                  initial="initial"
+                  animate={isInViewThree ? "animate" : "initial"}
+                  variants={animationVariants}
+                  className="border"
+                >
+                  <input
+                    type="text"
+                    className="w-full font-medium lg:font-semibold text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%] ring-0 outline-0 p-6 lg:p-5 xl:p-6 2xl:p-7"
+                    placeholder="John & Doe&reg;"
+                  />
+                </motion.div>
+              </div>
+            </div>
+
+            {/* col 5 */}
+            <div className="flex flex-col lg:flex-row items-center lg:items-start gap-[1rem] lg:gap-[2rem] lg:pb-[1rem]">
+              <div className="w-full lg:w-[16rem] 2xl:w-[24rem] 3xl:w-[33rem] lg:pt-[1.3rem] xl:pt-[1.6rem] 2xl:pt-[1.8rem]">
                 <TextFadeIn
                   slideUp={fadeIn}
                   phrase="Message"

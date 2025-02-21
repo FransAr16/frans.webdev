@@ -4,6 +4,7 @@ import MainHeader from "@/components/ui/MainHeader";
 import ContactHero from "./components/ContactHero";
 import ContactForm from "./components/ContactForm";
 import Footer from "@/components/Footer/Footer";
+import ContactLocation from "./components/ContactLocation";
 
 export default function Contact() {
   return (
@@ -13,6 +14,7 @@ export default function Contact() {
         <div className="w-full h-full relative ">
           <ContactHero />
           <ContactForm />
+          <ContactLocation />
           <Footer />
         </div>
       </main>

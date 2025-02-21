@@ -40,7 +40,7 @@ export default function Button({
             <p
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
-              className={`${className} m-0 inline-flex tracking-[-0.04em] leading-none overflow-hidden`}
+              className={`${className} m-0 tracking-[-0.04em] leading-none relative overflow-hidden`}
             >
               <motion.span
                 initial={{ y: "0%" }}

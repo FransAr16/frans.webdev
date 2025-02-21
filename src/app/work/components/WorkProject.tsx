@@ -253,7 +253,7 @@ export default function WorkProject() {
             <TextSlideUp
               text="See more work?"
               animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+              className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
             />
           </div>
 
@@ -263,7 +263,7 @@ export default function WorkProject() {
               slideUp={revealsText}
               text="Archive"
               underline="h-[2px] xl:h-[4px]"
-              className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+              className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
             />
           </div>
         </div>

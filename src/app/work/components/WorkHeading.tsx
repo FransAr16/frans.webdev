@@ -10,7 +10,7 @@ export default function WorkHeading() {
       <TextSlideUp
         text="Crafting immersive digital experiences that captivate and inspire, blending creativity with technical expertise."
         animate={revealsText}
-        className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+        className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
       />
     </>
   );

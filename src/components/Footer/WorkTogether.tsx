@@ -11,9 +11,9 @@ export default function WorkTogether() {
       <div className="grid grid-cols-12 w-full justify-between gap-[1rem] lg:gap-[1.5rem]">
         <div className="flex justify-center lg:justify-start col-span-12 lg:col-span-5 3xl:col-span-4">
           <TextSlideUp
-            text="Together, we can elevate your brand through cutting-edge and visually stunning interfaces."
+            text="Create something bold, immersive, and impactful for your audience."
             animate={revealsText}
-            className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+            className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
           />
         </div>
 
@@ -24,7 +24,7 @@ export default function WorkTogether() {
             <TextSlideUp
               text="Ready to Rock?"
               animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+              className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
             />
           </div>
 
@@ -34,7 +34,7 @@ export default function WorkTogether() {
               slideUp={revealsText}
               text="Get in touch"
               underline="h-[2px] xl:h-[4px]"
-              className="font-medium tracking-[-0.04em] mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[2rem] sm:text-[2.5rem] lg:text-[2.4rem] xl:text-[3.2vw] 2xl:text-[4rem]"
+              className="font-medium tracking-[-0.04em] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
             />
           </div>
         </div>

@@ -72,7 +72,7 @@ export default function FooterNav() {
           <div className="flex flex-col col-span-12 lg:col-span-4 gap-6 lg:gap-10 pt-[6rem] lg:pt-0">
             <div>
               <TextSlideUp
-                text="(Visit Me)"
+                text="(Location)"
                 animate={revealsText}
                 className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
               />

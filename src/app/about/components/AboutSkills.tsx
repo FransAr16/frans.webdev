@@ -52,6 +52,13 @@ export default function AboutSkills() {
                 className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
               />
             </div>
+            <div className="">
+              <TextFadeIn
+                slideUp={fadeIn}
+                phrase="Description"
+                className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
+              />
+            </div>
           </div>
 
           <div className="hidden lg:col-span-2 lg:flex justify-end">
@@ -108,7 +115,7 @@ export default function AboutSkills() {
             <div className="">
               <TextFadeIn
                 slideUp={fadeIn}
-                phrase="React.js TailwindCSS Next.js Typescript"
+                phrase="React.js TailwindCSS Next.js"
                 className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
               />
             </div>
