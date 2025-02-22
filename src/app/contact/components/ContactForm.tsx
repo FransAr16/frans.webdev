@@ -60,7 +60,7 @@ export default function ContactForm() {
   };
 
   const validateForm = () => {
-    const newErrors = {
+    let newErrors = {
       name: "",
       email: "",
       nameOrganization: "",
