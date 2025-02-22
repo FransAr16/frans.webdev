@@ -6,6 +6,7 @@ import { revealsText } from "@/data/animation";
 import Link from "next/link";
 import TextSlideUp from "../ui/TextSlideUp";
 import { LiaArrowUpSolid } from "react-icons/lia";
+import InfoCredits from "../InfoCredits";
 
 interface FooterNavBottomProps {
   href: string;
@@ -165,11 +166,12 @@ export default function FooterNavBottom() {
         </div>
         {/* Info & Credits */}
         <div className="col-span-6 lg:col-span-2 flex pt-[3rem] lg:pt-0 justify-end">
-          <FooterItem
+          {/* <FooterItem
             href="/info-credit"
             text="Info & Credits"
             className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-          />
+          /> */}
+          <InfoCredits />
         </div>
       </div>
     </div>
