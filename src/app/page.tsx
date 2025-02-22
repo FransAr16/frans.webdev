@@ -8,6 +8,7 @@ import Approach from "@/components/homepage/Approach";
 import RecentWork from "@/components/homepage/RecentWork";
 import About from "@/components/homepage/About";
 import Footer from "@/components/Footer/Footer";
+import CookiesModal from "@/components/CookiesModal";
 
 export default function Home() {
   const [showContent, setShowContent] = useState(false);
@@ -23,6 +24,7 @@ export default function Home() {
 
   return (
     <>
+      <CookiesModal />
       <HomeHeader />
       <main className="relative w-full h-full z-20">
         <Hero />

@@ -200,8 +200,8 @@ export default function Hero() {
                   <div className="w-full lg:w-1/2 flex lg:pl-[8.2%] 2xl:pl-[8.2%] lg:pt-[1.5rem] 2xl:pt-0">
                     <div className="w-full sm:w-[26rem] lg:w-[28rem] xl:w-[90%] 2xl:w-[41rem]">
                       <LetterBold
-                        text="Shaping The Future of Digital Experiences with Unmatched Craft and Precision."
-                        className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[2.2rem] sm:text-[2.5rem] lg:text-[2.4rem] xl:text-[3.2vw] 2xl:text-[4rem]"
+                        text="Shaping The Future of Digital Experience with Unmatched Craft and Precision."
+                        className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[2.5rem] lg:text-[2.4rem] xl:text-[3.2vw] 2xl:text-[4rem]"
                       />
                     </div>
                   </div>
