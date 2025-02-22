@@ -24,7 +24,7 @@ export default function ContactLocation() {
             {/* Tablet to Desktop */}
             <div className="hidden sm:flex">
               <Button
-                href={`mail:tofrans.webdev@gmail.com`}
+                href={`mailto:frans.webdev@gmail.com`}
                 slideUp={revealsText}
                 text="frans.webdev@gmail.com"
                 underline="h-[2px] xl:h-[4px]"
@@ -35,7 +35,7 @@ export default function ContactLocation() {
             <div className="flex flex-col sm:hidden">
               <div>
                 <Button
-                  href="mail:tofrans.webdev@gmail.com?subject=Job Inquiry&body=Hello, I would like to discuss a project."
+                  href="mailto:frans.webdev@gmail.com?subject=Job Inquiry&body=Hello, I would like to discuss a project."
                   slideUp={revealsText}
                   text="frans."
                   underline="hidden"
@@ -44,7 +44,7 @@ export default function ContactLocation() {
               </div>
               <div>
                 <Button
-                  href="mail:tofrans.webdev@gmail.com?subject=Job Inquiry&body=Hello, I would like to discuss a project."
+                  href="mailto:frans.webdev@gmail.com?subject=Job Inquiry&body=Hello, I would like to discuss a project."
                   slideUp={revealsText}
                   text="webdev@gmail.com"
                   underline="h-[2px] xl:h-[4px]"
