@@ -114,7 +114,7 @@ export default function InfoCredits() {
                       className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
                     />
                   </div>
-                  <div className="flex flex-col pt-[1rem] lg:pt-[1.5rem] xl:pt-[2rem]">
+                  <div className="flex flex-col pt-[1rem] lg:pt-[1.5rem] 2xl:pt-[2rem]">
                     <div>
                       <TextFadeIn
                         slideUp={fadeIn}
@@ -151,7 +151,7 @@ export default function InfoCredits() {
                       className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
                     />
                   </div>
-                  <div className="flex flex-col pt-[1rem] lg:pt-[1.5rem] xl:pt-[2rem]">
+                  <div className="flex flex-col pt-[1rem] lg:pt-[1.5rem] 2xl:pt-[2rem]">
                     <div className="flex">
                       <TextFadeIn
                         slideUp={fadeIn}
@@ -202,7 +202,7 @@ export default function InfoCredits() {
                       className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
                     />
                   </div>
-                  <div className="flex flex-col pt-[1rem] lg:pt-[1.5rem] xl:pt-[2rem]">
+                  <div className="flex flex-col pt-[1rem] lg:pt-[1.5rem] 2xl:pt-[2rem]">
                     <div className="flex">
                       <TextFadeIn
                         slideUp={fadeIn}
