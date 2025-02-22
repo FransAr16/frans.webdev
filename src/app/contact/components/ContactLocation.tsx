@@ -73,7 +73,7 @@ export default function ContactLocation() {
               </div>
               <div className="flex">
                 <TextSlideUp
-                  text="+62 851 731 160 906"
+                  text="+62 8517 3160 906"
                   animate={revealsText}
                   className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                 />

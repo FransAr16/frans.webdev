@@ -11,7 +11,7 @@ export default function WorkTogether() {
       <div className="grid grid-cols-12 w-full justify-between gap-[1rem] lg:gap-[1.5rem]">
         <div className="flex justify-center lg:justify-start col-span-12 lg:col-span-5 3xl:col-span-4">
           <TextSlideUp
-            text="Create something bold, immersive, and impactful for your audience."
+            text="Create something bold, immersive, and impactful for your brands."
             animate={revealsText}
             className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
           />

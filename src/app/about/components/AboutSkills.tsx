@@ -52,10 +52,10 @@ export default function AboutSkills() {
                 className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
               />
             </div>
-            <div className="">
+            <div className="pt-[1rem]">
               <TextFadeIn
                 slideUp={fadeIn}
-                phrase="Description"
+                phrase="Crafting responsive and visually stunning interfaces using HTML,CSS and Javascript. My expertise ensures seamless user experiences across various davices and browsers."
                 className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
               />
             </div>
@@ -65,7 +65,7 @@ export default function AboutSkills() {
             <div>
               <TextFadeIn
                 slideUp={fadeIn}
-                phrase="(01)"
+                phrase="(05)"
                 className="font-medium 2xl:font-semibold 2xl:text-[1.2rem]"
               />
             </div>
@@ -93,6 +93,13 @@ export default function AboutSkills() {
                 className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
               />
             </div>
+            <div className="pt-[1rem]">
+              <TextFadeIn
+                slideUp={fadeIn}
+                phrase="Use Three.js for 3D rendering, GSAP for timeline-based animations, and Motion for UI interactions, ensuring seamless transitions and natural motion effects across the entire web interface."
+                className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
+              />
+            </div>
           </div>
 
           <div className="hidden lg:col-span-2 lg:flex justify-end"></div>
@@ -116,6 +123,13 @@ export default function AboutSkills() {
               <TextFadeIn
                 slideUp={fadeIn}
                 phrase="React.js TailwindCSS Next.js"
+                className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
+              />
+            </div>
+            <div className="pt-[1rem]">
+              <TextFadeIn
+                slideUp={fadeIn}
+                phrase="Combining React.js, TailwindCSS and Next.js, focus on performance optimization with lazy loading, code splitting, and image optimization, delivering a smooth and engaging experience across all devices."
                 className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
               />
             </div>
@@ -152,6 +166,13 @@ export default function AboutSkills() {
                 className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
               />
             </div>
+            <div className="pt-[1rem]">
+              <TextFadeIn
+                slideUp={fadeIn}
+                phrase="I am currently exploring backend development using Node.js, Firebase, Supabase, PostgreSQL and Prisma, building simple APIs and database-driven applications to enchance my skills."
+                className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
+              />
+            </div>
           </div>
 
           <div className="hidden lg:col-span-2 lg:flex justify-end"></div>
@@ -182,6 +203,13 @@ export default function AboutSkills() {
               <TextFadeIn
                 slideUp={fadeIn}
                 phrase="Git GitHub Vercel Figma"
+                className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
+              />
+            </div>
+            <div className="pt-[1rem]">
+              <TextFadeIn
+                slideUp={fadeIn}
+                phrase="By utilizing Github for code management, Vercel for deployment, and Figma for design collaboration, I bridge the gap between design and development, enabling a smooth and efficient workflow."
                 className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
               />
             </div>
