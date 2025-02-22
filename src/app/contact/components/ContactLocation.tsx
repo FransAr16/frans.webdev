@@ -21,19 +21,21 @@ export default function ContactLocation() {
           </div>
 
           <div className="w-full flex">
+            {/* Tablet to Desktop */}
             <div className="hidden sm:flex">
               <Button
-                href="frans.webdev@gmail.com"
+                href={`mail:tofrans.webdev@gmail.com`}
                 slideUp={revealsText}
                 text="frans.webdev@gmail.com"
                 underline="h-[2px] xl:h-[4px]"
                 className="font-medium tracking-[-0.04em] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
               />
             </div>
+            {/* Mobile */}
             <div className="flex flex-col sm:hidden">
               <div>
-              <Button
-                  href="frans.webdev@gmail.com"
+                <Button
+                  href="mail:tofrans.webdev@gmail.com?subject=Job Inquiry&body=Hello, I would like to discuss a project."
                   slideUp={revealsText}
                   text="frans."
                   underline="hidden"
@@ -42,7 +44,7 @@ export default function ContactLocation() {
               </div>
               <div>
                 <Button
-                  href="frans.webdev@gmail.com"
+                  href="mail:tofrans.webdev@gmail.com?subject=Job Inquiry&body=Hello, I would like to discuss a project."
                   slideUp={revealsText}
                   text="webdev@gmail.com"
                   underline="h-[2px] xl:h-[4px]"
