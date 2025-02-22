@@ -265,7 +265,7 @@ export default function Hero() {
                   loop
                   className="w-full h-full object-cover"
                 >
-                  <source src="/videos/videos-1.mp4" type="video/mp4" />
+                  <source src="/videos/videos-2.webm" type="video/webm" />
                 </video>
               </motion.div>
 
