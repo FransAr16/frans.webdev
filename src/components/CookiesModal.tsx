@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Cookies from "js-cookie";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, easeInOut } from "framer-motion";
 import Link from "next/link";
 
 const CookiesModal = () => {
@@ -46,8 +46,8 @@ const CookiesModal = () => {
           <motion.div
             className="bg-[#FCFCFC] p-[.8rem] sm:p-[1rem] lg:p-[1.5rem] shadow-lg max-w-sm relative"
             initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1, transition: {duration: .75, ease: easeInOut} }}
+            // exit={{ scale: 0.8, opacity: 0 }}
           >
             <button
               onClick={() => handleConsent("no")}

@@ -89,7 +89,7 @@ export default function InfoCredits() {
             ? "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)"
             : "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)",
         }}
-        transition={{ duration: 1, ease: "easeInOut" }}
+        transition={{ duration: .75, ease: "easeInOut" }}
         className={`fixed right-0 bottom-0 w-full h-auto flex flex-col bg-background border-t ${
           isOpen ? "flex" : ""
         }`}
@@ -199,11 +199,11 @@ export default function InfoCredits() {
                     <TextFadeIn
                       slideUp={fadeIn}
                       phrase="Something else?"
-                      className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
+                      className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
                     />
                   </div>
                   <div className="flex flex-col pt-[1rem] lg:pt-[1.5rem] 2xl:pt-[2rem]">
-                    <div className="flex">
+                    <div className="flex w-[80%] md:w-[70%] lg:w-full">
                       <TextFadeIn
                         slideUp={fadeIn}
                         phrase="If you have any feedbacks, comments, questions about this website, don't hesitate to"
