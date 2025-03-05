@@ -55,7 +55,7 @@ export default function AboutMission() {
                 className="w-full h-full"
               >
                 <Image
-                  src="/profile.png"
+                  src="/profile.webp"
                   width={1678}
                   height={2160}
                   alt="profile-img"
