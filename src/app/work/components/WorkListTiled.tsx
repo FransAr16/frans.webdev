@@ -38,7 +38,7 @@ export default function WorkListTiled({
       <Link href={link} target="_blank" className="w-full">
         <div className=" w-full grid grid-cols-12 relative items-center lg:py-[1.6rem] xl:py-[2rem] border-t main-container group">
           <div className="col-span-5 group-hover:text-foreground/30">
-            <div className="group-hover:-translate-x-[1.5rem] transition-all duration-400 ease-out">
+            <div className="group-hover:-translate-x-[.8rem] 2xl:group-hover:-translate-x-[1.5rem] transition-all duration-400 ease-out">
               <TextSlideUp
                 text={title}
                 animate={revealsText}
@@ -47,7 +47,7 @@ export default function WorkListTiled({
             </div>
           </div>
           <div className="col-span-3 group-hover:text-foreground/30">
-            <div className="group-hover:translate-x-[1.5rem] transition-all duration-400 ease-out">
+            <div className="group-hover:translate-x-[.8rem] 2xl:group-hover:translate-x-[1.5rem] transition-all duration-400 ease-out">
               <TextSlideUp
                 text={location}
                 animate={revealsText}
@@ -56,7 +56,7 @@ export default function WorkListTiled({
             </div>
           </div>
           <div className="col-span-2 group-hover:text-foreground/30">
-            <div className="group-hover:translate-x-[1.5rem] transition-all duration-400 ease-out">
+            <div className="group-hover:translate-x-[.8rem] 2xl:group-hover:translate-x-[1.5rem] transition-all duration-400 ease-out">
               <TextSlideUp
                 text={category}
                 animate={revealsText}
@@ -65,7 +65,7 @@ export default function WorkListTiled({
             </div>
           </div>
           <div className="col-span-2 group-hover:text-foreground/30 text-end">
-            <div className="group-hover:translate-x-[1.5rem] transition-all duration-400 ease-out">
+            <div className="group-hover:translate-x-[.8rem] 2xl:group-hover:translate-x-[1.5rem] transition-all duration-400 ease-out">
               <TextSlideUp
                 text={published}
                 animate={revealsText}
