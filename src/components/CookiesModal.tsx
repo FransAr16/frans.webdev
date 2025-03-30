@@ -35,7 +35,7 @@ const CookiesModal = () => {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          className="fixed h-screen w-full z-[9999] flex items-end justify-end bg-border/40 p-[1rem] sm:p-[1.5rem] lg:p-[1.5rem]"
+          className="fixed h-screen w-full z-[9999] flex justify-center items-end lg:justify-end bg-border/40 p-[1rem] sm:p-[1.5rem] lg:p-[1.5rem]"
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
@@ -44,7 +44,7 @@ const CookiesModal = () => {
           exit={{ opacity: 0, transition: { delay: 0.1, duration: 1, ease: "easeInOut" } }}
         >
           <motion.div
-            className="bg-[#FCFCFC] p-[.8rem] sm:p-[1rem] lg:p-[1.5rem] shadow-lg max-w-sm relative"
+            className="bg-[#FCFCFC] p-[1rem] sm:p-[1rem] lg:p-[1.5rem] shadow-lg max-w-sm relative"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1, transition: {duration: .75, ease: easeInOut} }}
             // exit={{ scale: 0.8, opacity: 0 }}
