@@ -17,7 +17,7 @@ const CookiesModal = () => {
 
   const handleConsent = (consent: string) => {
     if (consent === "no") {
-      const expires = new Date(new Date().getTime() + 300 * 1000); // 5 menit
+      const expires = new Date(new Date().getTime() + 100 * 1000); // 5 menit
       Cookies.set("cookieConsent", consent, { expires });
     } else {
       Cookies.set("cookieConsent", consent, { expires: 30 }); // 30 hari
@@ -35,7 +35,7 @@ const CookiesModal = () => {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          className="fixed bottom-0 right-0 p-[1rem] sm:p-[1.5rem] lg:p-[1.5rem] z-[9999]"
+          className="fixed h-screen w-full z-[9999] flex items-end justify-end bg-border/40 p-[1rem] sm:p-[1.5rem] lg:p-[1.5rem]"
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,

@@ -73,7 +73,7 @@ export default function AboutIntro() {
               <div className="pb-2 lg:pb-4 order-first">
                 <div className="relative">
                   <TextSlideUp
-                    text="Frans - Creative Web Developer based in Indonesia"
+                    text="Frans - Creative Web Developer who loves design"
                     animate={revealsText}
                     className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
                   />

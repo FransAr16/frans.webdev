@@ -5,8 +5,9 @@ import { motion } from "motion/react";
 import { revealsText } from "@/data/animation";
 import Link from "next/link";
 import TextSlideUp from "../ui/TextSlideUp";
-import { LiaArrowUpSolid } from "react-icons/lia";
 import InfoCredits from "../InfoCredits";
+import BtnNavFooterBottom from "../ui/BtnNavFooterButton";
+import BackToTop from "../ui/BackToTop";
 
 interface FooterNavBottomProps {
   href: string;
@@ -15,32 +16,28 @@ interface FooterNavBottomProps {
 }
 
 export default function FooterNavBottom() {
-  const [isHovered, setIsHovered] = useState(false);
-
   const animationDelay = 0.2;
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth", // Animated scroll
-    });
-  };
 
   return (
     <div className="w-full h-full overflow-hidden relative">
       <div className="grid grid-cols-12 gap-1 lg:gap-4 w-full pb-[1.5rem] 2xl:pb-[2rem] pt-[4rem] sm:pt-[8rem] lg:pt-[10rem]">
+        {/* All rights reserved */}
         <div className="hidden lg:col-span-4 lg:flex">
-          <TextSlideUp
+          <BtnNavFooterBottom
             text={`© ${new Date().getFullYear()} All rights reserved`}
-            animate={revealsText}
-            className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+            animationDelay={0.1}
+            className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
           />
         </div>
+
+        {/* Privacy Policy */}
         <div className="hidden lg:col-span-4 lg:flex">
           <div className="flex">
-            <FooterItem
+            <BtnNavFooterBottom
               href="/privacy-policy"
               text="Privacy Policy"
+              underline={true}
+              animationDelay={0.1}
               className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
             />
           </div>
@@ -62,15 +59,17 @@ export default function FooterNavBottom() {
             </div>
           </div>
           <div className="flex">
-            <FooterItem
+            <BtnNavFooterBottom
               href="/terms-conditions"
               text="Terms"
+              underline={true}
+              animationDelay={0.1}
               className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
             />
           </div>
         </div>
 
-        {/* Mobile */}
+        {/* All rights reserved Mobile */}
         <div className="col-span-12 lg:hidden flex">
           <TextSlideUp
             text={`(© ${new Date().getFullYear()} All rights reserved)`}
@@ -78,11 +77,15 @@ export default function FooterNavBottom() {
             className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
           />
         </div>
+
+        {/* Privacy Policy Mobile */}
         <div className="col-span-12 lg:hidden flex order-first">
           <div className="flex">
-            <FooterItem
+            <BtnNavFooterBottom
               href="/privacy-policy"
               text="Privacy Policy"
+              underline={true}
+              animationDelay={0.1}
               className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
             />
           </div>
@@ -104,69 +107,23 @@ export default function FooterNavBottom() {
             </div>
           </div>
           <div className="flex">
-            <FooterItem
+            <BtnNavFooterBottom
               href="/terms-conditions"
               text="Terms"
+              underline={true}
+              animationDelay={0.1}
               className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
             />
           </div>
         </div>
-        {/* back to top */}
-        <div className="col-span-6 lg:col-span-2 flex pt-[3rem] lg:pt-0">
-          <div className="flex items-center justify-center gap-1">
-            <div
-              className="relative cursor-pointer overflow-hidden"
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
-              onClick={scrollToTop}
-            >
-              <p className="m-0 leading-none">
-                <span
-                  className={` relative overflow-hidden inline-flex tracking-[-0.04em] leading-[104%]`}
-                >
-                  <motion.span
-                    initial={{ y: "0%" }}
-                    animate={{ y: "100%" }}
-                    whileInView={{ y: "0%" }}
-                    viewport={{ once: true, amount: 0 }}
-                    transition={{
-                      duration: 1,
-                      ease: [0.76, 0, 0.24, 1],
-                      delay: animationDelay,
-                    }}
-                    className="flex items-center gap-[3px]"
-                  >
-                    <span className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]">
-                      Back to top
-                    </span>
-                    <LiaArrowUpSolid
-                      strokeWidth={1.8}
-                      className="w-[1.2rem] h-[1.2rem] 2xl:w-[1.3rem] 2xl:h-[1.3rem]"
-                    />
-                  </motion.span>
-                </span>
-              </p>
 
-              {/* Underline animation */}
-              <motion.div
-                className="pt-[1px]"
-                initial={{ width: "0%" }}
-                animate={{ width: isHovered ? "100%" : "0%" }}
-                transition={{
-                  duration: 0.5,
-                  ease: [0.76, 0, 0.24, 1],
-                }}
-              >
-                <div className="relative w-full h-[1px] overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-full bg-foreground"></div>
-                </div>
-              </motion.div>
-            </div>
-          </div>
+        {/* Back to top */}
+        <div className="col-span-6 lg:col-span-2 flex pt-[3rem] lg:pt-0">
+          <BackToTop text="Back to top" underline={true} className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]" />
         </div>
         {/* Info & Credits */}
         <div className="col-span-6 lg:col-span-2 flex pt-[3rem] lg:pt-0 justify-end">
-          <InfoCredits />
+          <InfoCredits text="Infos & Credits" underline={true} className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]" />
         </div>
       </div>
     </div>
@@ -209,7 +166,7 @@ function FooterItem({ href, text, className }: FooterNavBottomProps) {
         </p>
 
         {/* Underline animation */}
-        <motion.div
+        {/* <motion.div
           className="pt-[2px]"
           initial={{ width: "0%" }}
           animate={{ width: isHovered ? "100%" : "0%" }}
@@ -219,9 +176,9 @@ function FooterItem({ href, text, className }: FooterNavBottomProps) {
           }}
         >
           <div className="relative w-full h-[1px] overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-full bg-foreground"></div>
+            <div className="absolute bottom-0 left-0 w-full h-full bg-foreground"></div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </Link>
   );

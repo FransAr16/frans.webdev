@@ -7,11 +7,22 @@ import { fadeIn, revealsText } from "@/data/animation";
 import Button from "./ui/Button";
 import IconsCancel from "./ui/IconsCancel";
 
-export default function InfoCredits() {
+interface InfoCreditsProps {
+  text: string;
+  underline?: boolean;
+  className?: string;
+  animationDelay?: number;
+}
+
+export default function InfoCredits({
+  text,
+  underline,
+  className,
+  animationDelay,
+}: InfoCreditsProps) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleModal = () => setIsOpen(!isOpen);
   const [isHovered, setIsHovered] = useState(false);
-  const animationDelay = 0.2;
 
   useEffect(() => {
     let initialScroll = window.scrollY;
@@ -43,10 +54,10 @@ export default function InfoCredits() {
         onMouseLeave={() => setIsHovered(false)}
         onClick={toggleModal}
       >
-        <p className="m-0 leading-none">
-          <span
-            className={` relative overflow-hidden inline-flex tracking-[-0.04em] leading-[104%] font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]`}
-          >
+        <p 
+        className={`${className} m-0 tracking-[-0.04em] inline-flex leading-none relative overflow-hidden`}
+        >
+          <span className="m-0 tracking-[-0.04em] inline-flex leading-none relative overflow-hidden">
             <motion.span
               initial={{ y: "0%" }}
               animate={{ y: "100%" }}
@@ -58,25 +69,24 @@ export default function InfoCredits() {
                 delay: animationDelay,
               }}
             >
-              Info & Credits
+              {text}
             </motion.span>
           </span>
         </p>
 
         {/* Underline animation */}
-        <motion.div
-          className="pt-[2px]"
-          initial={{ width: "0%" }}
-          animate={{ width: isHovered ? "100%" : "0%" }}
-          transition={{
-            duration: 0.5,
-            ease: [0.76, 0, 0.24, 1],
-          }}
-        >
-          <div className="relative w-full h-[1px] overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-full bg-foreground"></div>
-          </div>
-        </motion.div>
+        {underline && (
+          <motion.div>
+            <div className="relative w-full h-[1px] overflow-hidden">
+              <motion.div
+                className="absolute top-0 left-0 h-full bg-foreground"
+                initial={{ width: "0%" }}
+                animate={{ width: isHovered ? "100%" : "0%" }}
+                transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
+              ></motion.div>
+            </div>
+          </motion.div>
+        )}
       </div>
 
       {/* Modal Info&Credits */}
@@ -89,7 +99,7 @@ export default function InfoCredits() {
             ? "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)"
             : "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)",
         }}
-        transition={{ duration: .5, ease: [0.76, 0, 0.24, 1] }}
+        transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
         className={`fixed right-0 bottom-0 w-full h-auto flex flex-col bg-background border-t ${
           isOpen ? "flex" : ""
         }`}
