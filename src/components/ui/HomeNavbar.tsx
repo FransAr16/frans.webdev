@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { navbarSlideUp, revealsText } from "@/data/animation";
+import { navbarSlideUp } from "@/data/animation";
 import HomeNavLink from "./HomeNavLink";
 import BtnContact from "./BtnContact";
 
@@ -66,75 +66,6 @@ export default function Navbar() {
           </div>
         </ul>
       </div>
-    </>
-  );
-}
-
-function Contact({ href, text, className }: ContactProps) {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const ContactSlideUp = {
-    initial: {
-      y: -100,
-      opacity: 0,
-    },
-    animate: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.75,
-        ease: "easeInOut",
-        delay: 2.8,
-      },
-    },
-  };
-
-  return (
-    <>
-      <Link href={href}>
-        <div className="relative flex overflow-hidden">
-          <p
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            className="m-0 leading-none"
-          >
-            {text.split("").map((word, index) => (
-              <span
-                key={index}
-                className={`${className} relative overflow-hidden inline-flex tracking-tight leading-[105%]`}
-              >
-                <motion.span
-                  variants={ContactSlideUp}
-                  custom={index}
-                  initial="initial"
-                  animate="animate"
-                >
-                  {word === " " ? "\u00A0" : word}
-                </motion.span>
-              </span>
-            ))}
-          </p>
-
-          <motion.div
-            variants={ContactSlideUp}
-            initial="initial"
-            animate="animate"
-            className="pt-[0px]"
-          >
-            <div className="">
-              <div
-                className={`h-[1px] absolute bottom-0 right-0 w-full flex bg-transparent transition-all duration-800 ease-in-out ${
-                  isHovered ? "translate-x-[200%]" : "translate-x-0"
-                }`}
-              >
-                <div className="right-0 absolute w-full h-full bg-background"></div>
-                <div className="right-[100%] absolute w-full h-full bg-foreground"></div>
-                <div className="right-[200%] absolute w-full h-full bg-background"></div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </Link>
     </>
   );
 }
