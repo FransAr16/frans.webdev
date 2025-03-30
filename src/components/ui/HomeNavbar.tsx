@@ -1,18 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "motion/react";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navbarSlideUp } from "@/data/animation";
 import HomeNavLink from "./HomeNavLink";
 import BtnContact from "./BtnContact";
-
-interface ContactProps {
-  href: string;
-  text: string;
-  className?: string;
-}
 
 const navItems = [
   {
