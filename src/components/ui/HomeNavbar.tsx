@@ -4,8 +4,9 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { navbarSlideUp } from "@/data/animation";
+import { navbarSlideUp, revealsText } from "@/data/animation";
 import HomeNavLink from "./HomeNavLink";
+import BtnContact from "./BtnContact";
 
 interface ContactProps {
   href: string;
@@ -41,26 +42,26 @@ export default function Navbar() {
         }}
         className="relative"
       >
-        <ul className="hidden lg:flex justify-between text-background">
+        <ul className="hidden lg:flex justify-between items-center text-background">
           <div className="flex lg:gap-[.8rem] xl:gap-[1rem] 2xl:gap-[1.5rem]">
             {navItems.map((item, index) => (
-                <HomeNavLink
-                  key={index}
-                  data={{ ...item, index }}
-                  isActive={selectedIndicator === item.href}
-                  setSelectedIndicator={setSelectedIndicator}
-                  animate={navbarSlideUp}
-                  // underline={underLineBtn}
-                  classNameLink="font-medium text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
-                  classNameHref=" w-full h-[1px] bg-background absolute left-0 bottom-0"
-                />
+              <HomeNavLink
+                key={index}
+                data={{ ...item, index }}
+                isActive={selectedIndicator === item.href}
+                setSelectedIndicator={setSelectedIndicator}
+                animate={navbarSlideUp}
+                classNameLink="font-medium text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+                classNameHref=" w-full h-[1px] bg-background absolute left-0 bottom-0"
+              />
             ))}
           </div>
           <div className="flex">
-            <Contact
+            <BtnContact
               href="/contact"
+              animationDelay={2.8}
               text="Start a project"
-              className="font-medium text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
             />
           </div>
         </ul>
@@ -91,7 +92,7 @@ function Contact({ href, text, className }: ContactProps) {
   return (
     <>
       <Link href={href}>
-        <div className="relative overflow-hidden">
+        <div className="relative flex overflow-hidden">
           <p
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -118,11 +119,11 @@ function Contact({ href, text, className }: ContactProps) {
             variants={ContactSlideUp}
             initial="initial"
             animate="animate"
-            className="pt-[2px]"
+            className="pt-[0px]"
           >
-            <div className="relative w-full h-[1px] overflow-hidden">
+            <div className="">
               <div
-                className={`absolute top-0 right-0 h-full w-full flex bg-transparent transition-all duration-800 ease-in-out ${
+                className={`h-[1px] absolute bottom-0 right-0 w-full flex bg-transparent transition-all duration-800 ease-in-out ${
                   isHovered ? "translate-x-[200%]" : "translate-x-0"
                 }`}
               >

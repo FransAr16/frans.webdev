@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MainNavLink from "./MainNavLink";
+import BtnContact from "./BtnContact";
 
 interface ContactProps {
   href: string;
@@ -43,21 +44,22 @@ export default function MainNavbar() {
         <ul className="hidden lg:flex justify-between text-background">
           <div className="flex lg:gap-[.8rem] xl:gap-[1rem] 2xl:gap-[1.5rem]">
             {navItems.map((item, index) => (
-                <MainNavLink
-                  key={index}
-                  data={{ ...item, index }}
-                  isActive={selectedIndicator === item.href}
-                  setSelectedIndicator={setSelectedIndicator}
-                  classNameLink="font-medium text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
-                  classNameHref=" w-full h-[1px] bg-background absolute left-0 bottom-0"
-                />
+              <MainNavLink
+                key={index}
+                data={{ ...item, index }}
+                isActive={selectedIndicator === item.href}
+                setSelectedIndicator={setSelectedIndicator}
+                classNameLink="font-medium text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+                classNameHref=" w-full h-[1.5px] bg-background absolute left-0 bottom-0"
+              />
             ))}
           </div>
           <div className="flex">
-            <Contact
+            <BtnContact
               href="/contact"
+              animationDelay={0.1}
               text="Start a project"
-              className="font-medium text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
             />
           </div>
         </ul>
@@ -80,7 +82,7 @@ function Contact({ href, text, className }: ContactProps) {
       transition: {
         duration: 0.75,
         ease: "easeInOut",
-        delay: .75,
+        delay: 0.75,
       },
     },
   };

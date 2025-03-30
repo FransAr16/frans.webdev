@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { revealsText } from "@/data/animation";
 import Link from "next/link";
 import TextSlideUp from "../ui/TextSlideUp";
+import BorderLineTop from "../ui/BorderLineTop";
 
 interface NavItemProps {
   text: string;
@@ -15,7 +16,8 @@ interface NavItemProps {
 export default function FooterNav() {
   return (
     <div className="relative h-full w-full overflow-hidden">
-      <div className="flex w-full pt-8 lg:pt-12 border-t">
+      <div className="flex w-full pt-8 lg:pt-12">
+        <BorderLineTop />
         <div className="w-full grid grid-cols-12 lg:gap-8">
           {/* col-1 */}
           <div className="flex flex-col col-span-6 lg:col-span-3 gap-6 lg:gap-10">
@@ -145,7 +147,7 @@ function NavItem({ href, text, className }: NavItemProps) {
             ease: [0.76, 0, 0.24, 1],
           }}
         >
-          <div className="relative w-full h-[2px] xl:h-[4px] overflow-hidden">
+          <div className="relative w-full h-[2px] xl:h-[3.5px] overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-full bg-foreground"></div>
           </div>
         </motion.div>

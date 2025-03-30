@@ -30,7 +30,7 @@ const navbarSlideUp = {
     transition: {
       duration: 0.75,
       ease: "easeInOut",
-      delay: .75,
+      delay: .2,
     },
   },
 };

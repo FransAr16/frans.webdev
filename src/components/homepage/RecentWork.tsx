@@ -1,12 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
+import { motion } from "motion/react";
 import MyWork from "../MyWork";
 import ModalWork from "../ModalWork";
 import MyWorkMobile from "../MyWorkMobile";
 import { latestWork } from "@/data/work";
 import { revealsText } from "@/data/animation";
 import TextSlideUp from "../ui/TextSlideUp";
+import BorderLineTop from "../ui/BorderLineTop";
 
 export default function RecentWork() {
   const [modal, setModal] = useState<{ active: boolean; index: number }>({
@@ -18,10 +20,8 @@ export default function RecentWork() {
     <div className="h-full lg:min-h-screen w-full">
       <div className="flex flex-col relative">
         <div className="w-full grid grid-cols-12 pt-5 lg:pb-[2.5rem] 2xl:pb-[3rem] main-container">
-          <div className="hidden lg:block lg:col-span-2">
-            {/* blank */}
-          </div>
-          <div className="col-span-12 lg:col-span-10 border-b pb-2 lg:border-none lg:pb-0">
+          <div className="hidden lg:block lg:col-span-2">{/* blank */}</div>
+          <div className="col-span-12 lg:col-span-10     pb-2 lg:border-none lg:pb-0">
             <TextSlideUp
               text="(Recent Work)"
               animate={revealsText}
@@ -31,7 +31,8 @@ export default function RecentWork() {
         </div>
         {/* Desktop */}
         <div className="relative items-center justify-center overflow-hidden hidden lg:flex main-container">
-          <div className="w-full flex flex-col items-center justify-center border-t">
+          <motion.div className="relative w-full flex flex-col items-center justify-center      ">
+            <BorderLineTop />
             {latestWork
               .slice(0, 4)
               .reverse()
@@ -46,11 +47,8 @@ export default function RecentWork() {
                   />
                 );
               })}
-          </div>
-          <ModalWork
-            modal={modal}
-            projects={latestWork}
-          />
+          </motion.div>
+          <ModalWork modal={modal} projects={latestWork} />
         </div>
 
         {/* Mobile */}

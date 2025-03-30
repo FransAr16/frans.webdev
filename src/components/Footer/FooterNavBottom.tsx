@@ -28,7 +28,7 @@ export default function FooterNavBottom() {
 
   return (
     <div className="w-full h-full overflow-hidden relative">
-      <div className="grid grid-cols-12 gap-1 lg:gap-4 w-full pb-[1.5rem] sm:pb-[2rem] lg:pb-[2rem] pt-[4rem] sm:pt-[8rem] lg:pt-[10rem]">
+      <div className="grid grid-cols-12 gap-1 lg:gap-4 w-full pb-[1.5rem] 2xl:pb-[2rem] pt-[4rem] sm:pt-[8rem] lg:pt-[10rem]">
         <div className="hidden lg:col-span-4 lg:flex">
           <TextSlideUp
             text={`© ${new Date().getFullYear()} All rights reserved`}
@@ -149,7 +149,7 @@ export default function FooterNavBottom() {
 
               {/* Underline animation */}
               <motion.div
-                className="pt-[2px]"
+                className="pt-[1px]"
                 initial={{ width: "0%" }}
                 animate={{ width: isHovered ? "100%" : "0%" }}
                 transition={{
@@ -166,11 +166,6 @@ export default function FooterNavBottom() {
         </div>
         {/* Info & Credits */}
         <div className="col-span-6 lg:col-span-2 flex pt-[3rem] lg:pt-0 justify-end">
-          {/* <FooterItem
-            href="/info-credit"
-            text="Info & Credits"
-            className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-          /> */}
           <InfoCredits />
         </div>
       </div>

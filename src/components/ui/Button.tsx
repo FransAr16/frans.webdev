@@ -34,7 +34,7 @@ export default function Button({
 
   return (
     <>
-      <div ref={Ref} className="relative">
+      <div ref={Ref} className="relative flex">
         <Link href={href}>
           <div className="relative overflow-hidden">
             <p
@@ -61,10 +61,10 @@ export default function Button({
               variants={slideUp}
               initial="closed"
               animate={hasAnimated ? "open" : "closed"}
-              className="pt-[2px]"
+              // className="pt-[1px]"
             >
               <div
-                className={`${underline} relative w-full h-[1px] overflow-hidden`}
+                className={`${underline} relative w-full h-[1.5px] overflow-hidden`}
               >
                 <div
                   className={`absolute top-0 right-0 h-full w-full flex bg-transparent transition-all duration-800 ease-in-out ${

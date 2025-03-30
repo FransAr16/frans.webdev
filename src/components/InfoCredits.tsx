@@ -89,7 +89,7 @@ export default function InfoCredits() {
             ? "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)"
             : "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)",
         }}
-        transition={{ duration: .75, ease: "easeInOut" }}
+        transition={{ duration: .5, ease: [0.76, 0, 0.24, 1] }}
         className={`fixed right-0 bottom-0 w-full h-auto flex flex-col bg-background border-t ${
           isOpen ? "flex" : ""
         }`}

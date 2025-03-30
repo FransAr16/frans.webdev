@@ -184,11 +184,11 @@ function Logo({ href, text, className }: LogoProps) {
   const LogoSlideUp = {
     initial: {
       y: "100%",
-      transition: { duration: 0.75, delay: 0.75, ease: "easeInOut" },
+      transition: { duration: 0.75, delay: 0.4, ease: "easeInOut" },
     },
     animate: {
       y: "0%",
-      transition: { duration: 0.75, delay: 0.75, ease: "easeInOut" },
+      transition: { duration: 0.75, delay: 0.4, ease: "easeInOut" },
     },
   };
   const LogoMobileSlideUp = {
