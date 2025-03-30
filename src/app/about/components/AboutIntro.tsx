@@ -7,26 +7,23 @@ import TextSlideUp from "@/components/ui/TextSlideUp";
 import Image from "next/image";
 
 const singleLineTab = [
-  "Creative web developer with a strong",
-  "focus on front-end development,",
-  "specializing in animations, user",
-  "interfaces, and interactive experiences. I excel at creating visually engaging and dynamic web applications.",
+  "Creative web developer with",
+  "specializing in dynamic, visually",
+  "engaging websites with animations and interactive user interfaces. I write clean, efficient code to ensure optimal performance and smooth functionality.",
 ];
 
 const singleLineMobile = [
   "Creative web",
   "developer with",
-  "a strong focus on",
-  "front-end",
-  "development,",
   "specializing in",
-  "animations, user",
-  "interfaces, and",
-  "interactive experiences.",
-  "I excel at creating",
-  "visually engaging",
-  "and dynamic web",
-  "applications.",
+  "dynamic, visually",
+  "engaging website",
+  "with animations",
+  "interactive user",
+  "interfaces. I write",
+  "clean, efficient code to ensure optimal",
+  "performance and",
+  "smooth functionality.",
 ];
 
 export default function AboutIntro() {
@@ -76,7 +73,7 @@ export default function AboutIntro() {
               <div className="pb-2 lg:pb-4 order-first">
                 <div className="relative">
                   <TextSlideUp
-                    text="Frans - Creative Web Developer specializing in Frontend"
+                    text="Frans - Creative Web Developer based in Indonesia"
                     animate={revealsText}
                     className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
                   />
@@ -121,30 +118,67 @@ export default function AboutIntro() {
             />
           </div>
           
-          {/* lg to xl */}
-          <div className="hidden lg:block 2xl:hidden">
+          {/* xl */}
+          <div className="hidden xl:block 2xl:hidden">
             <TextSlideUp
-              text="a strong focus on front-end development,"
+              // text="a strong focus on front-end development,"
+              text="specializing in dynamic, visually engaging"
               animate={revealsText}
               className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
             />
             <TextSlideUp
-              text="specializing in animations, user,"
+              // text="specializing in animations, user,"
+              text="website with animations interactive user"
               animate={revealsText}
               className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
             />
             <TextSlideUp
-              text="interfaces and interactive experiences."
+              // text="interfaces and interactive experiences."
+              text="interfaces. Skilled writing clean, efficient"
               animate={revealsText}
               className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
             />
             <TextSlideUp
-              text="I excel at creating visually engaging and"
+              // text="I excel at creating visually engaging and"
+              text="code to ensure optimal performance and"
               animate={revealsText}
               className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
             />
             <TextSlideUp
-              text="dynamic web applications."
+              text="smooth functionality."
+              animate={revealsText}
+              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
+            />
+          </div>
+
+          {/* lg */}
+          <div className="hidden lg:block xl:hidden">
+            <TextSlideUp
+              // text="a strong focus on front-end development,"
+              text="specializing in dynamic, visually engaging"
+              animate={revealsText}
+              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
+            />
+            <TextSlideUp
+              // text="specializing in animations, user,"
+              text="website with animations interactive user"
+              animate={revealsText}
+              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
+            />
+            <TextSlideUp
+              // text="interfaces and interactive experiences."
+              text="interfaces. Skilled writing clean, efficient"
+              animate={revealsText}
+              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
+            />
+            <TextSlideUp
+              // text="I excel at creating visually engaging and"
+              text="code to ensure optimal performance and"
+              animate={revealsText}
+              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
+            />
+            <TextSlideUp
+              text="smooth functionality."
               animate={revealsText}
               className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
             />
