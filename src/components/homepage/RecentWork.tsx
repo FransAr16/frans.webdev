@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion } from "motion/react";
 import MyWork from "../MyWork";
 import ModalWork from "../ModalWork";
 import MyWorkMobile from "../MyWorkMobile";

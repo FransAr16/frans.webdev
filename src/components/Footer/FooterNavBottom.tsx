@@ -1,19 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "motion/react";
 import { revealsText } from "@/data/animation";
-import Link from "next/link";
 import TextSlideUp from "../ui/TextSlideUp";
 import InfoCredits from "../InfoCredits";
 import BtnNavFooterBottom from "../ui/BtnNavFooterButton";
 import BackToTop from "../ui/BackToTop";
-
-interface FooterNavBottomProps {
-  href: string;
-  text: string;
-  className?: string;
-}
 
 export default function FooterNavBottom() {
   const animationDelay = 0.2;
@@ -130,56 +123,3 @@ export default function FooterNavBottom() {
   );
 }
 
-function FooterItem({ href, text, className }: FooterNavBottomProps) {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const animationDelay = 0.2;
-
-  return (
-    <Link href={href}>
-      <div
-        className="relative overflow-hidden"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        <p className="m-0 leading-none">
-          {text.split("").map((word, index) => (
-            <span
-              key={index}
-              className={`${className} relative overflow-hidden inline-flex tracking-[-0.04em] leading-[104%]`}
-            >
-              <motion.span
-                initial={{ y: "0%" }}
-                animate={{ y: "100%" }}
-                whileInView={{ y: "0%" }}
-                viewport={{ once: true, amount: 0 }}
-                transition={{
-                  duration: 1,
-                  ease: [0.76, 0, 0.24, 1],
-                  delay: animationDelay,
-                }}
-              >
-                {word === " " ? "\u00A0" : word}
-              </motion.span>
-            </span>
-          ))}
-        </p>
-
-        {/* Underline animation */}
-        {/* <motion.div
-          className="pt-[2px]"
-          initial={{ width: "0%" }}
-          animate={{ width: isHovered ? "100%" : "0%" }}
-          transition={{
-            duration: 0.5,
-            ease: [0.76, 0, 0.24, 1],
-          }}
-        >
-          <div className="relative w-full h-[1px] overflow-hidden">
-            <div className="absolute bottom-0 left-0 w-full h-full bg-foreground"></div>
-          </div>
-        </motion.div> */}
-      </div>
-    </Link>
-  );
-}
