@@ -12,6 +12,7 @@ import WorkCategoryBtn from "./WorkCategoryBtn";
 import WorkListTiled from "./WorkListTiled";
 import WorkListGrid from "./WorkListGrid";
 import Button from "@/components/ui/Button";
+import BorderLineTop from "@/components/ui/BorderLineTop";
 
 export default function WorkProject() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -59,9 +60,10 @@ export default function WorkProject() {
 
   return (
     <div className="flex flex-col w-full h-full py-[2rem] lg:py-[2rem] 2xl:py-[4rem]">
-      <div className="flex flex-col w-full h-full">
+      <div className="flex flex-col w-full h-full main-container">
         {/* CategoryNav */}
-        <div className="main-container w-full flex items-center justify-start lg:justify-between pt-[2rem] lg:pt-[2rem] 2xl:pt-[4rem] border-t ">
+        <div className="relative w-full flex items-center justify-start lg:justify-between pt-[2rem] lg:pt-[2rem] 2xl:pt-[4rem]">
+            <BorderLineTop />
           <div className=" flex-wrap gap-4 lg:gap-10 2xl:gap-12 items-center hidden">
             <div onClick={() => handleCategoryChange("All")}>
               <WorkCategoryBtn
@@ -145,7 +147,7 @@ export default function WorkProject() {
             variants={animationVariants}
             className="relative items-center justify-center overflow-hidden hidden lg:flex flex-col lg:pb-[6rem] lg:pt-[4rem] 2xl:pt-[5rem] 2xl:pb-[7rem]"
           >
-            <div className="w-full flex items-center main-container lg:pb-9 2xl:pb-12">
+            <div className="w-full flex items-center work-list-container lg:pb-9 2xl:pb-12">
               {projectNav.map((project, index) => (
                 <div
                   key={index}
@@ -186,8 +188,9 @@ export default function WorkProject() {
               initial={visible ? "hidden" : "exit"}
               animate={visible ? "visible" : "exit"}
               variants={animationVariants}
-              className="w-full  flex flex-col items-center justify-center"
+              className="relative w-full flex flex-col items-center justify-center"
             >
+              <BorderLineTop />
               {filteredProjects
                 .filter((project) => project.id >= 0 && project.id <= 10)
                 .reverse()
@@ -209,9 +212,6 @@ export default function WorkProject() {
               modal={modal}
               projects={myWork}
             />
-            <div className="w-full main-container">
-              <div className="border-b w-full" />
-            </div>
           </motion.div>
         )}
         {/* Desktop */}
@@ -221,9 +221,9 @@ export default function WorkProject() {
             initial={visible ? "hidden" : "exit"}
             animate={visible ? "visible" : "exit"}
             variants={animationVariants}
-            className="main-container relative hidden lg:flex w-full h-full items-center justify-center lg:py-[6rem] 2xl:py-[7rem]"
+            className="relative hidden lg:flex w-full h-full items-center justify-center lg:py-[6rem] 2xl:py-[7rem]"
           >
-            <div className="w-full grid lg:grid-cols-2 lg:gap-y-[9rem] xl:gap-y-[10rem] 2xl:gap-y-[11rem] lg:gap-x-[2.5rem] xl:gap-x-[3.2rem] 2xl:gap-x-[5rem] items-center justify-center">
+            <div className="w-full grid lg:grid-cols-2 lg:gap-y-[9rem] xl:gap-y-[10rem] 2xl:gap-y-[11rem] lg:gap-x-[4rem] xl:gap-x-[5rem] 2xl:gap-x-[6rem] items-center justify-center">
               {filteredProjects
                 .filter((project) => project.id >= 0 && project.id <= 10)
                 .reverse()
@@ -248,7 +248,7 @@ export default function WorkProject() {
           </motion.div>
         )}
 
-        <div className="main-container">
+        <div>
           <div>
             <TextSlideUp
               text="See more work?"
@@ -263,7 +263,7 @@ export default function WorkProject() {
               slideUp={revealsText}
               text="Archive"
               underline="h-[2px] xl:h-[3.5px]"
-              className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+              className="font-medium tracking-[-0.04em] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
             />
           </div>
         </div>

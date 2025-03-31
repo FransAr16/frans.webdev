@@ -81,12 +81,8 @@
   .main-container {
     @apply px-[1rem] sm:px-[1.5rem] lg:px-[1.5rem];
   }
-
-  .work-content-padding {
-    @apply px-[1rem] sm:px-[1.5rem] lg:px-[1.5rem];
-  }
-  .second-container {
-    @apply px-[1rem] sm:px-[1.5rem] lg:px-[2rem];
+  .work-list-container {
+    @apply px-[1rem] sm:px-[1.5rem] lg:px-[4rem];
   }
 
   /* Font Montserrat */

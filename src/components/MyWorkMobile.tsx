@@ -5,6 +5,7 @@ import { motion, useInView } from "motion/react";
 import TextSlideUp from "./ui/TextSlideUp";
 import { revealsText } from "@/data/animation";
 import Image from "next/image";
+import BorderLineBottom from "./ui/BorderLineBottom";
 
 interface MyWorkMobileProps {
   key: React.Key;
@@ -62,26 +63,17 @@ export default function MyWorkMobile({
               priority
               alt="image-work"
             />
-            {/* <CldImage
-              src={`${images}`}
-              width={1920}
-              height={1080}
-              className={`${imgClassName} w-full h-auto`}
-              alt="image-work"
-              crop={{
-                type: "auto",
-                source: true,
-              }}
-            /> */}
           </motion.div>
         </motion.div>
       </div>
-      <div className="flex pb-3 pt-5 border-b">
+      <div className="relative flex pb-3 pt-5 ">
         <TextSlideUp
           text={title}
           animate={revealsText}
           className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[clamp(2.3rem,10vw,10rem)] sm:text-[5.5vw] 2xl:text-[5.2vw]"
         />
+
+        <BorderLineBottom />
       </div>
       <div className="flex items-center justify-between pt-5">
         <div className="flex">

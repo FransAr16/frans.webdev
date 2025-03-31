@@ -27,7 +27,7 @@ export default function WorkHero() {
             <TextFadeIn
               slideUp={fadeIn}
               phrase="(10)"
-              className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
+              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
             />
           </div>
         </div>

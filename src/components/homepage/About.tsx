@@ -8,7 +8,7 @@ import TextSlideUp from "../ui/TextSlideUp";
 import Button from "../ui/Button";
 
 const paragraphOneTablet = [
-  "developer specializing in frontend, passionate about crafting visually",
+  "developer who loves design, passionate about crafting visually",
   "stunning and functional.",
 ];
 const paragraphTwoTablet = [
@@ -18,7 +18,7 @@ const paragraphTwoTablet = [
 ];
 
 const paragraphOneMobile = [
-  "web developer specializing in frontend, passionate about crafting visually stunning and functional.",
+  "web developer who loves design, passionate about crafting visually stunning and functional.",
 ];
 
 const paragraphTwoMobile = [
@@ -79,7 +79,40 @@ export default function About() {
         <div className="flex w-full h-full order-first lg:order-last">
           <div className="flex flex-col">
             <div className="flex flex-col gap-[2rem] lg:gap-[3rem] 2xl:gap-[4rem]">
-              {/* Desktop */}
+              {/* Desktop 2xl */}
+              <div className="flex-col hidden 2xl:flex">
+                <div className="flex lg:gap-4 2xl:gap-9 items-center">
+                  <TextSlideUp
+                    text="(About Me)"
+                    animate={revealsText}
+                    className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+                  />
+                  <div className="lg:pl-[.5rem] xl:pl-[1rem] 2xl:pl-[3rem]">
+                    <TextSlideUp
+                      text="I'm a creative web developer"
+                      animate={revealsText}
+                      className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                    />
+                  </div>
+                </div>
+                <TextSlideUp
+                  text="who loves design, passionate"
+                  animate={revealsText}
+                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                />
+                <TextSlideUp
+                  text="about crafting visually stunning"
+                  animate={revealsText}
+                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                />
+                <TextSlideUp
+                  text="and functionality."
+                  animate={revealsText}
+                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                />
+              </div>
+
+              {/* Desktop lg */}
               <div className="flex-col hidden lg:flex">
                 <div className="flex lg:gap-4 2xl:gap-9 items-center">
                   <TextSlideUp
@@ -96,17 +129,17 @@ export default function About() {
                   </div>
                 </div>
                 <TextSlideUp
-                  text="specializing in frontend, passionate"
+                  text="who loves design, passionate about"
                   animate={revealsText}
                   className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                 />
                 <TextSlideUp
-                  text="about crafting visually stunning"
+                  text="crafting visually stunning and"
                   animate={revealsText}
                   className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                 />
                 <TextSlideUp
-                  text="and functional."
+                  text="functionality."
                   animate={revealsText}
                   className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                 />
@@ -165,8 +198,8 @@ export default function About() {
               </div>
 
               <div className="flex flex-col gap-[2rem] lg:gap-[3rem] 2xl:gap-[4rem]">
-                {/* Desktop */}
-                <div className="hidden lg:block">
+                {/* Desktop 2xl */}
+                <div className="hidden 2xl:block">
                   <TextSlideUp
                     text="Combining innovation with a"
                     animate={revealsText}
@@ -179,6 +212,24 @@ export default function About() {
                   />
                   <TextSlideUp
                     text="and functional design."
+                    animate={revealsText}
+                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                  />
+                </div>
+                {/* Desktop lg */}
+                <div className="hidden lg:block">
+                  <TextSlideUp
+                    text="Combining innovation with a love"
+                    animate={revealsText}
+                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                  />
+                  <TextSlideUp
+                    text="of detail to create beautiful and"
+                    animate={revealsText}
+                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
+                  />
+                  <TextSlideUp
+                    text="functional design."
                     animate={revealsText}
                     className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                   />
