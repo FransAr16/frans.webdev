@@ -17,10 +17,10 @@ const CookiesModal = () => {
 
   const handleConsent = (consent: string) => {
     if (consent === "no") {
-      const expires = new Date(new Date().getTime() + 100 * 1000); // 5 menit
+      const expires = new Date(new Date().getTime() + 500 * 1000); // 5 minute
       Cookies.set("cookieConsent", consent, { expires });
     } else {
-      Cookies.set("cookieConsent", consent, { expires: 30 }); // 30 hari
+      Cookies.set("cookieConsent", consent, { expires: 30 }); // 30 days
     }
 
     setIsVisible(false);
