@@ -6,6 +6,7 @@ import Link from "next/link";
 import { revealsText } from "@/data/animation";
 import TextSlideUp from "@/components/ui/TextSlideUp";
 import Image from "next/image";
+import BorderLineBottom from "@/components/ui/BorderLineBottom";
 
 interface WorkListGridProps {
   index: number;
@@ -83,27 +84,17 @@ export default function WorkListGrid({
                   priority
                   alt="image-work"
                 />
-                {/* <CldImage
-                  src={`${images}`}
-                  width={1920}
-                  height={1080}
-                  className={`${imgClassName} w-full h-auto`}
-                  alt="image-work"
-                  crop={{
-                    type: "auto",
-                    source: true,
-                  }}
-                /> */}
               </div>
             </motion.div>
           </motion.div>
         </div>
-        <div className="lg:pt-[2.8rem] lg:pb-[1.5rem] 2xl:pt-[3rem] 2xl:pb-[1.6rem] border-b">
+        <div className="relative lg:pt-[2.8rem] lg:pb-[1.5rem] 2xl:pt-[3rem] 2xl:pb-[1.6rem]">
           <TextSlideUp
             text={title}
             animate={revealsText}
             className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[2rem] sm:text-[2.5rem] lg:text-[2.4rem] xl:text-[3.2vw] 2xl:text-[4rem]"
           />
+          <BorderLineBottom />
         </div>
         <div className="flex items-center justify-between lg:pt-[1.6rem] 2xl:pt-[1.7rem]">
           <div>

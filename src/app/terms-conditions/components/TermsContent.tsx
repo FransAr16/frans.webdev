@@ -3,6 +3,7 @@
 import React from "react";
 import TextFadeIn from "@/components/ui/TextFadeIn";
 import { fadeIn } from "@/data/animation";
+import BorderLineTop from "@/components/ui/BorderLineTop";
 
 interface ContentProps {
   title: string;
@@ -38,7 +39,8 @@ export default function TermsContent() {
       <div className="main-container w-full h-full overflow-hidden">
         {/* content */}
         <div className="w-full py-[2rem] lg:py-[2rem] 2xl:py-[4rem]">
-          <div className="flex flex-col w-full border-t">
+          <div className="relative flex flex-col w-full">
+            <BorderLineTop />
             {contents.map((content, index) => (
               <div key={index} className="pt-[2rem] pb-[5rem] lg:pt-[2rem] lg:pb-[7.5rem] 2xl:pt-[4rem]">
                 <Content title={content.title} desc={content.desc} />

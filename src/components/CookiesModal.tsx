@@ -35,7 +35,7 @@ const CookiesModal = () => {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          className="fixed w-full z-[9999] flex justify-center items-end lg:justify-end bg-border/40 p-[1rem] sm:p-[1.5rem] lg:p-[1.5rem]"
+          className="fixed w-full lg:w-auto bottom-2 right-0 lg:bottom-6 lg:right-6 z-[9999] flex justify-center items-end lg:justify-end p-[1rem] lg:p-0"
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,

@@ -62,57 +62,60 @@ export default function WorkProject() {
     <div className="flex flex-col w-full h-full py-[2rem] lg:py-[2rem] 2xl:py-[4rem]">
       <div className="flex flex-col w-full h-full main-container">
         {/* CategoryNav */}
-        <div className="relative w-full flex items-center justify-start lg:justify-between pt-[2rem] lg:pt-[2rem] 2xl:pt-[4rem]">
+        <div className="relative w-full flex flex-col">
+          <div>
             <BorderLineTop />
-          <div className=" flex-wrap gap-4 lg:gap-10 2xl:gap-12 items-center hidden">
-            <div onClick={() => handleCategoryChange("All")}>
-              <WorkCategoryBtn
-                animate={revealsText}
-                text="All"
-                isActive={activeCategory === "All"}
-                className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-              />
-            </div>
-            <div onClick={() => handleCategoryChange("Design")}>
-              <WorkCategoryBtn
-                animate={revealsText}
-                text="Design"
-                isActive={activeCategory === "Design"}
-                className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-              />
-            </div>
-            <div onClick={() => handleCategoryChange("Development")}>
-              <WorkCategoryBtn
-                animate={revealsText}
-                text="Development"
-                isActive={activeCategory === "Development"}
-                className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-              />
-            </div>
           </div>
-
-          <div className="items-center hidden lg:flex gap-4 lg:gap-10 2xl:gap-12">
-            <div onClick={() => handleLayoutChange("Tiled")}>
-              <WorkCategoryBtn
-                animate={revealsText}
-                text="Tiled"
-                isActive={activeLayout === "Tiled"}
-                className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-              />
+          <div className="w-full flex items-center justify-start lg:justify-between pt-[2rem] lg:pt-[2rem] 2xl:pt-[4rem]">
+            <div className="flex flex-wrap gap-4 lg:gap-10 2xl:gap-12 items-center">
+              <div onClick={() => handleCategoryChange("All")}>
+                <WorkCategoryBtn
+                  animate={revealsText}
+                  text="All"
+                  isActive={activeCategory === "All"}
+                  className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+                />
+              </div>
+              <div onClick={() => handleCategoryChange("Design")}>
+                <WorkCategoryBtn
+                  animate={revealsText}
+                  text="Design"
+                  isActive={activeCategory === "Design"}
+                  className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+                />
+              </div>
+              <div onClick={() => handleCategoryChange("Development")}>
+                <WorkCategoryBtn
+                  animate={revealsText}
+                  text="Development"
+                  isActive={activeCategory === "Development"}
+                  className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+                />
+              </div>
             </div>
-            <div onClick={() => handleLayoutChange("Grid")}>
-              <WorkCategoryBtn
-                animate={revealsText}
-                text="Grid"
-                isActive={activeLayout === "Grid"}
-                className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-              />
+            <div className="items-center hidden lg:flex gap-4 lg:gap-10 2xl:gap-12">
+              <div onClick={() => handleLayoutChange("Tiled")}>
+                <WorkCategoryBtn
+                  animate={revealsText}
+                  text="Tiled"
+                  isActive={activeLayout === "Tiled"}
+                  className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+                />
+              </div>
+              <div onClick={() => handleLayoutChange("Grid")}>
+                <WorkCategoryBtn
+                  animate={revealsText}
+                  text="Grid"
+                  isActive={activeLayout === "Grid"}
+                  className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+                />
+              </div>
             </div>
           </div>
         </div>
 
         {/* Mobile */}
-        <div className="main-container relative w-full h-full items-center justify-center flex lg:hidden pb-[5rem] sm:pb-[5rem] md:pb-[6rem]">
+        <div className=" relative w-full h-full items-center justify-center flex lg:hidden py-[5rem] sm:py-[5rem] md:py-[6rem]">
           <motion.div
             className="w-full grid sm:grid-cols-2 gap-y-[6rem] sm:gap-x-[1.4rem] items-center justify-center"
             initial={visible ? "hidden" : "exit"}
@@ -248,6 +251,7 @@ export default function WorkProject() {
           </motion.div>
         )}
 
+        {/* Link to Archive */}
         <div>
           <div>
             <TextSlideUp

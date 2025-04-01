@@ -61,7 +61,6 @@ export default function Button({
               variants={slideUp}
               initial="closed"
               animate={hasAnimated ? "open" : "closed"}
-              // className="pt-[1px]"
             >
               <div
                 className={`${underline} relative w-full h-[1.5px] overflow-hidden`}

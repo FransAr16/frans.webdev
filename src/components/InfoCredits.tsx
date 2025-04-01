@@ -222,7 +222,7 @@ export default function InfoCredits({
                     </div>
                     <div className="flex">
                       <Button
-                        href="/"
+                        href="mailto:frans.webdev@gmail.com"
                         slideUp={revealsText}
                         text="Reach out!"
                         className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
