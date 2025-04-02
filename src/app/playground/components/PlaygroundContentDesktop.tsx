@@ -772,7 +772,7 @@ function ParallaxProject() {
             <div className="flex">
               <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center gap-1 bg-background">
                 <p className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
-                  THIS ONE'S MY FAVORITE
+                 {"THIS ONE'S MY FAVORITE"}
                 </p>
                 <p>&#128521;</p>
               </div>
@@ -901,7 +901,7 @@ function ParallaxProject() {
             <div className="flex">
               <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center gap-1 bg-background">
                 <span className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
-                  IT'S ALREADY THE END
+                  {"IT'S ALREADY THE END"}
                 </span>
                 <span>&#128532;</span>
               </div>
