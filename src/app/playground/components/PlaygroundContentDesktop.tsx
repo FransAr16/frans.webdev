@@ -80,7 +80,6 @@ function ParallaxProject() {
   const ref9 = useRef(null);
   const ref10 = useRef(null);
   const ref11 = useRef(null);
-  const ref12 = useRef(null);
 
   const { scrollYProgress: progress1 } = useScroll({
     target: ref1,

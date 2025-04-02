@@ -1,6 +1,4 @@
 import React from "react";
-import TextFadeIn from "@/components/ui/TextFadeIn";
-import { fadeIn } from "@/data/animation";
 import PlaygroundHeading from "./PlaygroundHeading";
 import ArrowDown from "@/components/ui/ArrowDown";
 

@@ -4,7 +4,6 @@ import { motion } from "motion/react";
 import { revealsText } from "@/data/animation";
 import TextSlideUp from "@/components/ui/TextSlideUp";
 import BorderLineBottom from "@/components/ui/BorderLineBottom";
-import ArrowUpRight from "@/components/ui/ArrowUpRight";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 interface MyArchiveMobileProps {
@@ -94,39 +93,6 @@ export default function MyArchiveMobile({
           </div>
         </div>
 
-
-
-
-
-        <div className="w-full grid grid-cols-12 items-center lg:py-[1.6rem] xl:py-[2rem] group hidden">
-          <div className="col-span-6 group-hover:text-foreground/30">
-            <div className="group-hover:-translate-x-[1rem] 2xl:group-hover:-translate-x-[1.8rem] transition-all duration-400 ease-out">
-              <TextSlideUp
-                text={title}
-                animate={revealsText}
-                className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[6vw] sm:text-[2.5rem] lg:text-[2.4rem] xl:text-[3.2vw] 2xl:text-[4rem]"
-              />
-            </div>
-          </div>
-          <div className="col-span-3 group-hover:text-foreground/30">
-            <div className="group-hover:translate-x-[1rem] 2xl:group-hover:translate-x-[1.7rem] transition-all duration-400 ease-out">
-              <TextSlideUp
-                text={location}
-                animate={revealsText}
-                className="font-medium mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-              />
-            </div>
-          </div>
-          <div className="col-span-3 group-hover:text-foreground/30 text-end">
-            <div className="group-hover:translate-x-[1rem] 2xl:group-hover:translate-x-[1.7rem] transition-all duration-400 ease-out">
-              <TextSlideUp
-                text={published}
-                animate={revealsText}
-                className="font-medium mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-              />
-            </div>
-          </div>
-        </div>
       </Link>
     </div>
   );
