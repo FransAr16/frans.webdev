@@ -4,7 +4,7 @@ import FooterBottom from './FooterBottom'
 
 export default function Footer() {
   return (
-    <div className='relative overflow-hidden'>
+    <div className='relative overflow-hidden bg-background z-[4]'>
       <WorkTogether />
       <FooterBottom />
     </div>

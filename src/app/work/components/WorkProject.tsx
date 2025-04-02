@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { motion } from "motion/react";
 import { myWork, projectNav } from "@/data/work";
 import MyWorkMobile from "@/components/MyWorkMobile";
-import { revealsText } from "@/data/animation";
+import { animationVariants, revealsText } from "@/data/animation";
 import TextSlideUp from "@/components/ui/TextSlideUp";
 import WorkModalWork from "./WorkModalWork";
 import WorkLabelModal from "./WorkLabelModal";
@@ -23,20 +23,6 @@ export default function WorkProject() {
   const filteredProjects = myWork.filter((project) =>
     activeCategory === "All" ? true : project.category === activeCategory
   );
-
-  const animationVariants = {
-    hidden: { opacity: 0, y: 60 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { delay: 0.3, duration: 0.75, ease: [0.76, 0, 0.24, 1] },
-    },
-    exit: {
-      opacity: 0,
-      y: 60,
-      transition: { delay: 0.1, duration: 0.5, ease: [0.76, 0, 0.24, 1] },
-    },
-  };
 
   const handleCategoryChange = (category: string) => {
     if (category !== activeCategory) {

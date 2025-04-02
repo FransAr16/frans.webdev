@@ -97,3 +97,17 @@ export const slideUp = {
     },
   };
   
+
+  export const animationVariants = {
+    hidden: { opacity: 0, y: 60 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { delay: 0.3, duration: 0.75, ease: [0.76, 0, 0.24, 1] },
+    },
+    exit: {
+      opacity: 0,
+      y: 60,
+      transition: { delay: 0.1, duration: 0.5, ease: [0.76, 0, 0.24, 1] },
+    },
+  };
