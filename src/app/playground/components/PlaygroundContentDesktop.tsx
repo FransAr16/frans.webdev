@@ -540,7 +540,7 @@ function ParallaxProject() {
             <div className="flex">
               <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center bg-background">
                 <div className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
-                  KEEP SCROLLIIING 🔥
+                  KEEP SCROLLIIING &#x1F525;
                 </div>
               </div>
             </div>
@@ -775,7 +775,7 @@ function ParallaxProject() {
             <div className="flex">
               <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center bg-background">
                 <div className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
-                  THIS ONE'S MY FAVORITE 😉
+                  THIS ONE'S MY FAVORITE &#128521;
                 </div>
               </div>
             </div>
@@ -903,7 +903,7 @@ function ParallaxProject() {
             <div className="flex">
               <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center bg-background">
                 <div className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
-                  IT'S ALREADY THE END 😔
+                  IT'S ALREADY THE END &#128532;
                 </div>
               </div>
             </div>
