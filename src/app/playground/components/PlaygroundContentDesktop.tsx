@@ -771,10 +771,10 @@ function ParallaxProject() {
           >
             <div className="flex">
               <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center gap-1 bg-background">
-                <span className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                <p className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
                   THIS ONE'S MY FAVORITE
-                </span>
-                <span>&#128521;</span>
+                </p>
+                <p>&#128521;</p>
               </div>
             </div>
           </motion.div>
