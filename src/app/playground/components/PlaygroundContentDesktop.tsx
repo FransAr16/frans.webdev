@@ -538,10 +538,13 @@ function ParallaxProject() {
             style={{ y: moveUp4 }}
           >
             <div className="flex">
-              <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center bg-background">
+              <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center gap-1 bg-background">
                 <div className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
-                  KEEP SCROLLIIING &#x1F525;
+                  KEEP SCROLLIIING
                 </div>
+                <span>
+                  &#128293;
+                </span>
               </div>
             </div>
           </motion.div>
@@ -773,10 +776,13 @@ function ParallaxProject() {
             style={{ y: moveUp8 }}
           >
             <div className="flex">
-              <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center bg-background">
+              <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center gap-1 bg-background">
                 <div className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
-                  THIS ONE'S MY FAVORITE &#128521;
+                  THIS ONE'S MY FAVORITE
                 </div>
+                <span>
+                 &#128521;
+                </span>
               </div>
             </div>
           </motion.div>
@@ -901,15 +907,16 @@ function ParallaxProject() {
             style={{ y: moveUp11 }}
           >
             <div className="flex">
-              <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center bg-background">
+              <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center gap-1 bg-background">
                 <div className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
-                  IT'S ALREADY THE END &#128532;
+                  IT'S ALREADY THE END
                 </div>
+                <span>
+                  {"&#128532;"}
+                </span>
               </div>
             </div>
           </motion.div>
-          {/* Blank Space */}
-          {/* <div className="col-span-1"></div> */}
         </div>
       </div>
 
