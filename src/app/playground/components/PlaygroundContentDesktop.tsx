@@ -21,11 +21,7 @@ interface ParallaxTextProps {
   speedFactor?: number; // Untuk mengatur kecepatan animasi width
 }
 
-function ParallaxText({
-  text,
-  className,
-  speedFactor = 0,
-}: ParallaxTextProps) {
+function ParallaxText({ text, className, speedFactor = 0 }: ParallaxTextProps) {
   const { scrollY } = useScroll();
   const [innerHeight, setInnerHeight] = useState(1); // Defaultkan ke 1 agar hook tetap sama
 
@@ -539,12 +535,10 @@ function ParallaxProject() {
           >
             <div className="flex">
               <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center gap-1 bg-background">
-                <div className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                <span className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
                   KEEP SCROLLIIING
-                </div>
-                <span>
-                  &#128293;
                 </span>
+                <span>&#128293;</span>
               </div>
             </div>
           </motion.div>
@@ -777,12 +771,10 @@ function ParallaxProject() {
           >
             <div className="flex">
               <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center gap-1 bg-background">
-                <div className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
-                  {/* THIS ONE'S MY FAVORITE */}
-                </div>
-                <span>
-                 &#128521;
+                <span className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                  THIS ONE'S MY FAVORITE
                 </span>
+                <span>&#128521;</span>
               </div>
             </div>
           </motion.div>
@@ -908,12 +900,10 @@ function ParallaxProject() {
           >
             <div className="flex">
               <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center gap-1 bg-background">
-                <div className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                <span className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
                   IT'S ALREADY THE END
-                </div>
-                <span>
-                  {"&#128532;"}
                 </span>
+                <span>&#128532;</span>
               </div>
             </div>
           </motion.div>
