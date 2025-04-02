@@ -778,7 +778,7 @@ function ParallaxProject() {
             <div className="flex">
               <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center gap-1 bg-background">
                 <div className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
-                  THIS ONE'S MY FAVORITE
+                  {/* THIS ONE'S MY FAVORITE */}
                 </div>
                 <span>
                  &#128521;
