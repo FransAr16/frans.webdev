@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import BorderLineTop from "@/components/ui/BorderLineTop";
+import { dataProjects } from "@/data/playground";
 
 export default function PlaygroundContentDesktop() {
   return (
@@ -47,7 +48,7 @@ function ParallaxText({ text, className, speedFactor = 0 }: ParallaxTextProps) {
           <p className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] text-border">
             Welcome on the
           </p>
-          <p className="relative flex uppercase font-bold text-[8rem] leading-[100%]">
+          <p className="relative flex uppercase font-bold lg:text-[7rem] xl:text-[8rem] leading-[100%]">
             {/* Static Border Text */}
             <motion.span className="text-border z-[1]">{text}</motion.span>
             {/* Animated Foreground Text */}
@@ -144,134 +145,25 @@ function ParallaxProject() {
   const moveUp10 = useTransform(progress10, [0, 1], [0, -200]);
   const moveUp11 = useTransform(progress11, [0, 1], [1000, -400]);
 
-  const dataProjects = [
-    {
-      id: 1,
-      image: "/project_1.webp",
-      title: "Project One",
-      description: "An innovative web solution.",
-      number: "01",
-    },
-    {
-      id: 2,
-      image: "/project_2.webp",
-      title: "Project Two",
-      description: "A sleek and modern design.",
-      number: "02",
-    },
-    {
-      id: 3,
-      image: "/project_3.webp",
-      title: "Project Three",
-      description: "Interactive UI/UX experience.",
-      number: "03",
-    },
-    {
-      id: 4,
-      image: "/project_4.webp",
-      title: "Project Four",
-      description: "Next-level front-end animation.",
-      number: "04",
-    },
-    {
-      id: 5,
-      image: "/project_5.webp",
-      title: "Project Five",
-      description: "A fully responsive layout.",
-      number: "05",
-    },
-    {
-      id: 6,
-      image: "/project_6.webp",
-      title: "Project Six",
-      description: "AI-driven design innovation.",
-      number: "06",
-    },
-    {
-      id: 7,
-      image: "/project_7.webp",
-      title: "Project Seven",
-      description: "Minimalist and elegant UI.",
-      number: "07",
-    },
-    {
-      id: 8,
-      image: "/project_8.webp",
-      title: "Project Eight",
-      description: "Experimental design showcase.",
-      number: "08",
-    },
-    {
-      id: 9,
-      image: "/project_9.webp",
-      title: "Project Nine",
-      description: "Smooth scrolling experience.",
-      number: "09",
-    },
-    {
-      id: 10,
-      image: "/project_10.webp",
-      title: "Project Ten",
-      description: "A bold and futuristic layout.",
-      number: "10",
-    },
-    {
-      id: 11,
-      image: "/project_3.webp",
-      title: "Project Ten",
-      description: "A bold and futuristic layout.",
-      number: "11",
-    },
-    {
-      id: 12,
-      image: "/project_5.webp",
-      title: "Project Ten",
-      description: "A bold and futuristic layout.",
-      number: "12",
-    },
-    {
-      id: 13,
-      image: "/project_1.webp",
-      title: "Project Ten",
-      description: "A bold and futuristic layout.",
-      number: "13",
-    },
-    {
-      id: 14,
-      image: "/project_7.webp",
-      title: "Project Ten",
-      description: "A bold and futuristic layout.",
-      number: "14",
-    },
-    {
-      id: 15,
-      image: "/project_9.webp",
-      title: "Project Ten",
-      description: "A bold and futuristic layout.",
-      number: "15",
-    },
-    {
-      id: 16,
-      image: "/project_2.webp",
-      title: "Project Ten",
-      description: "A bold and futuristic layout.",
-      number: "16",
-    },
-  ];
+  const rotate4 = useTransform(progress4, [0, 0.8], [18, -15]);
+  const rotate8 = useTransform(progress8, [0, 0.8], [1, -5]);
+  const rotate11 = useTransform(progress11, [0, 0.8], [180, 0]);
 
   return (
     <div className="relative main-container z-[4] overflow-hidden">
-      <div className="relative grid gap-y-[2rem] pt-[4rem]">
+      <div className="absolute top-0 left-0 bg-background w-full h-[10vh]"></div>
+
+      <div className="relative grid gap-y-[2rem]">
         {/* <StickyText /> */}
         <BorderLineTop />
 
         {/* Project 1-2 */}
-        <div className="grid grid-cols-8 gap-x-[2rem] h-full py-[2rem]">
+        <div className="grid grid-cols-8 gap-x-[2rem] h-full py-[2rem] pt-[4rem]">
           {/* Project 1 */}
           <div className="col-span-3">
             <div className="border flex p-5 bg-background">
               <div className="w-full h-full flex flex-col">
-                <div className="h-[24rem] flex items-center justify-center main-container bg-border">
+                <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
                     src={dataProjects[0].image}
                     height={1080}
@@ -283,10 +175,10 @@ function ParallaxProject() {
                 <div className="pt-[1rem]">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col justify-center">
-                      <div className="font-medium 2xl:font-semibold lg:text-[1.3rem] 2xl:text-[1.58rem] leading-[120%]">
+                      <div className="font-medium 2xl:font-semibold lg:text-[1.2rem] 2xl:text-[1.48rem] leading-[120%]">
                         {dataProjects[0].title}
                       </div>
-                      <div className="2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                      <div className="2xl:font-medium lg:text-[1rem] 2xl:text-[1.18rem] leading-[120%]">
                         {dataProjects[0].description}
                       </div>
                     </div>
@@ -306,7 +198,7 @@ function ParallaxProject() {
           <div className="col-span-3 pt-[10rem]">
             <div className="border flex p-5 bg-background">
               <div className="w-full h-full flex flex-col">
-                <div className="h-[24rem] flex items-center justify-center main-container bg-border">
+                <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
                     src={dataProjects[1].image}
                     height={1080}
@@ -318,10 +210,10 @@ function ParallaxProject() {
                 <div className="pt-[1rem]">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col justify-center">
-                      <div className="font-medium 2xl:font-semibold lg:text-[1.3rem] 2xl:text-[1.58rem] leading-[120%]">
+                      <div className="font-medium 2xl:font-semibold lg:text-[1.2rem] 2xl:text-[1.48rem] leading-[120%]">
                         {dataProjects[1].title}
                       </div>
-                      <div className="2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                      <div className="2xl:font-medium lg:text-[1rem] 2xl:text-[1.18rem] leading-[120%]">
                         {dataProjects[1].description}
                       </div>
                     </div>
@@ -346,7 +238,7 @@ function ParallaxProject() {
           <motion.div className="col-span-3" style={{ y: moveUp1 }}>
             <div className="border flex p-4 bg-background">
               <div className="w-full h-full flex flex-col">
-                <div className="h-[24rem] flex items-center justify-center main-container bg-border">
+                <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
                     src={dataProjects[2].image}
                     height={1080}
@@ -358,10 +250,10 @@ function ParallaxProject() {
                 <div className="pt-[1rem]">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col justify-center">
-                      <div className="font-medium 2xl:font-semibold lg:text-[1.3rem] 2xl:text-[1.58rem] leading-[120%]">
+                      <div className="font-medium 2xl:font-semibold lg:text-[1.2rem] 2xl:text-[1.48rem] leading-[120%]">
                         {dataProjects[2].title}
                       </div>
-                      <div className="2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                      <div className="2xl:font-medium lg:text-[1rem] 2xl:text-[1.18rem] leading-[120%]">
                         {dataProjects[2].description}
                       </div>
                     </div>
@@ -378,7 +270,7 @@ function ParallaxProject() {
           <div className="col-span-3">
             <div className="border flex p-4 bg-background">
               <div className="w-full h-full flex flex-col">
-                <div className="h-[24rem] flex items-center justify-center main-container bg-border">
+                <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
                     src={dataProjects[3].image}
                     height={1080}
@@ -390,10 +282,10 @@ function ParallaxProject() {
                 <div className="pt-[1rem]">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col justify-center">
-                      <div className="font-medium 2xl:font-semibold lg:text-[1.3rem] 2xl:text-[1.58rem] leading-[120%]">
+                      <div className="font-medium 2xl:font-semibold lg:text-[1.2rem] 2xl:text-[1.48rem] leading-[120%]">
                         {dataProjects[3].title}
                       </div>
-                      <div className="2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                      <div className="2xl:font-medium lg:text-[1rem] 2xl:text-[1.18rem] leading-[120%]">
                         {dataProjects[3].description}
                       </div>
                     </div>
@@ -418,7 +310,7 @@ function ParallaxProject() {
           <motion.div className="col-span-3" style={{ y: moveUp2 }}>
             <div className="border flex p-4 bg-background">
               <div className="w-full h-full flex flex-col">
-                <div className="h-[24rem] flex items-center justify-center main-container bg-border">
+                <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
                     src={dataProjects[4].image}
                     height={1080}
@@ -430,10 +322,10 @@ function ParallaxProject() {
                 <div className="pt-[1rem]">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col justify-center">
-                      <div className="font-medium 2xl:font-semibold lg:text-[1.3rem] 2xl:text-[1.58rem] leading-[120%]">
+                      <div className="font-medium 2xl:font-semibold lg:text-[1.2rem] 2xl:text-[1.48rem] leading-[120%]">
                         {dataProjects[4].title}
                       </div>
-                      <div className="2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                      <div className="2xl:font-medium lg:text-[1rem] 2xl:text-[1.18rem] leading-[120%]">
                         {dataProjects[4].description}
                       </div>
                     </div>
@@ -458,7 +350,7 @@ function ParallaxProject() {
           <div className="col-span-3">
             <div className="border flex p-4 bg-background">
               <div className="w-full h-full flex flex-col">
-                <div className="h-[24rem] flex items-center justify-center main-container bg-border">
+                <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
                     src={dataProjects[5].image}
                     height={1080}
@@ -470,10 +362,10 @@ function ParallaxProject() {
                 <div className="pt-[1rem]">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col justify-center">
-                      <div className="font-medium 2xl:font-semibold lg:text-[1.3rem] 2xl:text-[1.58rem] leading-[120%]">
+                      <div className="font-medium 2xl:font-semibold lg:text-[1.2rem] 2xl:text-[1.48rem] leading-[120%]">
                         {dataProjects[5].title}
                       </div>
-                      <div className="2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                      <div className="2xl:font-medium lg:text-[1rem] 2xl:text-[1.18rem] leading-[120%]">
                         {dataProjects[5].description}
                       </div>
                     </div>
@@ -490,7 +382,7 @@ function ParallaxProject() {
           <motion.div className="col-span-3" style={{ y: moveUp3 }}>
             <div className="border flex p-4 bg-background">
               <div className="w-full h-full flex flex-col">
-                <div className="h-[24rem] flex items-center justify-center main-container bg-border">
+                <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
                     src={dataProjects[6].image}
                     height={1080}
@@ -502,10 +394,10 @@ function ParallaxProject() {
                 <div className="pt-[1rem]">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col justify-center">
-                      <div className="font-medium 2xl:font-semibold lg:text-[1.3rem] 2xl:text-[1.58rem] leading-[120%]">
+                      <div className="font-medium 2xl:font-semibold lg:text-[1.2rem] 2xl:text-[1.48rem] leading-[120%]">
                         {dataProjects[6].title}
                       </div>
-                      <div className="2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                      <div className="2xl:font-medium lg:text-[1rem] 2xl:text-[1.18rem] leading-[120%]">
                         {dataProjects[6].description}
                       </div>
                     </div>
@@ -531,11 +423,11 @@ function ParallaxProject() {
           {/* Label */}
           <motion.div
             className="col-span-2 flex items-center justify-center"
-            style={{ y: moveUp4 }}
+            style={{ y: moveUp4, rotate: rotate4 }}
           >
             <div className="flex">
               <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center gap-1 bg-background">
-                <span className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                <span className="ml-1 2xl:font-medium lg:text-[1rem] 2xl:text-[1.28rem] leading-[120%]">
                   KEEP SCROLLIIING
                 </span>
                 <span>&#128293;</span>
@@ -549,7 +441,7 @@ function ParallaxProject() {
           <div className="col-span-3">
             <div className="border flex p-4 bg-background">
               <div className="w-full h-full flex flex-col">
-                <div className="h-[24rem] flex items-center justify-center main-container bg-border">
+                <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
                     src={dataProjects[7].image}
                     height={1080}
@@ -561,10 +453,10 @@ function ParallaxProject() {
                 <div className="pt-[1rem]">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col justify-center">
-                      <div className="font-medium 2xl:font-semibold lg:text-[1.3rem] 2xl:text-[1.58rem] leading-[120%]">
+                      <div className="font-medium 2xl:font-semibold lg:text-[1.2rem] 2xl:text-[1.48rem] leading-[120%]">
                         {dataProjects[7].title}
                       </div>
-                      <div className="2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                      <div className="2xl:font-medium lg:text-[1rem] 2xl:text-[1.18rem] leading-[120%]">
                         {dataProjects[7].description}
                       </div>
                     </div>
@@ -589,7 +481,7 @@ function ParallaxProject() {
           <motion.div className="col-span-3 pt-[10rem]" style={{ y: moveUp5 }}>
             <div className="border flex p-5 bg-background">
               <div className="w-full h-full flex flex-col">
-                <div className="h-[24rem] flex items-center justify-center main-container bg-border">
+                <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
                     src={dataProjects[8].image}
                     height={1080}
@@ -601,10 +493,10 @@ function ParallaxProject() {
                 <div className="pt-[1rem]">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col justify-center">
-                      <div className="font-medium 2xl:font-semibold lg:text-[1.3rem] 2xl:text-[1.58rem] leading-[120%]">
+                      <div className="font-medium 2xl:font-semibold lg:text-[1.2rem] 2xl:text-[1.48rem] leading-[120%]">
                         {dataProjects[8].title}
                       </div>
-                      <div className="2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                      <div className="2xl:font-medium lg:text-[1rem] 2xl:text-[1.18rem] leading-[120%]">
                         {dataProjects[8].description}
                       </div>
                     </div>
@@ -624,7 +516,7 @@ function ParallaxProject() {
           <div className="col-span-3">
             <div className="border flex p-5 bg-background">
               <div className="w-full h-full flex flex-col">
-                <div className="h-[24rem] flex items-center justify-center main-container bg-border">
+                <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
                     src={dataProjects[9].image}
                     height={1080}
@@ -636,10 +528,10 @@ function ParallaxProject() {
                 <div className="pt-[1rem]">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col justify-center">
-                      <div className="font-medium 2xl:font-semibold lg:text-[1.3rem] 2xl:text-[1.58rem] leading-[120%]">
+                      <div className="font-medium 2xl:font-semibold lg:text-[1.2rem] 2xl:text-[1.48rem] leading-[120%]">
                         {dataProjects[9].title}
                       </div>
-                      <div className="2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                      <div className="2xl:font-medium lg:text-[1rem] 2xl:text-[1.18rem] leading-[120%]">
                         {dataProjects[9].description}
                       </div>
                     </div>
@@ -662,7 +554,7 @@ function ParallaxProject() {
           <motion.div className="col-span-3 pt-[18rem]" style={{ y: moveUp6 }}>
             <div className="border flex p-5 bg-background">
               <div className="w-full h-full flex flex-col">
-                <div className="h-[24rem] flex items-center justify-center main-container bg-border">
+                <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
                     src={dataProjects[10].image}
                     height={1080}
@@ -674,10 +566,10 @@ function ParallaxProject() {
                 <div className="pt-[1rem]">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col justify-center">
-                      <div className="font-medium 2xl:font-semibold lg:text-[1.3rem] 2xl:text-[1.58rem] leading-[120%]">
+                      <div className="font-medium 2xl:font-semibold lg:text-[1.2rem] 2xl:text-[1.48rem] leading-[120%]">
                         {dataProjects[10].title}
                       </div>
-                      <div className="2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                      <div className="2xl:font-medium lg:text-[1rem] 2xl:text-[1.18rem] leading-[120%]">
                         {dataProjects[10].description}
                       </div>
                     </div>
@@ -694,7 +586,7 @@ function ParallaxProject() {
           <div className="col-span-3 pt-[12rem]">
             <div className="border flex p-5 bg-background">
               <div className="w-full h-full flex flex-col">
-                <div className="h-[24rem] flex items-center justify-center main-container bg-border">
+                <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
                     src={dataProjects[11].image}
                     height={1080}
@@ -706,10 +598,10 @@ function ParallaxProject() {
                 <div className="pt-[1rem]">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col justify-center">
-                      <div className="font-medium 2xl:font-semibold lg:text-[1.3rem] 2xl:text-[1.58rem] leading-[120%]">
+                      <div className="font-medium 2xl:font-semibold lg:text-[1.2rem] 2xl:text-[1.48rem] leading-[120%]">
                         {dataProjects[11].title}
                       </div>
-                      <div className="2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                      <div className="2xl:font-medium lg:text-[1rem] 2xl:text-[1.18rem] leading-[120%]">
                         {dataProjects[11].description}
                       </div>
                     </div>
@@ -737,7 +629,7 @@ function ParallaxProject() {
           <motion.div className="col-span-3 pt-[6rem]" style={{ y: moveUp7 }}>
             <div className="border flex p-5 bg-background">
               <div className="w-full h-full flex flex-col">
-                <div className="h-[24rem] flex items-center justify-center main-container bg-border">
+                <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
                     src={dataProjects[12].image}
                     height={1080}
@@ -749,10 +641,10 @@ function ParallaxProject() {
                 <div className="pt-[1rem]">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col justify-center">
-                      <div className="font-medium 2xl:font-semibold lg:text-[1.3rem] 2xl:text-[1.58rem] leading-[120%]">
+                      <div className="font-medium 2xl:font-semibold lg:text-[1.2rem] 2xl:text-[1.48rem] leading-[120%]">
                         {dataProjects[12].title}
                       </div>
-                      <div className="2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                      <div className="2xl:font-medium lg:text-[1rem] 2xl:text-[1.18rem] leading-[120%]">
                         {dataProjects[12].description}
                       </div>
                     </div>
@@ -766,8 +658,8 @@ function ParallaxProject() {
           </motion.div>
           {/* Label */}
           <motion.div
-            className="col-span-2 flex items-center justify-center"
-            style={{ y: moveUp8 }}
+            className="col-span-3 flex items-center justify-start"
+            style={{ y: moveUp8, rotate: rotate8 }}
           >
             <div className="flex">
               <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center gap-1 bg-background">
@@ -778,8 +670,6 @@ function ParallaxProject() {
               </div>
             </div>
           </motion.div>
-          {/* Blank Space */}
-          <div className="col-span-1"></div>
         </div>
 
         {/* Project 14-15 */}
@@ -791,7 +681,7 @@ function ParallaxProject() {
           <motion.div className="col-span-3 pt-[4rem]" style={{ y: moveUp9 }}>
             <div className="border flex p-5 bg-background">
               <div className="w-full h-full flex flex-col">
-                <div className="h-[24rem] flex items-center justify-center main-container bg-border">
+                <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
                     src={dataProjects[13].image}
                     height={1080}
@@ -803,10 +693,10 @@ function ParallaxProject() {
                 <div className="pt-[1rem]">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col justify-center">
-                      <div className="font-medium 2xl:font-semibold lg:text-[1.3rem] 2xl:text-[1.58rem] leading-[120%]">
+                      <div className="font-medium 2xl:font-semibold lg:text-[1.2rem] 2xl:text-[1.48rem] leading-[120%]">
                         {dataProjects[13].title}
                       </div>
-                      <div className="2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                      <div className="2xl:font-medium lg:text-[1rem] 2xl:text-[1.18rem] leading-[120%]">
                         {dataProjects[13].description}
                       </div>
                     </div>
@@ -826,7 +716,7 @@ function ParallaxProject() {
           <div className="col-span-3">
             <div className="border flex p-5 bg-background">
               <div className="w-full h-full flex flex-col">
-                <div className="h-[24rem] flex items-center justify-center main-container bg-border">
+                <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
                     src={dataProjects[14].image}
                     height={1080}
@@ -838,10 +728,10 @@ function ParallaxProject() {
                 <div className="pt-[1rem]">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col justify-center">
-                      <div className="font-medium 2xl:font-semibold lg:text-[1.3rem] 2xl:text-[1.58rem] leading-[120%]">
+                      <div className="font-medium 2xl:font-semibold lg:text-[1.2rem] 2xl:text-[1.48rem] leading-[120%]">
                         {dataProjects[14].title}
                       </div>
-                      <div className="2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                      <div className="2xl:font-medium lg:text-[1rem] 2xl:text-[1.18rem] leading-[120%]">
                         {dataProjects[14].description}
                       </div>
                     </div>
@@ -866,7 +756,7 @@ function ParallaxProject() {
           <motion.div className="col-span-3 pt-[20rem]" style={{ y: moveUp10 }}>
             <div className="border flex p-5 bg-background">
               <div className="w-full h-full flex flex-col">
-                <div className="h-[24rem] flex items-center justify-center main-container bg-border">
+                <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
                     src={dataProjects[14].image}
                     height={1080}
@@ -878,10 +768,10 @@ function ParallaxProject() {
                 <div className="pt-[1rem]">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col justify-center">
-                      <div className="font-medium 2xl:font-semibold lg:text-[1.3rem] 2xl:text-[1.58rem] leading-[120%]">
+                      <div className="font-medium 2xl:font-semibold lg:text-[1.2rem] 2xl:text-[1.48rem] leading-[120%]">
                         {dataProjects[14].title}
                       </div>
-                      <div className="2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                      <div className="2xl:font-medium lg:text-[1rem] 2xl:text-[1.18rem] leading-[120%]">
                         {dataProjects[14].description}
                       </div>
                     </div>
@@ -895,12 +785,12 @@ function ParallaxProject() {
           </motion.div>
           {/* Label */}
           <motion.div
-            className="col-span-2 flex items-center justify-center pt-[2rem]"
-            style={{ y: moveUp11 }}
+            className="col-span-2 flex items-center justify-center pt-[10rem]"
+            style={{ y: moveUp11, rotate: rotate11 }}
           >
             <div className="flex">
               <div className="border border-foreground/50 py-1 px-2 rounded-full flex items-center justify-center gap-1 bg-background">
-                <span className="ml-1 2xl:font-medium lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                <span className="ml-1 2xl:font-medium lg:text-[1rem] 2xl:text-[1.28rem] leading-[120%]">
                   {"IT'S ALREADY THE END"}
                 </span>
                 <span>&#128532;</span>

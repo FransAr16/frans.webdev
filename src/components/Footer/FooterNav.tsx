@@ -55,14 +55,14 @@ export default function FooterNav() {
             <div className="flex flex-col">
               <div className="flex">
                 <NavItem
-                  href="Instagram.com"
+                  href="https://Instagram.com"
                   text="Instagram"
                   className="font-medium tracking-[-0.04em] leading-[100%] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                 />
               </div>
               <div className="flex">
                 <NavItem
-                  href="Twitter.com"
+                  href="https://Twitter.com"
                   text="Twitter"
                   className="font-medium tracking-[-0.04em] leading-[100%] text-[10vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
                 />
@@ -108,7 +108,7 @@ function NavItem({ href, text, className }: NavItemProps) {
   const animationDelay = 0.2;
 
   return (
-    <Link href={href}>
+    <Link href={href} target="_blank">
       <div
         className="relative overflow-hidden"
         onMouseEnter={() => setIsHovered(true)}

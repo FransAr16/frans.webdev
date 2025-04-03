@@ -109,7 +109,7 @@ export default function Sidebar({ onClose }: SidebarProps) {
                     </li>
                   </ul>
                 </div>
-                <div className="flex w-full mb-[4rem]">
+                <div className="flex w-full mb-[10%]">
                   <MobileContact
                     href="/contact"
                     text="Start a project"
