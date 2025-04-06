@@ -144,21 +144,21 @@ export default function Hero() {
                     <div className="flex flex-col">
                       <LetterLight
                         text="Creative"
-                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+                        className="font-medium 2x:font-semibold mr-[5px] xl:mr-[6px] text-[4.8vw] sm:text-[2.8vw] md:text-[1rem] lg:text-[1.3vw] 2xl:text-[1.28rem]"
                       />
                       <LetterLight
                         text="Web Developer"
-                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+                        className="font-medium 2x:font-semibold mr-[5px] xl:mr-[6px] text-[4.8vw] sm:text-[2.8vw] md:text-[1rem] lg:text-[1.3vw] 2xl:text-[1.28rem]"
                       />
                     </div>
                     <div className="flex flex-col">
                       <LetterLight
                         text="Who"
-                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+                        className="font-medium 2x:font-semibold mr-[5px] xl:mr-[6px] text-[4.8vw] sm:text-[2.8vw] md:text-[1rem] lg:text-[1.3vw] 2xl:text-[1.28rem]"
                       />
                       <LetterLight
                         text="Loves Design"
-                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] "
+                        className="font-medium 2x:font-semibold mr-[5px] xl:mr-[6px] text-[4.8vw] sm:text-[2.8vw] md:text-[1rem] lg:text-[1.3vw] 2xl:text-[1.28rem] "
                       />
                     </div>
                   </div>
@@ -191,7 +191,7 @@ export default function Hero() {
                       <div className="flex justify-center lg:w-[16vw] 2xl:w-[18rem] pt-3 lg:pt-6">
                         <LetterBold
                           text="(01)"
-                          className="font-semibold 2xl:text-[1.28rem]"
+                          className="font-semibold lg:text-[1.3vw] 2xl:text-[1.28rem]"
                         />
                       </div>
                     </motion.div>
@@ -201,7 +201,7 @@ export default function Hero() {
                     <div className="w-full sm:w-[26rem] lg:w-[28rem] xl:w-[90%] 2xl:w-[41rem]">
                       <LetterBold
                         text="Shaping The Future of Digital Experience with Unmatched Craft and Precision."
-                        className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[2.5rem] lg:text-[2.4rem] xl:text-[3.2vw] 2xl:text-[4rem]"
+                        className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5vw] md:text-[4.7vw] lg:text-[3.2vw] xl:text-[3.3vw] 2xl:text-[4rem]"
                       />
                     </div>
                   </div>

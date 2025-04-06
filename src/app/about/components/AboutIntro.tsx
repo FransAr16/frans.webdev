@@ -2,14 +2,34 @@
 
 import React, { useRef } from "react";
 import { motion, useInView } from "motion/react";
-import { revealsText } from "@/data/animation";
-import TextSlideUp from "@/components/ui/TextSlideUp";
 import Image from "next/image";
+import TextTitleSmall from "@/components/ui/TextTitleSmall";
+import TextTitleLarge from "@/components/ui/TextTitleLarge";
 
-const singleLineTab = [
+const singleLineDesktop = [
+  "specializing in dynamic, visually engaging",
+  "website with animations interactive user",
+  "interfaces. Skilled writing clean, efficient",
+  "code to ensure optimal performance and",
+  "smooth functionality.",
+];
+
+const singleLineTabLarge = [
+  "Creative web developer with specializing in",
+  "dynamic, visually engaging website with",
+  "animations interactive user interfaces. Skilled",
+  "writing clean, efficient code to ensure optimal",
+  "performance and smooth functionality.",
+];
+
+const singleLineTabSmall = [
   "Creative web developer with",
   "specializing in dynamic, visually",
-  "engaging websites with animations and interactive user interfaces. I write clean, efficient code to ensure optimal performance and smooth functionality.",
+  "engaging website with animations",
+  "interactive user interfaces. Skilled",
+  "writing clean, efficient code to",
+  "ensure optimal performance and",
+  "smooth functionality.",
 ];
 
 const singleLineMobile = [
@@ -72,139 +92,54 @@ export default function AboutIntro() {
               </div>
               <div className="pb-2 lg:pb-4 order-first">
                 <div className="relative">
-                  <TextSlideUp
-                    text="Frans - Creative Web Developer who loves design"
-                    animate={revealsText}
-                    className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-                  />
+                  <TextTitleSmall text="Frans - Creative Web Developer who loves design" />
                 </div>
               </div>
             </div>
             <div className="hidden lg:block lg:ml-[10px] 2xl:ml-[24px]">
-              <TextSlideUp
-                text="Creative web developer with"
-                animate={revealsText}
-                className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] tracking-[-0.04em] text-[5.2vw] leading-[106%]"
-              />
+              <TextTitleLarge text="Creative web developer with" />
             </div>
           </div>
 
           {/* Intro Desktop 2xl*/}
           <div className="hidden 2xl:block">
-            <TextSlideUp
-              text="a strong focus on front-end development,"
-              animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
-            />
-            <TextSlideUp
-              text="specializing in animations, user interfaces,"
-              animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
-            />
-            <TextSlideUp
-              text="and interactive experiences. I excel at"
-              animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
-            />
-            <TextSlideUp
-              text="creating visually engaging and dynamic"
-              animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
-            />
-            <TextSlideUp
-              text="web applications."
-              animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
-            />
+            {singleLineDesktop.map((line, index) => (
+              <TextTitleLarge key={index} text={line} />
+            ))}
           </div>
-          
+
           {/* xl */}
           <div className="hidden xl:block 2xl:hidden">
-            <TextSlideUp
-              // text="a strong focus on front-end development,"
-              text="specializing in dynamic, visually engaging"
-              animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
-            />
-            <TextSlideUp
-              // text="specializing in animations, user,"
-              text="website with animations interactive user"
-              animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
-            />
-            <TextSlideUp
-              // text="interfaces and interactive experiences."
-              text="interfaces. Skilled writing clean, efficient"
-              animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
-            />
-            <TextSlideUp
-              // text="I excel at creating visually engaging and"
-              text="code to ensure optimal performance and"
-              animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
-            />
-            <TextSlideUp
-              text="smooth functionality."
-              animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
-            />
+            {singleLineDesktop.map((line, index) => (
+              <TextTitleLarge key={index} text={line} />
+            ))}
           </div>
 
           {/* lg */}
           <div className="hidden lg:block xl:hidden">
-            <TextSlideUp
-              // text="a strong focus on front-end development,"
-              text="specializing in dynamic, visually engaging"
-              animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
-            />
-            <TextSlideUp
-              // text="specializing in animations, user,"
-              text="website with animations interactive user"
-              animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
-            />
-            <TextSlideUp
-              // text="interfaces and interactive experiences."
-              text="interfaces. Skilled writing clean, efficient"
-              animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
-            />
-            <TextSlideUp
-              // text="I excel at creating visually engaging and"
-              text="code to ensure optimal performance and"
-              animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
-            />
-            <TextSlideUp
-              text="smooth functionality."
-              animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.2vw] leading-[106%]"
-            />
+            {singleLineDesktop.map((line, index) => (
+              <TextTitleLarge key={index} text={line} />
+            ))}
           </div>
 
-          {/* Tablet */}
-          <div className="flex-col hidden sm:flex lg:hidden mt-[3rem]">
-            {singleLineTab.map((line, index) => (
-              <TextSlideUp
-                key={index}
-                text={line}
-                animate={revealsText}
-                className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[5.5vw] leading-[110%]"
-              ></TextSlideUp>
+          {/* Tablet large */}
+          <div className="flex-col hidden md:flex lg:hidden mt-[3rem]">
+            {singleLineTabLarge.map((line, index) => (
+              <TextTitleLarge key={index} text={line} />
+            ))}
+          </div>
+
+          {/* Tablet small */}
+          <div className="flex-col hidden sm:flex md:hidden mt-[3rem]">
+            {singleLineTabSmall.map((line, index) => (
+              <TextTitleLarge key={index} text={line} />
             ))}
           </div>
 
           {/* Mobile */}
           <div className="flex flex-col sm:hidden mt-[3rem]">
             {singleLineMobile.map((line, index) => (
-              <TextSlideUp
-                key={index}
-                text={line}
-                animate={revealsText}
-                className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[clamp(2.3rem,10vw,10rem)] leading-[110%]"
-              ></TextSlideUp>
+              <TextTitleLarge key={index} text={line} />
             ))}
           </div>
         </div>

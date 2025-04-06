@@ -25,7 +25,7 @@ export default function AboutProfile() {
 
   return (
     <div className="w-screen h-full lg:h-screen 3xl:h-[130vh] overflow-hidden relative">
-      <div className="main-container py-[2rem] lg:py-[2.5rem]">
+      <div className="main-container pb-[2rem] lg:pb-[2.5rem]">
         <div ref={ref}>
           <motion.div
             initial={{

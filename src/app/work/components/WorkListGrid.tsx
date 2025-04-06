@@ -3,10 +3,10 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "motion/react";
 import Link from "next/link";
-import { revealsText } from "@/data/animation";
-import TextSlideUp from "@/components/ui/TextSlideUp";
 import Image from "next/image";
 import BorderLineBottom from "@/components/ui/BorderLineBottom";
+import TextTitleMedium from "@/components/ui/TextTitleMedium";
+import TextTitleSmall from "@/components/ui/TextTitleSmall";
 
 interface WorkListGridProps {
   index: number;
@@ -89,27 +89,15 @@ export default function WorkListGrid({
           </motion.div>
         </div>
         <div className="relative lg:pt-[2.8rem] lg:pb-[1.5rem] 2xl:pt-[3rem] 2xl:pb-[1.6rem]">
-          <TextSlideUp
-            text={title}
-            animate={revealsText}
-            className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[2rem] sm:text-[2.5rem] lg:text-[2.4rem] xl:text-[3.2vw] 2xl:text-[4rem]"
-          />
+          <TextTitleMedium text={title} />
           <BorderLineBottom />
         </div>
         <div className="flex items-center justify-between lg:pt-[1.6rem] 2xl:pt-[1.7rem]">
           <div>
-            <TextSlideUp
-              text={category}
-              animate={revealsText}
-              className="font-medium mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-            />
+            <TextTitleSmall text={category} />
           </div>
           <div>
-            <TextSlideUp
-              text={published}
-              animate={revealsText}
-              className="font-medium mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-            />
+            <TextTitleSmall text={published} />
           </div>
         </div>
       </Link>

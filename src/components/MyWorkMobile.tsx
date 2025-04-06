@@ -2,10 +2,10 @@
 
 import React, { useRef } from "react";
 import { motion, useInView } from "motion/react";
-import TextSlideUp from "./ui/TextSlideUp";
-import { revealsText } from "@/data/animation";
 import Image from "next/image";
 import BorderLineBottom from "./ui/BorderLineBottom";
+import TextTitleMedium from "./ui/TextTitleMedium";
+import TextTitleSmall from "./ui/TextTitleSmall";
 
 interface MyWorkMobileProps {
   key: React.Key;
@@ -67,28 +67,15 @@ export default function MyWorkMobile({
         </motion.div>
       </div>
       <div className="relative flex pb-3 pt-5 ">
-        <TextSlideUp
-          text={title}
-          animate={revealsText}
-          className="font-medium mr-[8px] xl:mr-[18px] 2xl:mr-[20px] text-[clamp(2.3rem,10vw,10rem)] sm:text-[5.5vw] 2xl:text-[5.2vw]"
-        />
-
+        <TextTitleMedium text={title} />
         <BorderLineBottom />
       </div>
       <div className="flex items-center justify-between pt-5">
         <div className="flex">
-          <TextSlideUp
-            text={category}
-            animate={revealsText}
-            className="font-medium mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
-          />
+          <TextTitleSmall text={category} />
         </div>
         <div className="flex">
-          <TextSlideUp
-            text={published}
-            animate={revealsText}
-            className="font-medium mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
-          />
+          <TextTitleSmall text={published} />
         </div>
       </div>
     </div>

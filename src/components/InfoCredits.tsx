@@ -2,10 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import { motion } from "motion/react";
-import TextFadeIn from "./ui/TextFadeIn";
-import { fadeIn, revealsText } from "@/data/animation";
-import Button from "./ui/Button";
 import IconsCancel from "./ui/IconsCancel";
+import TextDesc from "./ui/TextDesc";
+import BtnSmall from "./ui/BtnSmall";
 
 interface InfoCreditsProps {
   text: string;
@@ -54,8 +53,8 @@ export default function InfoCredits({
         onMouseLeave={() => setIsHovered(false)}
         onClick={toggleModal}
       >
-        <p 
-        className={`${className} m-0 tracking-[-0.04em] inline-flex leading-none relative overflow-hidden`}
+        <p
+          className={`${className} m-0 tracking-[-0.04em] inline-flex leading-none relative font-medium 2xl:font-semibold text-[4.8vw] sm:text-[2.8vw] md:text-[2.3vw] lg:text-[1.35vw] 2xl:text-[1.2vw] overflow-hidden`}
         >
           <span className="m-0 tracking-[-0.04em] inline-flex leading-none relative overflow-hidden">
             <motion.span
@@ -64,7 +63,7 @@ export default function InfoCredits({
               whileInView={{ y: "0%" }}
               viewport={{ once: true, amount: 0 }}
               transition={{
-                duration: 1,
+                duration: 0.8,
                 ease: [0.76, 0, 0.24, 1],
                 delay: animationDelay,
               }}
@@ -77,7 +76,7 @@ export default function InfoCredits({
         {/* Underline animation */}
         {underline && (
           <motion.div>
-            <div className="relative w-full h-[1px] overflow-hidden">
+            <div className="relative w-full h-[1.5px] overflow-hidden">
               <motion.div
                 className="absolute top-0 left-0 h-full bg-foreground"
                 initial={{ width: "0%" }}
@@ -99,7 +98,7 @@ export default function InfoCredits({
             ? "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)"
             : "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)",
         }}
-        transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
+        transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
         className={`fixed right-0 bottom-0 w-full h-auto flex flex-col bg-background border-t ${
           isOpen ? "flex" : ""
         }`}
@@ -110,34 +109,18 @@ export default function InfoCredits({
             <div className="col-span-2 lg:col-span-4">
               <div className="flex lg:gap-[2rem] xl:gap-[2.5rem]">
                 <div className="hidden md:block">
-                  <TextFadeIn
-                    slideUp={fadeIn}
-                    phrase="(01)"
-                    className="font-medium 2xl:font-semibold text-[.9rem] sm:text-[1rem] lg:text-[.9rem] 2xl:text-[1rem] leading-[120%]"
-                  />
+                  <TextDesc text="(01)" />
                 </div>
                 <div className="flex flex-col">
                   <div>
-                    <TextFadeIn
-                      slideUp={fadeIn}
-                      phrase="Fonts used"
-                      className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
-                    />
+                    <TextDesc text="Fonts used" />
                   </div>
                   <div className="flex flex-col pt-[1rem] lg:pt-[1.5rem] 2xl:pt-[2rem]">
                     <div>
-                      <TextFadeIn
-                        slideUp={fadeIn}
-                        phrase="Geist by Andrés Briganti"
-                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
-                      />
+                      <TextDesc text="Geist by Andrés Briganti" />
                     </div>
                     <div>
-                      <TextFadeIn
-                        slideUp={fadeIn}
-                        phrase="Montserrat by Julieta Ulanovsky"
-                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
-                      />
+                      <TextDesc text="Montserrat by Julieta Ulanovsky" />
                     </div>
                   </div>
                 </div>
@@ -147,48 +130,24 @@ export default function InfoCredits({
             <div className="col-span-2 lg:col-span-4">
               <div className="flex lg:gap-[2rem] xl:gap-[2.5rem]">
                 <div className="hidden md:block">
-                  <TextFadeIn
-                    slideUp={fadeIn}
-                    phrase="(02)"
-                    className="font-medium 2xl:font-semibold text-[.9rem] sm:text-[1rem] lg:text-[.9rem] 2xl:text-[1rem] leading-[120%]"
-                  />
+                  <TextDesc text="(02)" />
                 </div>
                 <div className="flex flex-col">
                   <div>
-                    <TextFadeIn
-                      slideUp={fadeIn}
-                      phrase="Info"
-                      className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
-                    />
+                    <TextDesc text="Info" />
                   </div>
                   <div className="flex flex-col pt-[1rem] lg:pt-[1.5rem] 2xl:pt-[2rem]">
                     <div className="flex">
-                      <TextFadeIn
-                        slideUp={fadeIn}
-                        phrase="Created by frans"
-                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
-                      />
+                      <TextDesc text="Created by frans" />
                     </div>
                     <div className="flex">
-                      <TextFadeIn
-                        slideUp={fadeIn}
-                        phrase="Designed with figma"
-                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
-                      />
+                      <TextDesc text="Designed with figma" />
                     </div>
                     <div className="flex">
-                      <TextFadeIn
-                        slideUp={fadeIn}
-                        phrase="Animated with GSAP & Motion"
-                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
-                      />
+                      <TextDesc text="Animated with GSAP & Motion" />
                     </div>
                     <div className="flex">
-                      <TextFadeIn
-                        slideUp={fadeIn}
-                        phrase="Developed in Next.js"
-                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
-                      />
+                      <TextDesc text="Developed in Next.js" />
                     </div>
                   </div>
                 </div>
@@ -198,35 +157,23 @@ export default function InfoCredits({
             <div className="col-span-2 lg:col-span-3">
               <div className="flex lg:gap-[2rem] xl:gap-[2.5rem]">
                 <div className="hidden md:block">
-                  <TextFadeIn
-                    slideUp={fadeIn}
-                    phrase="(03)"
-                    className="font-medium 2xl:font-semibold text-[.9rem] sm:text-[1rem] lg:text-[.9rem] 2xl:text-[1rem] leading-[120%]"
-                  />
+                  <TextDesc text="(03)" />
                 </div>
                 <div className="flex flex-col">
                   <div>
-                    <TextFadeIn
-                      slideUp={fadeIn}
-                      phrase="Something else?"
-                      className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
-                    />
+                    <TextDesc text="Something else?" />
                   </div>
                   <div className="flex flex-col pt-[1rem] lg:pt-[1.5rem] 2xl:pt-[2rem]">
-                    <div className="flex w-[80%] md:w-[70%] lg:w-full">
-                      <TextFadeIn
-                        slideUp={fadeIn}
-                        phrase="If you have any feedbacks, comments, questions about this website, don't hesitate to"
-                        className="font-medium 2xl:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
-                      />
-                    </div>
-                    <div className="flex">
-                      <Button
-                        href="mailto:frans.webdev@gmail.com"
-                        slideUp={revealsText}
-                        text="Reach out!"
-                        className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-                      />
+                    <div className="flex flex-wrap w-[80%] md:w-[70%] lg:w-full">
+                      <TextDesc text="If you have any feedbacks, comments, questions about this website, don't hesitate to" />
+                      <div className="flex">
+                        <BtnSmall
+                          href="mailto:frans.webdev@gmail.com"
+                          text="React out !"
+                          underline="h-[1.5px]"
+                          animationDelay={0.3}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>

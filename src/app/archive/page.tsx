@@ -1,9 +1,9 @@
 import React from "react";
 import MainLayout from "@/components/MainLayout";
 import MainHeader from "@/components/ui/MainHeader";
-import Footer from "@/components/Footer/Footer";
 import ArchiveHero from "./components/ArchiveHero";
 import ArchiveProject from "./components/ArchiveProject";
+import Footer from "./components/Footer/Footer";
 
 export default function Archive() {
   return (

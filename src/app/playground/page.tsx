@@ -2,8 +2,8 @@ import MainLayout from "@/components/MainLayout";
 import MainHeader from "@/components/ui/MainHeader";
 import React from "react";
 import PlaygroundHero from "./components/PlaygroundHero";
-import Footer from "@/components/Footer/Footer";
 import PlaygroundContent from "./components/PlaygroundContent";
+import Footer from "./components/Footer/Footer";
 
 export default function Playground() {
   return (

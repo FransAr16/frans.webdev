@@ -6,7 +6,7 @@ import AboutProfile from "./components/AboutProfile";
 import AboutIntro from "./components/AboutIntro";
 import AboutSkills from "./components/AboutSkills";
 import AboutMission from "./components/AboutMission";
-import Footer from "@/components/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 
 export default function About() {
   return (

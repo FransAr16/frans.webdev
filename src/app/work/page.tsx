@@ -3,7 +3,7 @@ import MainLayout from "@/components/MainLayout";
 import MainHeader from "@/components/ui/MainHeader";
 import WorkHero from "./components/WorkHero";
 import WorkProject from "./components/WorkProject";
-import Footer from "@/components/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 
 export default function Work() {
   return (

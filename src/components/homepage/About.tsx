@@ -3,27 +3,9 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "motion/react";
 import Image from "next/image";
-import { revealsText } from "@/data/animation";
-import TextSlideUp from "../ui/TextSlideUp";
-import Button from "../ui/Button";
-
-const paragraphOneTablet = [
-  "developer who loves design, passionate about crafting visually",
-  "stunning and functional.",
-];
-const paragraphTwoTablet = [
-  "Combining innovation with a ",
-  "love of detail to create beautiful",
-  "and functional design.",
-];
-
-const paragraphOneMobile = [
-  "web developer who loves design, passionate about crafting visually stunning and functional.",
-];
-
-const paragraphTwoMobile = [
-  "Combining innovation with a love of detail to create beautiful and functional design.",
-];
+import TextTitleSmall from "../ui/TextTitleSmall";
+import TextTitleMedium from "../ui/TextTitleMedium";
+import BtnSmall from "../ui/BtnSmall";
 
 export default function About() {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -68,202 +50,90 @@ export default function About() {
           </div>
 
           <div className="w-full sm:w-[15rem] md:w-[16rem] lg:w-[11rem] xl:w-[13rem] 2xl:w-[18rem] order-first lg:order-last">
-            <TextSlideUp
-              text="Frans - Web Developer @2024"
-              animate={revealsText}
-              className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] leading-[120%] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-            />
+            <TextTitleSmall text="Frans - Web Developer @2024" />
           </div>
         </div>
 
         <div className="flex w-full h-full order-first lg:order-last">
           <div className="flex flex-col">
             <div className="flex flex-col gap-[2rem] lg:gap-[3rem] 2xl:gap-[4rem]">
+              {/* Paragraph 1 */}
               {/* Desktop 2xl */}
               <div className="flex-col hidden 2xl:flex">
                 <div className="flex lg:gap-4 2xl:gap-9 items-center">
-                  <TextSlideUp
-                    text="(About Me)"
-                    animate={revealsText}
-                    className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-                  />
+                  <TextTitleSmall text="(About Me)" />
                   <div className="lg:pl-[.5rem] xl:pl-[1rem] 2xl:pl-[3rem]">
-                    <TextSlideUp
-                      text="I'm a creative web developer"
-                      animate={revealsText}
-                      className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                    />
+                    <TextTitleMedium text="Web developer who loves" />
                   </div>
                 </div>
-                <TextSlideUp
-                  text="who loves design, passionate"
-                  animate={revealsText}
-                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                />
-                <TextSlideUp
-                  text="about crafting visually stunning"
-                  animate={revealsText}
-                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                />
-                <TextSlideUp
-                  text="and functionality."
-                  animate={revealsText}
-                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                />
+                <TextTitleMedium text="design, passionate about crafting visually stunning and functionality." />
               </div>
 
               {/* Desktop lg */}
               <div className="flex-col hidden lg:flex">
                 <div className="flex lg:gap-4 2xl:gap-9 items-center">
-                  <TextSlideUp
-                    text="(About Me)"
-                    animate={revealsText}
-                    className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-                  />
+                  <TextTitleSmall text="(About Me)" />
                   <div className="lg:pl-[.5rem] xl:pl-[1rem] 2xl:pl-[3rem]">
-                    <TextSlideUp
-                      text="I'm a creative web developer"
-                      animate={revealsText}
-                      className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                    />
+                    <TextTitleMedium text="Creative web developer who" />
                   </div>
                 </div>
-                <TextSlideUp
-                  text="who loves design, passionate about"
-                  animate={revealsText}
-                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                />
-                <TextSlideUp
-                  text="crafting visually stunning and"
-                  animate={revealsText}
-                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                />
-                <TextSlideUp
-                  text="functionality."
-                  animate={revealsText}
-                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                />
+                <TextTitleMedium text="loves design, passionate about crafting visually stunning and functionality." />
               </div>
 
-              {/* Tablet */}
-              <div className="flex-col hidden sm:flex lg:hidden">
+              {/* Tablet Large */}
+              <div className="flex-col hidden md:flex lg:hidden">
                 <div className="flex gap-4 items-center">
-                  <TextSlideUp
-                    text="(About Me)"
-                    animate={revealsText}
-                    className="font-medium mr-[4px] lg:mr-[6px] tracking-[-0.04em] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-                  />
+                  <TextTitleSmall text="(About Me)" />
                   <div className="sm:ml-[2rem] lg:ml-[3rem]">
-                    <TextSlideUp
-                      text="I'm a creative web"
-                      animate={revealsText}
-                      className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                    />
+                    <TextTitleMedium text="Creative web developer who" />
                   </div>
                 </div>
-                {paragraphOneTablet.map((line, index) => (
-                  <TextSlideUp
-                    key={index}
-                    text={line}
-                    animate={revealsText}
-                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                  />
-                ))}
+                <TextTitleMedium text="loves design, passionate about crafting visually stunning and functionality." />
+              </div>
+              
+              {/* Tablet Small */}
+              <div className="flex-col hidden sm:flex md:hidden">
+                <div className="flex gap-4 items-center">
+                  <TextTitleSmall text="(About Me)" />
+                  <div className="sm:ml-[2rem] lg:ml-[3rem]">
+                    <TextTitleMedium text="Creative web developer" />
+                  </div>
+                </div>
+                <TextTitleMedium text="who loves design, passionate about crafting visually stunning and functionality." />
               </div>
 
               {/* Mobile */}
               <div className="flex flex-col sm:hidden">
                 <div className="flex gap-4 items-center">
-                  <TextSlideUp
-                    text="(About Me)"
-                    animate={revealsText}
-                    className="font-medium mr-[4px] lg:mr-[6px] tracking-[-0.04em] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-                  />
+                  <TextTitleSmall text="(About Me)" />
                   <div className="">
-                    <TextSlideUp
-                      text="I'm a creative"
-                      animate={revealsText}
-                      className="font-medium mr-[8px] xl:mr-[14px] 2xl:mr-[16px] text-[2rem] sm:text-[2.5rem] lg:text-[2.4rem] xl:text-[3.2vw] 2xl:text-[4rem]"
-                    />
+                  <TextTitleMedium text="Creative web" />
                   </div>
                 </div>
-                {paragraphOneMobile.map((line, index) => (
-                  <TextSlideUp
-                    key={index}
-                    text={line}
-                    animate={revealsText}
-                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                  />
-                ))}
+                <TextTitleMedium text="developer who loves design, passionate about crafting visually stunning and functionality." />
               </div>
 
+              {/* Paragraph 2 */}
               <div className="flex flex-col gap-[2rem] lg:gap-[3rem] 2xl:gap-[4rem]">
                 {/* Desktop 2xl */}
                 <div className="hidden 2xl:block">
-                  <TextSlideUp
-                    text="Combining innovation with a"
-                    animate={revealsText}
-                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                  />
-                  <TextSlideUp
-                    text="love of detail to create beautiful"
-                    animate={revealsText}
-                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                  />
-                  <TextSlideUp
-                    text="and functional design."
-                    animate={revealsText}
-                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                  />
+                  <TextTitleMedium text="Combining innovation with a love of detail to create beautiful and functional design." />
                 </div>
                 {/* Desktop lg */}
                 <div className="hidden lg:block">
-                  <TextSlideUp
-                    text="Combining innovation with a love"
-                    animate={revealsText}
-                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                  />
-                  <TextSlideUp
-                    text="of detail to create beautiful and"
-                    animate={revealsText}
-                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                  />
-                  <TextSlideUp
-                    text="functional design."
-                    animate={revealsText}
-                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                  />
+                  <TextTitleMedium text="Combining innovation with a love of detail to create beautiful and functional design." />
                 </div>
                 {/* Tablet */}
                 <div className="hidden sm:block lg:hidden">
-                  {paragraphTwoTablet.map((line, index) => (
-                    <TextSlideUp
-                      key={index}
-                      text={line}
-                      animate={revealsText}
-                      className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                    />
-                  ))}
+                  <TextTitleMedium text="Combining innovation with a love of detail to create beautiful and functional design." />
                 </div>
                 {/* Mobile */}
                 <div className="sm:hidden">
-                  {paragraphTwoMobile.map((line, index) => (
-                    <TextSlideUp
-                      key={index}
-                      text={line}
-                      animate={revealsText}
-                      className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                    />
-                  ))}
+                <TextTitleMedium text="Combining innovation with a love of detail to create beautiful and functional design." />
                 </div>
 
                 <div className="flex">
-                  <Button
-                    href="/about"
-                    slideUp={revealsText}
-                    text="Learn more about me"
-                    className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-                  />
+                  <BtnSmall href="/about" text="Learn more about me" underline="h-[1.3px] md:h-[1.4px]" />
                 </div>
               </div>
             </div>

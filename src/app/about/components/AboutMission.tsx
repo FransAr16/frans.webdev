@@ -3,26 +3,43 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "motion/react";
 import Image from "next/image";
-import { revealsText } from "@/data/animation";
-import TextSlideUp from "@/components/ui/TextSlideUp";
-import Button from "@/components/ui/Button";
+import BtnSmall from "@/components/ui/BtnSmall";
+import TextTitleSmall from "@/components/ui/TextTitleSmall";
+import TextTitleMedium from "@/components/ui/TextTitleMedium";
 
-const paragraphOneLg = [
+const textDesktopLarge = [
   "development by embracing modern frameworks, and creating scalable solutions for the ever-evolving digital landscape.",
 ];
 
-const paragraphOneMd = [
-  "by embracing modern frameworks, and creating scalable solutions for the ever-evolving digital landscape.",
+const textDesktopSmall = [
+  "development by embracing",
+  "modern frameworks, and",
+  "creating scalable solutions for",
+  "the ever-evolving digital landscape.",
 ];
 
-const paragraphOneSm = [
-  "development by embracing modern frameworks, and creating scalable solutions for the ever-evolving digital landscape.",
+const textTabLarge = [
+  "by embracing modern frameworks, and",
+  "creating scalable solutions for the",
+  "ever-evolving digital landscape.",
 ];
 
-const paragraphOneMobile = [
-  "in development by embracing modern frameworks, and creating scalable solutions for the ever-evolving digital landscape.",
+const textTabSmall = [
+  "development by embracing",
+  "modern frameworks, and creating",
+  "scalable solutions for the ever-",
+  "evolving digital landscape.",
 ];
 
+const textMobile = [
+  "in development by",
+  "embracing modern",
+  "frameworks, and",
+  "creating scalable",
+  "solutions for the",
+  "ever-evolving digital",
+  "landscape.",
+];
 
 export default function AboutMission() {
   const ref = useRef(null);
@@ -73,157 +90,74 @@ export default function AboutMission() {
               {/* Desktop 2xl*/}
               <div className="flex-col hidden 2xl:flex">
                 <div className="flex lg:gap-4 2xl:gap-9 items-center">
-                  <TextSlideUp
-                    text="(Vision)"
-                    animate={revealsText}
-                    className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-                  />
+                  <TextTitleSmall text="(Vision)" />
                   <div className="lg:pl-[.5rem] xl:pl-[1rem] 2xl:pl-[3rem]">
-                    <TextSlideUp
-                      text="Leading the way in"
-                      animate={revealsText}
-                      className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                    />
+                    <TextTitleMedium text="Leading the way in" />
                   </div>
                 </div>
-                <TextSlideUp
-                  text="development by embracing"
-                  animate={revealsText}
-                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                />
-                <TextSlideUp
-                  text="modern frameworks, optimizing"
-                  animate={revealsText}
-                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                />
-                <TextSlideUp
-                  text="performance, and creating"
-                  animate={revealsText}
-                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                />
-                <TextSlideUp
-                  text="scalable solutions for the"
-                  animate={revealsText}
-                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                />
-                <TextSlideUp
-                  text="ever-evolving digital landscape."
-                  animate={revealsText}
-                  className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                />
+                {textDesktopLarge.map((line, index) => (
+                  <TextTitleMedium key={index} text={line} />
+                ))}
               </div>
 
               {/* lg-xl */}
               <div className="flex-col hidden lg:flex 2xl:hidden">
                 <div className="flex lg:gap-4 2xl:gap-9 items-center">
-                  <TextSlideUp
-                    text="(Vision)"
-                    animate={revealsText}
-                    className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-                  />
+                  <TextTitleSmall text="(Vision)" />
                   <div className="lg:pl-[.5rem] xl:pl-[1rem] 2xl:pl-[3rem]">
-                    <TextSlideUp
-                      text="Leading the way in"
-                      animate={revealsText}
-                      className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                    />
+                    <TextTitleMedium text="Leading the way in" />
                   </div>
                 </div>
-                {paragraphOneLg.map((line, index) => (
-                  <TextSlideUp
-                    key={index}
-                    text={line}
-                    animate={revealsText}
-                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                  />
+                {textDesktopSmall.map((line, index) => (
+                  <TextTitleMedium key={index} text={line} />
                 ))}
               </div>
 
               {/* Md */}
               <div className="flex-col hidden md:flex lg:hidden">
                 <div className="flex gap-4 items-center">
-                  <TextSlideUp
-                    text="(Vision)"
-                    animate={revealsText}
-                    className="font-medium mr-[4px] lg:mr-[6px] tracking-[-0.04em] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-                  />
+                  <TextTitleSmall text="(Vision)" />
                   <div className="sm:ml-[2rem] lg:ml-[3rem]">
-                    <TextSlideUp
-                      text="Leading the way in development"
-                      animate={revealsText}
-                      className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                    />
+                    <TextTitleMedium text="Leading the way in development" />
                   </div>
                 </div>
-                {paragraphOneMd.map((line, index) => (
-                  <TextSlideUp
-                    key={index}
-                    text={line}
-                    animate={revealsText}
-                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                  />
+                {textTabLarge.map((line, index) => (
+                  <TextTitleMedium key={index} text={line} />
                 ))}
               </div>
 
               {/* Sm */}
               <div className="flex-col hidden sm:flex md:hidden">
                 <div className="flex gap-4 items-center">
-                  <TextSlideUp
-                    text="(Vision)"
-                    animate={revealsText}
-                    className="font-medium mr-[4px] lg:mr-[6px] tracking-[-0.04em] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-                  />
+                  <TextTitleSmall text="(Vision)" />
                   <div className="sm:ml-[2rem] lg:ml-[3rem]">
-                    <TextSlideUp
-                      text="Leading the way in"
-                      animate={revealsText}
-                      className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                    />
+                    <TextTitleMedium text="Leading the way in" />
                   </div>
                 </div>
-                {paragraphOneSm.map((line, index) => (
-                  <TextSlideUp
-                    key={index}
-                    text={line}
-                    animate={revealsText}
-                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                  />
+                {textTabSmall.map((line, index) => (
+                  <TextTitleMedium key={index} text={line} />
                 ))}
               </div>
 
               {/* Mobile */}
               <div className="flex flex-col sm:hidden">
                 <div className="flex gap-4 items-center">
-                  <TextSlideUp
-                    text="(Vision)"
-                    animate={revealsText}
-                    className="font-medium mr-[4px] lg:mr-[6px] tracking-[-0.04em] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-                  />
+                  <TextTitleSmall text="(Vision)" />
                   <div className="">
-                    <TextSlideUp
-                      text="Leading the way"
-                      animate={revealsText}
-                      className="font-medium mr-[8px] xl:mr-[14px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                    />
+                    <TextTitleMedium text="Leading the way" />
                   </div>
                 </div>
-                {paragraphOneMobile.map((line, index) => (
-                  <TextSlideUp
-                    key={index}
-                    text={line}
-                    animate={revealsText}
-                    className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-                  />
+                {textMobile.map((line, index) => (
+                  <TextTitleMedium key={index} text={line} />
                 ))}
               </div>
 
               <div className="flex flex-col gap-[2rem] lg:gap-[3rem] 2xl:gap-[4rem]">
                 <div className="flex">
-                  <Button
+                  <BtnSmall
                     href="/contact"
-                    slideUp={revealsText}
                     text="Let's work together"
-                    className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+                    underline="h-[1.3px] sm:h-[1.4px] md:h-[1.5px]"
                   />
                 </div>
               </div>

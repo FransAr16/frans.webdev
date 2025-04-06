@@ -32,7 +32,7 @@ export default function BackToTop({
         onClick={scrollToTop}
       >
         <p
-          className={`${className} m-0 tracking-[-0.04em] inline-flex leading-none relative overflow-hidden`}
+          className={`${className} m-0 tracking-[-0.04em] inline-flex leading-none relative font-medium 2xl:font-semibold text-[4.8vw] sm:text-[2.8vw] md:text-[2.3vw] lg:text-[1.35vw] 2xl:text-[1.2vw] overflow-hidden`}
         >
           <span className="m-0 tracking-[-0.04em] inline-flex leading-none relative overflow-hidden">
             <motion.span
@@ -41,7 +41,7 @@ export default function BackToTop({
               whileInView={{ y: "0%" }}
               viewport={{ once: true, amount: 0 }}
               transition={{
-                duration: 1,
+                duration: 0.8,
                 ease: [0.76, 0, 0.24, 1],
                 delay: animationDelay,
               }}
@@ -59,7 +59,7 @@ export default function BackToTop({
         {/* Underline animation */}
         {underline && (
           <motion.div>
-            <div className="relative w-full h-[1px] overflow-hidden">
+            <div className="relative w-full h-[1px] md:h-[1.4px] overflow-hidden">
               <motion.div
                 className="absolute top-0 left-0 h-full bg-foreground"
                 initial={{ width: "0%" }}

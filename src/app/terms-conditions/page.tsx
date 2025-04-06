@@ -1,9 +1,9 @@
 import React from "react";
 import MainLayout from "@/components/MainLayout";
 import MainHeader from "@/components/ui/MainHeader";
-import Footer from "@/components/Footer/Footer";
 import TermsHero from "./components/TermsHero";
 import TermsContent from "./components/TermsContent";
+import Footer from "./components/Footer/Footer";
 
 export default function TermsConditions() {
   return (

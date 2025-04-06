@@ -5,9 +5,8 @@ import MyWork from "../MyWork";
 import ModalWork from "../ModalWork";
 import MyWorkMobile from "../MyWorkMobile";
 import { latestWork } from "@/data/work";
-import { revealsText } from "@/data/animation";
-import TextSlideUp from "../ui/TextSlideUp";
 import BorderLineTop from "../ui/BorderLineTop";
+import TextTitleSmall from "../ui/TextTitleSmall";
 
 export default function RecentWork() {
   const [modal, setModal] = useState<{ active: boolean; index: number }>({
@@ -21,11 +20,7 @@ export default function RecentWork() {
         <div className="w-full grid grid-cols-12 pt-5 lg:pb-[2.5rem] 2xl:pb-[3rem] main-container">
           <div className="hidden lg:block lg:col-span-2">{/* blank */}</div>
           <div className="col-span-12 lg:col-span-10 pb-2 lg:border-none lg:pb-0">
-            <TextSlideUp
-              text="(Recent Work)"
-              animate={revealsText}
-              className="font-medium 2xl:font-semibold mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
-            />
+            <TextTitleSmall text="(Recent Work)" />
           </div>
         </div>
         {/* Desktop */}
@@ -43,17 +38,17 @@ export default function RecentWork() {
                     title={project.title}
                     category={project.category}
                     setModal={setModal}
-                    />
-                  );
-                })}
+                  />
+                );
+              })}
           </div>
           <ModalWork modal={modal} projects={latestWork} />
         </div>
 
-        {/* Mobile */}
-        <div className="relative items-center justify-center flex lg:hidden main-container pt-[1rem] pb-[4rem]">
-          <div className="relative w-full flex flex-col sm:flex-row gap-[6rem] gap-x-[1.2rem] items-center justify-center ">
-                <BorderLineTop />
+        {/* Mobile - Tablet */}
+        <div className="relative items-center justify-center flex lg:hidden main-container pt-[3rem] sm:pt-[4rem] pb-[4rem]">
+          <BorderLineTop />
+          <div className="relative w-full flex flex-col sm:flex-row gap-[6rem] sm:gap-[2.5rem] items-center justify-between">
             {latestWork
               .slice(2, 4)
               .reverse()

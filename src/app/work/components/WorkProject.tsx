@@ -4,15 +4,16 @@ import React, { useState } from "react";
 import { motion } from "motion/react";
 import { myWork, projectNav } from "@/data/work";
 import MyWorkMobile from "@/components/MyWorkMobile";
-import { animationVariants, revealsText } from "@/data/animation";
-import TextSlideUp from "@/components/ui/TextSlideUp";
+import { animationVariants } from "@/data/animation";
 import WorkModalWork from "./WorkModalWork";
 import WorkLabelModal from "./WorkLabelModal";
 import WorkCategoryBtn from "./WorkCategoryBtn";
 import WorkListTiled from "./WorkListTiled";
 import WorkListGrid from "./WorkListGrid";
-import Button from "@/components/ui/Button";
 import BorderLineTop from "@/components/ui/BorderLineTop";
+import TextTitleMedium from "@/components/ui/TextTitleMedium";
+import BtnLarge from "@/components/ui/BtnLarge";
+import TextTitleSmall from "@/components/ui/TextTitleSmall";
 
 export default function WorkProject() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -45,55 +46,42 @@ export default function WorkProject() {
   };
 
   return (
-    <div className="flex flex-col w-full h-full py-[2rem] lg:py-[2rem] 2xl:py-[4rem]">
+    <div className="flex flex-col w-full h-full pb-[2rem] lg:pb-[2rem] 2xl:pb-[4rem]">
       <div className="flex flex-col w-full h-full main-container">
         {/* CategoryNav */}
         <div className="relative w-full flex flex-col">
-          <div>
-            <BorderLineTop />
-          </div>
           <div className="w-full flex items-center justify-start lg:justify-between pt-[2rem] lg:pt-[2rem] 2xl:pt-[4rem]">
             <div className="flex flex-wrap gap-4 lg:gap-10 2xl:gap-12 items-center">
               <div onClick={() => handleCategoryChange("All")}>
                 <WorkCategoryBtn
-                  animate={revealsText}
                   text="All"
                   isActive={activeCategory === "All"}
-                  className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
                 />
               </div>
               <div onClick={() => handleCategoryChange("Design")}>
                 <WorkCategoryBtn
-                  animate={revealsText}
                   text="Design"
                   isActive={activeCategory === "Design"}
-                  className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
                 />
               </div>
               <div onClick={() => handleCategoryChange("Development")}>
                 <WorkCategoryBtn
-                  animate={revealsText}
                   text="Development"
                   isActive={activeCategory === "Development"}
-                  className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
                 />
               </div>
             </div>
             <div className="items-center hidden lg:flex gap-4 lg:gap-10 2xl:gap-12">
               <div onClick={() => handleLayoutChange("Tiled")}>
                 <WorkCategoryBtn
-                  animate={revealsText}
                   text="Tiled"
                   isActive={activeLayout === "Tiled"}
-                  className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
                 />
               </div>
               <div onClick={() => handleLayoutChange("Grid")}>
                 <WorkCategoryBtn
-                  animate={revealsText}
                   text="Grid"
                   isActive={activeLayout === "Grid"}
-                  className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
                 />
               </div>
             </div>
@@ -143,32 +131,16 @@ export default function WorkProject() {
                   className="grid grid-cols-12 w-full items-center"
                 >
                   <div className="col-span-5">
-                    <TextSlideUp
-                      text={project.navClient}
-                      animate={revealsText}
-                      className="font-normal text-[#a3a3a3] mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-                    />
+                    <TextTitleSmall text={project.navClient} className="opacity-30" />
                   </div>
                   <div className="col-span-3">
-                    <TextSlideUp
-                      text={project.navLocation}
-                      animate={revealsText}
-                      className="font-normal text-[#a3a3a3] mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-                    />
+                    <TextTitleSmall text={project.navLocation} className="opacity-30" />
                   </div>
                   <div className="col-span-2">
-                    <TextSlideUp
-                      text={project.navCategory}
-                      animate={revealsText}
-                      className="font-normal text-[#a3a3a3] mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-                    />
+                    <TextTitleSmall text={project.navCategory} className="opacity-30" />
                   </div>
-                  <div className="col-span-2 text-end">
-                    <TextSlideUp
-                      text={project.navPublished}
-                      animate={revealsText}
-                      className="font-normal text-[#a3a3a3] mr-[4px] lg:mr-[6px] text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
-                    />
+                  <div className="col-span-2 flex justify-end">
+                    <TextTitleSmall text={project.navPublished} className="opacity-30" />
                   </div>
                 </div>
               ))}
@@ -240,21 +212,11 @@ export default function WorkProject() {
         {/* Link to Archive */}
         <div>
           <div>
-            <TextSlideUp
-              text="See more work?"
-              animate={revealsText}
-              className="font-medium mr-[8px] xl:mr-[12px] 2xl:mr-[16px] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-            />
+            <TextTitleMedium text="See more work?" />
           </div>
 
           <div className="flex">
-            <Button
-              href="/archive"
-              slideUp={revealsText}
-              text="Archive"
-              underline="h-[2px] xl:h-[3.5px]"
-              className="font-medium tracking-[-0.04em] text-[9.5vw] sm:text-[5.2vw] lg:text-[3.4vw] xl:text-[3.4vw] 3xl:text-[3vw]"
-            />
+            <BtnLarge href="/archive" text="Archive" underline="h-[2px] xl:h-[3px]" />
           </div>
         </div>
       </div>

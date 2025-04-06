@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { motion, useInView, Variants } from "motion/react";
+import { motion, useInView } from "motion/react";
+import { revealsText } from "@/data/animation";
 
 interface WorkCategoryBtnProps {
   text: string | React.ReactNode;
-  animate: Variants;
   underline?: string;
   className?: string;
   animationDelay?: number;
@@ -15,7 +15,6 @@ interface WorkCategoryBtnProps {
 
 export default function WorkCategoryBtn({
   text,
-  animate,
   underline,
   className,
   isDisabled,
@@ -38,10 +37,10 @@ export default function WorkCategoryBtn({
         <p
           onMouseEnter={() => !isDisabled && setIsHovered(true)}
           onMouseLeave={() => !isDisabled && setIsHovered(false)}
-          className={`${className} m-0 inline-flex tracking-[-0.04em] leading-none overflow-hidden`}
+          className={`${className} m-0 inline-flex tracking-[-0.04em] leading-none font-semibold text-[4.8vw] sm:text-[2.8vw] md:text-[2.3vw] lg:text-[1.35vw] 2xl:text-[1.2vw] overflow-hidden`}
         >
           <motion.span
-            variants={animate}
+            variants={revealsText}
             initial="initial"
             animate={hasAnimated ? "open" : "closed"}
             className=""
@@ -52,7 +51,7 @@ export default function WorkCategoryBtn({
 
         {/* Underline animation */}
         <motion.div
-          variants={animate}
+          variants={revealsText}
           initial="closed"
           animate={hasAnimated ? "open" : "closed"}
           className="pt-[2px]"

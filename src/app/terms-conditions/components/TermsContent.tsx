@@ -1,9 +1,8 @@
 "use client";
 
 import React from "react";
-import TextFadeIn from "@/components/ui/TextFadeIn";
-import { fadeIn } from "@/data/animation";
 import BorderLineTop from "@/components/ui/BorderLineTop";
+import TextTitleSmall from "@/components/ui/TextTitleSmall";
 
 interface ContentProps {
   title: string;
@@ -42,7 +41,10 @@ export default function TermsContent() {
           <div className="relative flex flex-col w-full">
             <BorderLineTop />
             {contents.map((content, index) => (
-              <div key={index} className="pt-[2rem] pb-[5rem] lg:pt-[2rem] lg:pb-[7.5rem] 2xl:pt-[4rem]">
+              <div
+                key={index}
+                className="pt-[2rem] pb-[4rem] lg:pt-[2rem] lg:pb-[6.5rem] 2xl:pt-[4rem]"
+              >
                 <Content title={content.title} desc={content.desc} />
               </div>
             ))}
@@ -50,7 +52,7 @@ export default function TermsContent() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 function Content({ title, desc }: ContentProps) {
@@ -59,23 +61,14 @@ function Content({ title, desc }: ContentProps) {
       <div className="w-full h-full">
         <div className="grid grid-cols-12 lg:gap-8">
           <div className="col-span-12 lg:col-span-2">
-            <TextFadeIn
-              slideUp={fadeIn}
-              phrase={title}
-              className="font-medium lg:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
-            />
+            <TextTitleSmall text={title} />
           </div>
 
           <div className="hidden lg:flex lg:col-span-2"></div>
 
           <div className="col-span-12 lg:col-span-7 pt-[3rem] lg:pt-0">
             {desc.split("\n").map((line, index) => (
-              <TextFadeIn
-                key={index}
-                slideUp={fadeIn}
-                phrase={line}
-                className="font-medium lg:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
-              />
+              <TextTitleSmall key={index} text={line} />
             ))}
           </div>
           <div className="hidden lg:flex lg:col-span-1"></div>

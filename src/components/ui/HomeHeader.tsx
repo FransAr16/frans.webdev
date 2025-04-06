@@ -330,7 +330,7 @@ function MenuBtn({ text, className }: MenuBtnProps) {
           animate="animate"
           className="pt-[1px]"
         >
-          <div className="relative w-full h-[1px] overflow-hidden">
+          <div className="relative w-full h-[1.3px] overflow-hidden">
             <div
               className={`absolute top-0 left-0 h-full bg-background transition-all duration-600 ease-underLine ${
                 isHovered ? "w-0" : "w-full"

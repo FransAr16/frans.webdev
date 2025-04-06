@@ -41,8 +41,8 @@ export default function MainNavbar() {
                 data={{ ...item, index }}
                 isActive={selectedIndicator === item.href}
                 setSelectedIndicator={setSelectedIndicator}
-                classNameLink="font-medium text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
-                classNameHref=" w-full h-[1.5px] bg-background absolute left-0 bottom-0"
+                classNameLink="font-medium text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.4vw] 2xl:text-[1.3vw]"
+                classNameHref=" w-full h-[1.4px] bg-background absolute left-0 bottom-0"
               />
             ))}
           </div>
@@ -51,7 +51,7 @@ export default function MainNavbar() {
               href="/contact"
               animationDelay={0.1}
               text="Start a project"
-              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.4vw] 2xl:text-[1.3vw]"
             />
           </div>
         </ul>

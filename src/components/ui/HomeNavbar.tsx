@@ -43,7 +43,7 @@ export default function Navbar() {
                 isActive={selectedIndicator === item.href}
                 setSelectedIndicator={setSelectedIndicator}
                 animate={navbarSlideUp}
-                classNameLink="font-medium text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.3rem]"
+                classNameLink="font-medium text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.4vw] 2xl:text-[1.3vw]"
                 classNameHref=" w-full h-[1px] bg-background absolute left-0 bottom-0"
               />
             ))}
@@ -53,7 +53,7 @@ export default function Navbar() {
               href="/contact"
               animationDelay={2.8}
               text="Start a project"
-              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.1rem] 2xl:text-[1.28rem]"
+              className="font-medium 2xl:font-semibold text-[1.1rem] sm:text-[1.2rem] md:text-[1rem] lg:text-[1.4vw] 2xl:text-[1.3vw]"
             />
           </div>
         </ul>

@@ -1,19 +1,18 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { motion, useInView, Variants } from "motion/react";
+import { motion, useInView } from "motion/react";
+import { fadeIn } from "@/data/animation";
 
 interface TextRevealsProps {
-  phrase: string;
-  slideUp: Variants;
+  text: string;
   className?: string;
   ellipsis?: boolean;
 }
 
 
-export default function TextFadeIn({
-  phrase,
-  slideUp,
+export default function TextDesc({
+  text,
   className,
   ellipsis,
 }: TextRevealsProps) {
@@ -31,15 +30,15 @@ export default function TextFadeIn({
       <div ref={Ref} className="relative">
         <div className="">
           <p className="m-0 leading-none">
-            {phrase.split(" ").map((word, index) => (
+            {text.split(" ").map((word, index) => (
               <span
                 key={index}
                 className={`${
                   className || ""
-                 } relative inline-flex`}
+                 } relative inline-flex font-medium mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]`}
               >
                 <motion.span
-                  variants={slideUp}
+                  variants={fadeIn}
                   custom={index}
                   initial="closed"
                   animate={hasAnimated ? "open" : "closed"}

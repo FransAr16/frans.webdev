@@ -86,7 +86,7 @@ export default function MainHeader() {
   return (
     <>
       <motion.div className="fixed w-screen lg:w-full h-[80px] top-0 left-0 right-0 bottom-0 overflow-hidden mix-blend-exclusion z-[999] text-background">
-        <div className="absolute top-0 left-0 w-full h-auto main-container py-4 lg:py-[1.1rem] 2xl:py-8">
+        <div className="absolute top-0 left-0 w-full h-auto main-container py-4 lg:py-[1.38rem] 2xl:py-[2.28rem]">
           <div className="m-auto max-w-full">
             <div className="relative grid items-center grid-cols-12 w-full gap-[0rem] overflow-hidden">
               {/* Logo */}
@@ -167,7 +167,7 @@ function Logo({ href, text, className }: LogoProps) {
 
   // Transform ukuran font berdasarkan scroll
   const fontSize = useTransform(scrollY, [0, 200], ["7rem", "2.2rem"]);
-  const fontSize2xl = useTransform(scrollY, [0, 200], ["12rem", "3.4rem"]);
+  const fontSize2xl = useTransform(scrollY, [0, 200], ["9rem", "3.4rem"]);
 
   // Transform line-height (leading) berdasarkan scroll
   const leadingSize = useTransform(scrollY, [0, 200], ["78%", "90%"]);
@@ -208,6 +208,7 @@ function Logo({ href, text, className }: LogoProps) {
   return (
     <>
       <Link href={href}>
+        {/* 2xl */}
         <motion.p className="hidden 2xl:block m-0">
           {text.split("").map((word, index) => (
             <span
@@ -216,7 +217,7 @@ function Logo({ href, text, className }: LogoProps) {
             >
               <motion.span
                 style={{
-                  fontSize: isScrolled ? fontSize2xl : "12rem",
+                  fontSize: isScrolled ? fontSize2xl : "9rem",
                   lineHeight: isScrolled ? leadingSize2xl : "75%",
                 }}
                 variants={LogoSlideUp}
@@ -228,6 +229,8 @@ function Logo({ href, text, className }: LogoProps) {
             </span>
           ))}
         </motion.p>
+
+        {/* lg */}
         <motion.p className="hidden lg:block 2xl:hidden m-0">
           {text.split("").map((word, index) => (
             <span
@@ -249,6 +252,7 @@ function Logo({ href, text, className }: LogoProps) {
           ))}
         </motion.p>
 
+        {/* Mobile */}
         <p className="block lg:hidden m-0 leading-none">
           {text.split("").map((word, index) => (
             <span
@@ -355,7 +359,7 @@ function MenuBtn({ text, className }: MenuBtnProps) {
           animate="animate"
           className="pt-[1px]"
         >
-          <div className="relative w-full h-[1px] overflow-hidden">
+          <div className="relative w-full h-[1.4px] sm:h-[1.4px] overflow-hidden">
             <div
               className={`absolute top-0 left-0 h-full bg-background transition-all duration-600 ease-underLine ${
                 isHovered ? "w-0" : "w-full"

@@ -3,11 +3,9 @@
 import React, { useRef, useState } from "react";
 import { motion, useInView } from "motion/react";
 import emailjs from "@emailjs/browser";
-import TextFadeIn from "@/components/ui/TextFadeIn";
-import { fadeIn } from "@/data/animation";
 import ChevronDown from "@/components/ui/ChevronDown";
 import ArrowRight from "@/components/ui/ArrowRight";
-import BorderLineTop from "@/components/ui/BorderLineTop";
+import TextTitleSmall from "@/components/ui/TextTitleSmall";
 
 const animationVariants = {
   initial: { opacity: 0, y: 50 },
@@ -109,23 +107,15 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="flex flex-col w-full h-full pt-[2rem] pb-[4rem] lg:py-[2rem] 2xl:py-[4rem] relative overflow-hidden">
+    <div className="flex flex-col w-full h-full pb-[4rem] lg:pb-[2rem] 2xl:pb-[4rem] relative overflow-hidden">
       <div className="flex flex-col main-container">
-        <div className="relative pt-[3rem] lg:pt-[2.5rem]">
-          <div>
-            <BorderLineTop />
-          </div>
-
+        <div className="relative pt-[2rem] lg:pt-[2rem]">
           <form
             onSubmit={handleSubmit}
             className="grid grid-cols-4 lg:grid-cols-12 w-full h-full  gap-[2rem]"
           >
             <div className="pb-[4rem] sm:pb-[3rem] lg:pb-0 col-span-4 lg:col-span-3">
-              <TextFadeIn
-                slideUp={fadeIn}
-                phrase="Contact Form"
-                className="font-medium lg:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
-              />
+              <TextTitleSmall text="Contact Form" />
             </div>
             <div className="hidden lg:block lg:col-span-1">{/* blank */}</div>
             <div className="col-span-4 lg:col-span-8">
@@ -133,11 +123,7 @@ export default function ContactForm() {
                 {/* Reason of Contact */}
                 <div className="flex flex-col lg:flex-row items-center gap-[1rem] lg:gap-[2rem] pb-[3rem] lg:pb-[1rem]">
                   <div className="w-full lg:w-[16rem] 2xl:w-[24rem] 3xl:w-[33rem]">
-                    <TextFadeIn
-                      slideUp={fadeIn}
-                      phrase="Reason of contact"
-                      className="font-medium lg:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
-                    />
+                    <TextTitleSmall text="Reason of contact" />
                   </div>
                   <div ref={colOne} className="w-full relative">
                     <motion.div
@@ -149,7 +135,7 @@ export default function ContactForm() {
                     >
                       <div className="flex items-center justify-between">
                         <div className="w-full overflow-hidden">
-                          <span className="font-medium lg:font-semibold text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                          <span className="font-medium 2xl:font-semibold text-[4.8vw] sm:text-[2.8vw] md:text-[2.3vw] lg:text-[1.35vw] 2xl:text-[1.2vw] leading-[120%]">
                             {selectedReason || "Select reason"}
                           </span>
                         </div>
@@ -180,7 +166,7 @@ export default function ContactForm() {
                         className="border-b p-6 lg:p-5 xl:p-6 2xl:p-7 cursor-pointer"
                         onClick={() => selectReason("For business")}
                       >
-                        <span className="font-medium lg:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                        <span className="mr-[5px] xl:mr-[6px] font-medium 2xl:font-semibold text-[4.8vw] sm:text-[2.8vw] md:text-[2.3vw] lg:text-[1.35vw] 2xl:text-[1.2vw] leading-[120%]">
                           For business
                         </span>
                       </div>
@@ -188,7 +174,7 @@ export default function ContactForm() {
                         className="p-6 lg:p-5 xl:p-6 2xl:p-7 cursor-pointer"
                         onClick={() => selectReason("Contact for a job")}
                       >
-                        <span className="font-medium lg:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                        <span className="mr-[5px] xl:mr-[6px] font-medium 2xl:font-semibold text-[4.8vw] sm:text-[2.8vw] md:text-[2.3vw] lg:text-[1.35vw] 2xl:text-[1.2vw] leading-[120%]">
                           Contact for a job
                         </span>
                       </div>
@@ -203,11 +189,7 @@ export default function ContactForm() {
                 {/* Full Name */}
                 <div className="flex flex-col lg:flex-row items-center gap-[1rem] lg:gap-[2rem] pb-[3rem] lg:pb-[1rem]">
                   <div className="w-full lg:w-[16rem] 2xl:w-[24rem] 3xl:w-[33rem]">
-                    <TextFadeIn
-                      slideUp={fadeIn}
-                      phrase="Full name"
-                      className="font-medium lg:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
-                    />
+                    <TextTitleSmall text="Full name" />
                   </div>
                   <div ref={colTwo} className="w-full relative">
                     <motion.div
@@ -221,7 +203,7 @@ export default function ContactForm() {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full font-medium lg:font-semibold text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%] ring-0 outline-0 p-6 lg:p-5 xl:p-6 2xl:p-7"
+                        className="w-full font-medium 2xl:font-semibold text-[4.8vw] sm:text-[2.8vw] md:text-[2.3vw] lg:text-[1.35vw] 2xl:text-[1.2vw] leading-[120%] ring-0 outline-0 p-6 lg:p-5 xl:p-6 2xl:p-7"
                         placeholder="Full name here*"
                       />
                       {errors.name && (
@@ -235,11 +217,7 @@ export default function ContactForm() {
                 {/* Email Address */}
                 <div className="flex flex-col lg:flex-row items-center gap-[1rem] lg:gap-[2rem] pb-[3rem] lg:pb-[1rem]">
                   <div className="w-full lg:w-[16rem] 2xl:w-[24rem] 3xl:w-[33rem]">
-                    <TextFadeIn
-                      slideUp={fadeIn}
-                      phrase="Email address"
-                      className="font-medium lg:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
-                    />
+                    <TextTitleSmall text="Email address" />
                   </div>
                   <div ref={colThree} className="w-full relative">
                     <motion.div
@@ -253,7 +231,7 @@ export default function ContactForm() {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full font-medium lg:font-semibold text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%] ring-0 outline-0 p-6 lg:p-5 xl:p-6 2xl:p-7"
+                        className="w-full font-medium 2xl:font-semibold text-[4.8vw] sm:text-[2.8vw] md:text-[2.3vw] lg:text-[1.35vw] 2xl:text-[1.2vw] leading-[120%] ring-0 outline-0 p-6 lg:p-5 xl:p-6 2xl:p-7"
                         placeholder="example@provider.com*"
                       />
                       {errors.email && (
@@ -267,11 +245,7 @@ export default function ContactForm() {
                 {/* Name Organization */}
                 <div className="flex flex-col lg:flex-row items-center gap-[1rem] lg:gap-[2rem] pb-[3rem] lg:pb-[1rem]">
                   <div className="w-full lg:w-[16rem] 2xl:w-[24rem] 3xl:w-[33rem]">
-                    <TextFadeIn
-                      slideUp={fadeIn}
-                      phrase="Name organization"
-                      className="font-medium lg:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
-                    />
+                    <TextTitleSmall text="Name organization" />
                   </div>
                   <div ref={colThree} className="w-full relative">
                     <motion.div
@@ -285,7 +259,7 @@ export default function ContactForm() {
                         name="nameOrganization"
                         value={formData.nameOrganization}
                         onChange={handleChange}
-                        className="w-full font-medium lg:font-semibold text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%] ring-0 outline-0 p-6 lg:p-5 xl:p-6 2xl:p-7"
+                        className="w-full font-medium 2xl:font-semibold text-[4.8vw] sm:text-[2.8vw] md:text-[2.3vw] lg:text-[1.35vw] 2xl:text-[1.2vw] leading-[120%] ring-0 outline-0 p-6 lg:p-5 xl:p-6 2xl:p-7"
                         placeholder="John & Doe&reg;"
                       />
                       {errors.nameOrganization && (
@@ -299,11 +273,7 @@ export default function ContactForm() {
                 {/* Message */}
                 <div className="flex flex-col lg:flex-row items-center lg:items-start gap-[1rem] lg:gap-[2rem] lg:pb-[1rem]">
                   <div className="w-full lg:w-[16rem] 2xl:w-[24rem] 3xl:w-[33rem] lg:pt-[1.3rem] xl:pt-[1.6rem] 2xl:pt-[1.8rem]">
-                    <TextFadeIn
-                      slideUp={fadeIn}
-                      phrase="Message"
-                      className="font-medium lg:font-semibold mr-[5px] xl:mr-[6px] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]"
-                    />
+                    <TextTitleSmall text="Message" />
                   </div>
                   <div ref={colFour} className="w-full relative">
                     <motion.div
@@ -316,7 +286,7 @@ export default function ContactForm() {
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
-                        className="w-full h-[10rem] 2xl:h-[14rem] resize-none font-medium lg:font-semibold text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%] ring-0 outline-0 p-6 lg:p-5 xl:p-6 2xl:p-7"
+                        className="w-full h-[10rem] 2xl:h-[14rem] resize-none font-medium 2xl:font-semibold text-[4.8vw] sm:text-[2.8vw] md:text-[2.3vw] lg:text-[1.35vw] 2xl:text-[1.2vw] leading-[120%] ring-0 outline-0 p-6 lg:p-5 xl:p-6 2xl:p-7"
                         placeholder="Start typing here ..."
                       />
                       {errors.message && (
@@ -343,7 +313,7 @@ export default function ContactForm() {
                     >
                       <div className="flex items-center justify-between">
                         <div className="w-full overflow-hidden flex ">
-                          <span className="font-medium lg:font-semibold text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] 2xl:text-[1.28rem] leading-[120%]">
+                          <span className="font-medium 2xl:font-semibold text-[4.8vw] sm:text-[2.8vw] md:text-[2.3vw] lg:text-[1.35vw] 2xl:text-[1.2vw] leading-[120%]">
                             Submit form
                           </span>
                         </div>

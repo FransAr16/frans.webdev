@@ -3,7 +3,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
-import BorderLineTop from "@/components/ui/BorderLineTop";
 import { dataProjects } from "@/data/playground";
 
 export default function PlaygroundContentDesktop() {
@@ -145,7 +144,7 @@ function ParallaxProject() {
   const moveUp10 = useTransform(progress10, [0, 1], [0, -200]);
   const moveUp11 = useTransform(progress11, [0, 1], [1000, -400]);
 
-  const rotate4 = useTransform(progress4, [0, 0.8], [18, -15]);
+  const rotate4 = useTransform(progress4, [0, 1], [10, -7]);
   const rotate8 = useTransform(progress8, [0, 0.8], [1, -5]);
   const rotate11 = useTransform(progress11, [0, 0.8], [180, 0]);
 
@@ -153,19 +152,17 @@ function ParallaxProject() {
     <div className="relative main-container z-[4] overflow-hidden">
       <div className="absolute top-0 left-0 bg-background w-full h-[10vh]"></div>
 
-      <div className="relative grid gap-y-[2rem]">
-        {/* <StickyText /> */}
-        <BorderLineTop />
+      <div className="relative grid gap-y-[2rem] lg:py-[6rem]">
 
         {/* Project 1-2 */}
-        <div className="grid grid-cols-8 gap-x-[2rem] h-full py-[2rem] pt-[4rem]">
+        <div className="grid grid-cols-8 gap-x-[2rem] 2xl:gap-x-[4rem] h-full">
           {/* Project 1 */}
           <div className="col-span-3">
             <div className="border flex p-5 bg-background">
               <div className="w-full h-full flex flex-col">
                 <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
-                    src={dataProjects[0].image}
+                    src={dataProjects[0].images}
                     height={1080}
                     width={1920}
                     className="object-cover inline-block max-w-full"
@@ -200,7 +197,7 @@ function ParallaxProject() {
               <div className="w-full h-full flex flex-col">
                 <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
-                    src={dataProjects[1].image}
+                    src={dataProjects[1].images}
                     height={1080}
                     width={1920}
                     className="object-cover inline-block max-w-full"
@@ -230,7 +227,7 @@ function ParallaxProject() {
         {/* Project 3-4 */}
         <div
           ref={ref1}
-          className="grid grid-cols-8 gap-x-[2rem] h-[120vh] py-[5rem]"
+          className="grid grid-cols-8 gap-x-[2rem] 2xl:gap-x-[4rem] h-[120vh] py-[5rem]"
         >
           {/* Blank Space */}
           <div className="col-span-1"></div>
@@ -240,7 +237,7 @@ function ParallaxProject() {
               <div className="w-full h-full flex flex-col">
                 <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
-                    src={dataProjects[2].image}
+                    src={dataProjects[2].images}
                     height={1080}
                     width={1920}
                     className="object-cover inline-block max-w-full"
@@ -272,7 +269,7 @@ function ParallaxProject() {
               <div className="w-full h-full flex flex-col">
                 <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
-                    src={dataProjects[3].image}
+                    src={dataProjects[3].images}
                     height={1080}
                     width={1920}
                     className="object-cover inline-block max-w-full"
@@ -304,7 +301,7 @@ function ParallaxProject() {
         {/* Project 5 */}
         <div
           ref={ref2}
-          className="grid grid-cols-8 gap-x-[2rem] h-[120vh] py-[2rem]"
+          className="grid grid-cols-8 gap-x-[2rem] 2xl:gap-x-[4rem] h-[120vh] py-[2rem]"
         >
           {/* Project 5 */}
           <motion.div className="col-span-3" style={{ y: moveUp2 }}>
@@ -312,7 +309,7 @@ function ParallaxProject() {
               <div className="w-full h-full flex flex-col">
                 <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
-                    src={dataProjects[4].image}
+                    src={dataProjects[4].images}
                     height={1080}
                     width={1920}
                     className="object-cover inline-block max-w-full"
@@ -342,7 +339,7 @@ function ParallaxProject() {
         {/* Project 6-7 */}
         <div
           ref={ref3}
-          className="grid grid-cols-8 gap-x-[2rem] h-[120vh] py-[5rem]"
+          className="grid grid-cols-8 gap-x-[2rem] 2xl:gap-x-[4rem] h-[120vh] py-[5rem]"
         >
           {/* Blank Space */}
           <div className="col-span-1"></div>
@@ -352,7 +349,7 @@ function ParallaxProject() {
               <div className="w-full h-full flex flex-col">
                 <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
-                    src={dataProjects[5].image}
+                    src={dataProjects[5].images}
                     height={1080}
                     width={1920}
                     className="object-cover inline-block max-w-full"
@@ -384,7 +381,7 @@ function ParallaxProject() {
               <div className="w-full h-full flex flex-col">
                 <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
-                    src={dataProjects[6].image}
+                    src={dataProjects[6].images}
                     height={1080}
                     width={1920}
                     className="object-cover inline-block max-w-full"
@@ -416,7 +413,7 @@ function ParallaxProject() {
         {/* Project 8 */}
         <div
           ref={ref4}
-          className="grid grid-cols-8 gap-x-[2rem] h-[120vh] py-[5rem]"
+          className="grid grid-cols-8 gap-x-[2rem] 2xl:gap-x-[4rem] h-[120vh] py-[5rem]"
         >
           {/* Blank Space */}
           <div className="col-span-1"></div>
@@ -443,7 +440,7 @@ function ParallaxProject() {
               <div className="w-full h-full flex flex-col">
                 <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
-                    src={dataProjects[7].image}
+                    src={dataProjects[7].images}
                     height={1080}
                     width={1920}
                     className="object-cover inline-block max-w-full"
@@ -475,7 +472,7 @@ function ParallaxProject() {
         {/* Project 9-10 */}
         <div
           ref={ref5}
-          className="grid grid-cols-8 gap-x-[2rem] h-full py-[2rem]"
+          className="grid grid-cols-8 gap-x-[2rem] 2xl:gap-x-[4rem] h-full py-[2rem]"
         >
           {/* Project 9 */}
           <motion.div className="col-span-3 pt-[10rem]" style={{ y: moveUp5 }}>
@@ -483,7 +480,7 @@ function ParallaxProject() {
               <div className="w-full h-full flex flex-col">
                 <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
-                    src={dataProjects[8].image}
+                    src={dataProjects[8].images}
                     height={1080}
                     width={1920}
                     className="object-cover inline-block max-w-full"
@@ -518,7 +515,7 @@ function ParallaxProject() {
               <div className="w-full h-full flex flex-col">
                 <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
-                    src={dataProjects[9].image}
+                    src={dataProjects[9].images}
                     height={1080}
                     width={1920}
                     className="object-cover inline-block max-w-full"
@@ -548,7 +545,7 @@ function ParallaxProject() {
         {/* Project 11-12 */}
         <div
           ref={ref6}
-          className="grid grid-cols-8 gap-x-[2rem] h-full py-[2rem]"
+          className="grid grid-cols-8 gap-x-[2rem] 2xl:gap-x-[4rem] h-full py-[2rem]"
         >
           {/* Project 11 */}
           <motion.div className="col-span-3 pt-[18rem]" style={{ y: moveUp6 }}>
@@ -556,7 +553,7 @@ function ParallaxProject() {
               <div className="w-full h-full flex flex-col">
                 <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
-                    src={dataProjects[10].image}
+                    src={dataProjects[10].images}
                     height={1080}
                     width={1920}
                     className="object-cover inline-block max-w-full"
@@ -588,7 +585,7 @@ function ParallaxProject() {
               <div className="w-full h-full flex flex-col">
                 <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
-                    src={dataProjects[11].image}
+                    src={dataProjects[11].images}
                     height={1080}
                     width={1920}
                     className="object-cover inline-block max-w-full"
@@ -621,7 +618,7 @@ function ParallaxProject() {
         {/* Project 13 */}
         <div
           ref={ref7}
-          className="grid grid-cols-8 gap-x-[2rem] h-full py-[2rem]"
+          className="grid grid-cols-8 gap-x-[2rem] 2xl:gap-x-[4rem] h-full py-[2rem]"
         >
           {/* Blank Space */}
           <div className="col-span-2"></div>
@@ -631,7 +628,7 @@ function ParallaxProject() {
               <div className="w-full h-full flex flex-col">
                 <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
-                    src={dataProjects[12].image}
+                    src={dataProjects[12].images}
                     height={1080}
                     width={1920}
                     className="object-cover inline-block max-w-full"
@@ -675,7 +672,7 @@ function ParallaxProject() {
         {/* Project 14-15 */}
         <div
           ref={ref8}
-          className="grid grid-cols-8 gap-x-[2rem] h-full py-[2rem]"
+          className="grid grid-cols-8 gap-x-[2rem] 2xl:gap-x-[4rem] h-full py-[2rem]"
         >
           {/* Project 14 */}
           <motion.div className="col-span-3 pt-[4rem]" style={{ y: moveUp9 }}>
@@ -683,7 +680,7 @@ function ParallaxProject() {
               <div className="w-full h-full flex flex-col">
                 <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
-                    src={dataProjects[13].image}
+                    src={dataProjects[13].images}
                     height={1080}
                     width={1920}
                     className="object-cover inline-block max-w-full"
@@ -718,7 +715,7 @@ function ParallaxProject() {
               <div className="w-full h-full flex flex-col">
                 <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
-                    src={dataProjects[14].image}
+                    src={dataProjects[14].images}
                     height={1080}
                     width={1920}
                     className="object-cover inline-block max-w-full"
@@ -748,35 +745,35 @@ function ParallaxProject() {
           <div className="col-span-1"></div>
         </div>
 
-        {/* Project 15 */}
-        <div ref={ref9} className="grid grid-cols-8 gap-x-[2rem] h-full">
+        {/* Project 16 */}
+        <div ref={ref9} className="grid grid-cols-8 gap-x-[2rem] 2xl:gap-x-[4rem] h-full">
           {/* Blank Space */}
           <div className="col-span-3"></div>
-          {/* Project 15 */}
+          {/* Project 16 */}
           <motion.div className="col-span-3 pt-[20rem]" style={{ y: moveUp10 }}>
             <div className="border flex p-5 bg-background">
               <div className="w-full h-full flex flex-col">
                 <div className="lg:h-[22rem] xl:h-[24rem] flex items-center justify-center main-container bg-border">
                   <Image
-                    src={dataProjects[14].image}
+                    src={dataProjects[15].images}
                     height={1080}
                     width={1920}
                     className="object-cover inline-block max-w-full"
-                    alt={dataProjects[14].title}
+                    alt={dataProjects[15].title}
                   />
                 </div>
                 <div className="pt-[1rem]">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col justify-center">
                       <div className="font-medium 2xl:font-semibold lg:text-[1.2rem] 2xl:text-[1.48rem] leading-[120%]">
-                        {dataProjects[14].title}
+                        {dataProjects[15].title}
                       </div>
                       <div className="2xl:font-medium lg:text-[1rem] 2xl:text-[1.18rem] leading-[120%]">
-                        {dataProjects[14].description}
+                        {dataProjects[15].description}
                       </div>
                     </div>
                     <div className="2xl:font-medium lg:text-[.9rem] 2xl:text-[1.08rem] leading-[120%]">
-                      {dataProjects[14].number}
+                      {dataProjects[15].number}
                     </div>
                   </div>
                 </div>
